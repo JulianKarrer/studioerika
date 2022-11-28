@@ -1,6 +1,5 @@
 import * as React from "react"
 import { useState } from "react"
-import Layout from "../components/layout"
 import {useIsMobile} from "../hooks/useMobile"
 import useInterval from "../hooks/useInterval"
 import { useMousePos } from "../hooks/useMousePos"
@@ -19,7 +18,7 @@ const bigHeaderStyles = {
 const videoStyles = {
   width: "200px",
   maxWidth: "calc(-40px + 90vw)",
-  position: "fixed",
+  position: "absolute",
   top: "75vh",
   transform: "translate3d(-50%, -50%, 0)",
   left: "50vw",
@@ -96,14 +95,12 @@ const BigHeader = () => {
 const IndexPage = () => {
   const isMobile = useIsMobile()
   return (
-    <Layout>
-      <main style={{...pageStyles, ...(isMobile?{minHeight: "calc(100vh + 100px)"}:{})}}>
-        <BigHeader />
-        <video controls={false} muted loop playsInline autoPlay style={videoStyles}>
-          <source src={ErikaMp4} type={"video/mp4"} />
-        </video>
-      </main>
-    </Layout>
+    <main style={{...pageStyles, ...(isMobile?{minHeight: "calc(100vh + 100px)"}:{})}}>
+      <BigHeader />
+      <video controls={false} muted loop playsInline autoPlay style={videoStyles}>
+        <source src={ErikaMp4} type={"video/mp4"} />
+      </video>
+    </main>
   )
 }
 

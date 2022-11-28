@@ -3,7 +3,7 @@ import { useIsMobile } from "../hooks/useMobile"
 
 const linkStyle = {
   fontSize: "15px",
-  fontFamily: "SuisseWorks, -apple-system, Roboto, sans-serif, serif",
+  fontFamily: "SuisseWorks, serif",
   textDecoration: "none",
   color: "#141414",
 }
@@ -17,19 +17,16 @@ const adressStyle = {
 
 const leftStyle = {
   position: "absolute",
-  padding: "20px",
   bottom: 20,
   display: "flex",
 }
 
 const rightStyle = {
-  padding: "20px",
   bottom: 20,
   position: "absolute",
   right: 40,
 }
-const middleStyle = {
-  padding: "20px",
+const middleStyle = { 
   bottom: 20,
   position: "absolute",
   left: "50vw",
@@ -39,7 +36,6 @@ const middleStyle = {
 const containerMobileStyle = {
   display: "flex",
   position: "absolute",
-  padding: "20px",
   bottom: 0,
   flexDirection: "column",
   columnGap: "10px",

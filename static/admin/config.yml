@@ -19,5 +19,5 @@ collections:
     fields:
       - { label: 'Name', name: 'title', widget: 'string' }
       - { label: 'Beschreibung', name: 'mitarbeiterdescription', widget: 'string' }
-      - { label: 'Email', name: 'mitarbeiteremail', widget: 'string' }
+      - { label: 'Email', name: 'mitarbeiteremail', widget: 'string', required: false }
       - { label: 'Bild', name: 'mitarbeiterimage', widget: 'image', allow_multiple: false }
