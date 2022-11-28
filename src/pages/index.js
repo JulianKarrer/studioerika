@@ -4,7 +4,6 @@ import Layout from "../components/layout"
 import {useIsMobile} from "../hooks/useMobile"
 import useInterval from "../hooks/useInterval"
 import { useMousePos } from "../hooks/useMousePos"
-import useWindowSize from "../hooks/useWindowSize"
 import ErikaMp4 from "../videos/erikatanzt_quer_web.mp4"
 
 const pageStyles = {
@@ -78,7 +77,6 @@ const BigHeader = () => {
   const mousePos = useMousePos()
   const [mobileWord, setMobileWord] = useState(0);
   useInterval(()=>{setMobileWord((mobileWord + 1)%headerWordsMobile.length)}, 1000)
-  const size = useWindowSize();
 
   return(
   <div style={bigHeaderStyles}>
