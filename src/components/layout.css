@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'ZIGZAG';
+  src: url('/fonts/ZIGZAG.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SuisseWorks';
+  src: url('/fonts/SuisseWorks-Book.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  background-color: #f5f4f0;
+  color: #141414;
+}
+
+body {
+  margin: 0;
+}
