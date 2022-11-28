@@ -17,7 +17,7 @@ collections:
     editor:
       preview: false
     fields:
-      - { label: 'Name', name: 'mitarbeitername', widget: 'string' }
+      - { label: 'Name', name: 'title', widget: 'string' }
       - { label: 'Beschreibung', name: 'mitarbeiterdescription', widget: 'string' }
       - { label: 'Email', name: 'mitarbeiteremail', widget: 'string' }
-      - { label: 'Bild', name: 'mitarbeiterimage', widget: 'image', allow_multiple: 'false' }
+      - { label: 'Bild', name: 'mitarbeiterimage', widget: 'image', allow_multiple: false }
