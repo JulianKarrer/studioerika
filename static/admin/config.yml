@@ -28,7 +28,7 @@ collections:
     slug: 'wo'
     media_folder: ''
     public_folder: ''
-    path: '{{title}}/wo'
+    path: 'wo'
     editor:
       preview: false
     fields:
