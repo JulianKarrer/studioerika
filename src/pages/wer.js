@@ -7,7 +7,7 @@ import { useIsMobile } from '../hooks/useMobile';
 import Layout from '../components/layout';
 
 const teamImgStyle = {
-  left: "50vw",
+  left: "calc(50vw - 20px)",
   transform: "translateX(-50%)",
   top: 100,
 }

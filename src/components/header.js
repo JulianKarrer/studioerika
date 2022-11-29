@@ -51,13 +51,13 @@ const divStyleMobileMainPage = {
 export default function Header({title}) {
   const isMobile = useIsMobile();
   return <div style={containerStyle}>
-    <div style={isMobile?(window.location.pathname !== "/"?divStyleMobile:divStyleMobileMainPage):divStyle}>
+    <div style={isMobile?(title !== ""?divStyleMobile:divStyleMobileMainPage):divStyle}>
       <Link style={linkStyle} to="/">Was</Link>
       <Link style={linkStyle} to="/wer">Wer</Link>
       <Link style={linkStyle} to="/">Wie</Link>
-      <Link style={linkStyle} to="/">Wo</Link>
+      <Link style={linkStyle} to="/wo">Wo</Link>
     </div>
-    {window.location.pathname !== "/"&&
+    {title !== ""&&
   <Link style={headerTopLeftStyle} to="/">Studio Erika<br/>Grafik und {title}</Link>}
   </div>
 }
