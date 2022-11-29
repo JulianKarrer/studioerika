@@ -1,5 +1,6 @@
 import React from "react"
 import { useIsMobile } from "../hooks/useMobile"
+import { Link } from "gatsby"
 
 const linkStyle = {
   fontSize: "15px",
@@ -9,6 +10,8 @@ const linkStyle = {
 }
 
 const adressStyle = {
+  display: "flex",
+  flexDirection: "column",
   fontSize: "20px",
   fontFamily: "ZIGZAG, -apple-system, Roboto, sans-serif, serif",
   textDecoration: "none",
@@ -49,11 +52,12 @@ export default function Footer() {
   const isMobile = useIsMobile();
   return <div style={{...(isMobile?containerMobileStyle:{})}}>
     <div style={{...adressStyle, ...(isMobile?rowMobileStyle:leftStyle)}}>
-      MEHLSTRAßE 1, 87435 KEMPTEN<br/>
-      TEL 0831 591 886 39<br/>
-      HALLO@STUDIOERIKA.DE</div>
+      <span>MEHLSTRAßE 1, 87435 KEMPTEN<br/></span>
+      <a style={adressStyle} href="tel:004983159188639">TEL 0831 591 886 39</a><br/>
+      <a style={adressStyle} href="mailto:hallo@studioerika.de">HALLO@STUDIOERIKA.DE</a></div>
     <a style={{...linkStyle, ...(isMobile?rowMobileStyle:middleStyle)}}
       href="https://www.instagram.com/erikagrafik/" target="_blank" rel="noopener noreferrer" >Instagram</a>
-    <div style={{...linkStyle, ...(isMobile?rowMobileStyle:rightStyle)}}>Impressum + Datenschutz</div>
+    <div style={(isMobile?rowMobileStyle:rightStyle)}>
+      <Link to="/impressum-datenschutz" style={linkStyle}>Impressum + Datenschutz</Link></div>
   </div>
 }
