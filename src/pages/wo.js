@@ -33,7 +33,7 @@ const imageSettings = {
   style:{locationImageStyle},
 }
 
-export default function Wo({data})  {
+const Wo = () => {
   return (<Layout title="Allgäu">
     <div style={textContainerStyle}>
       <p>Schreib uns per Mail an <a href="mailto:hallo@studioerika.de" style={linkStyle}>hallo@studioerika.de</a><br/>
@@ -56,10 +56,22 @@ export default function Wo({data})  {
         />
         <StaticImage
           src="../images/wo/detail.jpg"
-          alt="Außenansicht des Büros"
+          alt="Innendeko"
+          {...imageSettings}
+        />
+        <StaticImage
+          src="../images/wo/fensterlaeden.jpg"
+          alt="Bemalte Fensterläden"
+          {...imageSettings}
+        />
+        <StaticImage
+          src="../images/wo/kueche.jpg"
+          alt="Unsere Büroküche - optimal zum Kaffee trinken"
           {...imageSettings}
         />
       </Slider>
     </div>
   </Layout>)
 }
+
+export default Wo

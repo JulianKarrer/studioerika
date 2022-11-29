@@ -8,7 +8,6 @@ import useWindowSize from "../hooks/useWindowSize"
 const Canvas = ({positions,dimensions, ...props}) => {
   const ref = useRef(null)
   useEffect(()=>{
-    console.log(positions)
     const ctx = ref.current.getContext("2d")
     ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height)
     for (let pos of positions){
