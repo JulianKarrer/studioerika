@@ -32,8 +32,10 @@ collections:
     editor:
       preview: false
     fields:
-      - { label: 'Bilder', name: 'title', widget: 'list', fields:
-        - { label: 'Alt-Text', name: 'alttext', widget: 'string' }
-        - { label: 'Bild', name: 'mitarbeiterimage', widget: 'image', allow_multiple: false }
-        - { label: 'Reihenfolge (zB. 0, 1, 2, a, b, ...)', name: 'order', widget: 'string', required: false, default: "z" }
-      }
+      - label: 'Bilder'
+        name: 'title'
+        widget: 'list'
+        fields:
+          - { label: 'Alt-Text', name: 'alttext', widget: 'string' }
+          - { label: 'Bild', name: 'mitarbeiterimage', widget: 'image', allow_multiple: false }
+          - { label: 'Reihenfolge (zB. 0, 1, 2, a, b, ...)', name: 'order', widget: 'string', default: "z" }
