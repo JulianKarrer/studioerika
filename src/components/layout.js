@@ -32,7 +32,7 @@ const canvasStyle = {
   zIndex: 99999,
 }
 
-export default function Layout({ children }) {
+export default function Layout({ children, title }) {
   // draw disks when user is idle
   const isIdle = useIdle(20e3)
   const [positions, setPositions] = useState([])
@@ -53,7 +53,7 @@ export default function Layout({ children }) {
   return<> 
     <Canvas positions={positions} style={canvasStyle} dimensions={size}/>
     <div style={{position: "relative", minHeight: "100vh", padding: "20px"}}>
-      <Header />
+      <Header title={title} />
       {children}
     </div>
     <div style={{marginTop: "50px", position: "relative", padding: "20px"}}>

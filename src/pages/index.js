@@ -4,13 +4,14 @@ import {useIsMobile} from "../hooks/useMobile"
 import useInterval from "../hooks/useInterval"
 import { useMousePos } from "../hooks/useMousePos"
 import ErikaMp4 from "../videos/erikatanzt_quer_web.mp4"
+import Layout from "../components/layout"
 
 const pageStyles = {
-  padding: "20px",
   overflow: "hidden",
 }
 
 const bigHeaderStyles = {
+  marginTop: "30px",
   fontSize: "14vmin",
   fontFamily: "ZIGZAG, -apple-system, Roboto, sans-serif, serif"
 }
@@ -95,12 +96,14 @@ const BigHeader = () => {
 const IndexPage = () => {
   const isMobile = useIsMobile()
   return (
-    <main style={{...pageStyles, ...(isMobile?{minHeight: "calc(100vh + 100px)"}:{})}}>
-      <BigHeader />
-      <video controls={false} muted loop playsInline autoPlay style={videoStyles}>
-        <source src={ErikaMp4} type={"video/mp4"} />
-      </video>
-    </main>
+    <Layout title="">
+      <main style={{...pageStyles, ...(isMobile?{minHeight: "calc(100vh + 100px)"}:{})}}>
+        <BigHeader />
+        <video controls={false} muted loop playsInline autoPlay style={videoStyles}>
+          <source src={ErikaMp4} type={"video/mp4"} />
+        </video>
+      </main>
+    </Layout>
   )
 }
 

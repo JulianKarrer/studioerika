@@ -4,6 +4,7 @@ import { StaticImage, GatsbyImage, getImage } from "gatsby-plugin-image"
 import Slider from 'infinite-react-carousel';
 import useWindowSize from '../hooks/useWindowSize';
 import { useIsMobile } from '../hooks/useMobile';
+import Layout from '../components/layout';
 
 const teamImgStyle = {
   left: "50vw",
@@ -78,7 +79,7 @@ const PortraitContainer = ({children}) => {
 
 
 const Wer = ({data}) => {
-  return (<>
+  return (<Layout title="Team">
     <div>
      <StaticImage
       src="../images/erika_team.jpg"
@@ -103,7 +104,7 @@ const Wer = ({data}) => {
           />
         })}
     </PortraitContainer>
-    </>)
+  </Layout>)
 }
 
 export const query = graphql`
