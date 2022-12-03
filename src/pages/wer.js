@@ -110,7 +110,7 @@ export const query = graphql`
 query MitarbeiterQuery {
   allMarkdownRemark(
     filter: {fileAbsolutePath: {regex: "/(mitarbeiter)/"}}
-    sort: {frontmatter: {title: ASC}}
+    sort: {frontmatter: {order: ASC}}
   ) {
     nodes {
       frontmatter {
