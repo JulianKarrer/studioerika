@@ -6,4 +6,5 @@ mitarbeiterdescription: " ist Gründungsmitglied, HR-Manager*In und Head of
   ihren Hauptaufgaben gehört die Social-Media-Betreuung und die Musikauswahl
   fürs Studio."
 mitarbeiterimage: erika_erika.jpg
+order: "4"
 ---
