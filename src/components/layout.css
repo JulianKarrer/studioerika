@@ -19,6 +19,11 @@ html {
   color: #141414;
   font-family: SuisseWorks, serif;
   font-size: 12pt;
+  cursor: url("/maus.cur") 12 12, auto;
+}
+
+a {
+  cursor: url("/maus_hover.cur") 12 12, auto;
 }
 
 body {
