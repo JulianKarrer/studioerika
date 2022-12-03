@@ -53,8 +53,11 @@ export default function Footer() {
   return <div style={{...(isMobile?containerMobileStyle:{})}}>
     <div style={{...adressStyle, ...(isMobile?rowMobileStyle:leftStyle)}}>
       <span>MEHLSTRAßE 1, 87435 KEMPTEN<br/></span>
-      <a style={adressStyle} href="tel:004983159188639">TEL 0831 591 886 39</a><br/>
-      <a style={adressStyle} href="mailto:hallo@studioerika.de">HALLO@STUDIOERIKA.DE</a></div>
+      <span style={{display: "flex"}}>
+        <a style={{...adressStyle, marginRight: "10px"}} href="tel:004983159188639">TEL 0831 591 886 39</a> 
+        <a style={adressStyle} href="mailto:hallo@studioerika.de">HALLO@STUDIOERIKA.DE</a>
+      </span>
+    </div>
     <a style={{...linkStyle, ...(isMobile?rowMobileStyle:middleStyle)}}
       href="https://www.instagram.com/erikagrafik/" target="_blank" rel="noopener noreferrer" >Instagram</a>
     <div style={(isMobile?rowMobileStyle:rightStyle)}>

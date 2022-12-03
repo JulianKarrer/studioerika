@@ -3,10 +3,10 @@ import { Link } from "gatsby"
 import { useIsMobile } from "../hooks/useMobile"
 
 const containerStyle = {
-  mixBlendMode: "difference", 
   color: "white", 
   zIndex: "10",
   position: "relative",
+  mixBlendMode: "exclusion",
 }
 
 const linkStyle = {
@@ -15,6 +15,10 @@ const linkStyle = {
   fontSize: "20px",
   color: "white",
   paddingRight: "10px",
+}
+
+const linkActiveStyle = {
+  textDecorationLine: "underline",
 }
 
 const headerTopLeftStyle = {
@@ -52,10 +56,10 @@ export default function Header({title}) {
   const isMobile = useIsMobile();
   return <div style={containerStyle}>
     <div style={isMobile?(title !== ""?divStyleMobile:divStyleMobileMainPage):divStyle}>
-      <Link style={linkStyle} to="/">Was</Link>
-      <Link style={linkStyle} to="/wer">Wer</Link>
-      <Link style={linkStyle} to="/">Wie</Link>
-      <Link style={linkStyle} to="/wo">Wo</Link>
+      <Link style={linkStyle} activeStyle={linkActiveStyle} to="/">Was</Link>
+      <Link style={linkStyle} activeStyle={linkActiveStyle} to="/wer">Wer</Link>
+      <Link style={linkStyle} activeStyle={linkActiveStyle} to="/wie">Wie</Link>
+      <Link style={linkStyle} activeStyle={linkActiveStyle} to="/wo">Wo</Link>
     </div>
     {title !== ""&&
   <Link style={headerTopLeftStyle} to="/">Studio Erika<br/>Grafik und {title}</Link>}

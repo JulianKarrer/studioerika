@@ -5,6 +5,9 @@ import { useIdle, useInterval } from "react-use"
 import "./layout.css"
 import useWindowSize from "../hooks/useWindowSize"
 
+const IDLE_TIME_TO_SCREENSAVER = 30000e3;
+const SCREENSAVER_TIME_PER_BUBBLE = 1e3;
+
 const Canvas = ({positions,dimensions, ...props}) => {
   const ref = useRef(null)
   useEffect(()=>{
@@ -12,7 +15,7 @@ const Canvas = ({positions,dimensions, ...props}) => {
     ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height)
     for (let pos of positions){
       ctx.beginPath()
-      ctx.arc(pos.x, pos.y, 50, 0, 2*Math.PI, false)
+      ctx.arc(pos.x, pos.y, 80, 0, 2*Math.PI, false)
       ctx.fillStyle = "white"
       ctx.fill()
     }
@@ -33,7 +36,7 @@ const canvasStyle = {
 
 export default function Layout({ children, title }) {
   // draw disks when user is idle
-  const isIdle = useIdle(20e3)
+  const isIdle = useIdle(IDLE_TIME_TO_SCREENSAVER)
   const [positions, setPositions] = useState([])
   const size = useWindowSize();
   // reset disks if the user becomes active
@@ -47,7 +50,7 @@ export default function Layout({ children, title }) {
     if(isIdle){
       setPositions(pos => [...pos, {x: Math.random()*size.width, y: Math.random()*size.height}])
     } 
-  }, 5e3)
+  }, SCREENSAVER_TIME_PER_BUBBLE)
 
   return<> 
     <Canvas positions={positions} style={canvasStyle} dimensions={size}/>

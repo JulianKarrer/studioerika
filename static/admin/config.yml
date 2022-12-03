@@ -21,3 +21,4 @@ collections:
       - { label: 'Beschreibung', name: 'mitarbeiterdescription', widget: 'string' }
       - { label: 'Email', name: 'mitarbeiteremail', widget: 'string', required: false }
       - { label: 'Bild', name: 'mitarbeiterimage', widget: 'image', allow_multiple: false }
+      - { label: 'Reihenfolge', name: 'order', widget: 'string', default: '9' }

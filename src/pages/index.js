@@ -11,18 +11,29 @@ const pageStyles = {
 }
 
 const bigHeaderStyles = {
+  marginTop: "-20px",
+  fontSize: "14vmin",
+  fontFamily: "ZIGZAG, -apple-system, Roboto, sans-serif, serif"
+}
+
+const bigHeaderMobileStyles = {
   marginTop: "30px",
   fontSize: "14vmin",
   fontFamily: "ZIGZAG, -apple-system, Roboto, sans-serif, serif"
 }
 
-const videoStyles = {
+const videoContainerStyles = {
   width: "200px",
   maxWidth: "calc(-40px + 90vw)",
   position: "absolute",
-  top: "75vh",
+  top: "80vh",
   transform: "translate3d(-50%, -50%, 0)",
   left: "50vw",
+  overflow: "hidden",
+}
+
+const videoStyles = {
+
 }
 
 const headerWords = [
@@ -79,7 +90,7 @@ const BigHeader = () => {
   useInterval(()=>{setMobileWord((mobileWord + 1)%headerWordsMobile.length)}, 1000)
 
   return(
-  <div style={bigHeaderStyles}>
+  <div style={isMobile?bigHeaderMobileStyles:bigHeaderStyles}>
     STUDIO ERIKA<br/>GRAFIK UND<br/>{isMobile&&
       headerWordsMobile[mobileWord]
     }{!isMobile&&
@@ -99,9 +110,11 @@ const IndexPage = () => {
     <Layout title="">
       <main style={{...pageStyles, ...(isMobile?{minHeight: "calc(100vh + 100px)"}:{})}}>
         <BigHeader />
-        <video controls={false} muted loop playsInline autoPlay style={videoStyles}>
-          <source src={ErikaMp4} type={"video/mp4"} />
-        </video>
+        <div style={videoContainerStyles}>
+          <video controls={false} muted loop playsInline autoPlay style={videoStyles}>
+            <source src={ErikaMp4} type={"video/mp4"} />
+          </video>
+        </div>
       </main>
     </Layout>
   )

@@ -6,8 +6,8 @@ import Layout from '../components/layout';
 const locationImageStyle = {}
 
 const textContainerStyle = {
-  marginBottom: "100px", 
-  marginTop: "150px", 
+  marginBottom: "150px", 
+  marginTop: "200px", 
   maxWidth: "400px", 
   textAlign: "center",
   left: "calc(50vw - 20px)",

@@ -9,7 +9,7 @@ import Layout from '../components/layout';
 const teamImgStyle = {
   left: "calc(50vw - 20px)",
   transform: "translateX(-50%)",
-  top: 100,
+  top: 150,
 }
 
 const headerTextStyle = {
@@ -17,6 +17,7 @@ const headerTextStyle = {
   textDecoration: "none",
   fontSize: "7vmin",
   textAlign: "center",
+  marginTop: 150,
 }
 
 const headerStyle = {
@@ -39,7 +40,7 @@ const mailtoStyle = {
 const Portrait = ({name, email, imagedata, description}) => {
   const image = getImage(imagedata)
   return(
-  <div style={{width: "min(80%, 500px)", textAlign: "left", marginLeft: "50%", transform: "translateX(-50%)", marginBottom: "100px"}}>
+  <div style={{width: "min(80%, 600px)", textAlign: "left", marginLeft: "50%", transform: "translateX(-50%)", marginBottom: "100px"}}>
     <div style={{pointerEvents: "none", userSelect: "none"}}>
       <GatsbyImage image={image} alt={name} />
       <p style={{maxWidth: "80%"}}><span style={{...accentFont, fontSize: "12pt"}}>{name + " "}</span>{description}</p>
@@ -55,7 +56,7 @@ const PortraitContainer = ({children}) => {
     arrows: false,
     arrowsBlock: false,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 5000,
     centerMode: true,
     centerPadding: 320*size.width/1400,
   }
@@ -80,7 +81,6 @@ const PortraitContainer = ({children}) => {
 
 const Wer = ({data}) => {
   return (<Layout title="Team">
-    <div>
      <StaticImage
       src="../images/erika_team.jpg"
       alt="Das Team von Studio Erika"
@@ -90,7 +90,6 @@ const Wer = ({data}) => {
       height={300}
       style={teamImgStyle}
     />
-    </div>
     <div style={headerStyle}>
       <p style={headerTextStyle}><span style={accentFont}>STUDIO ERIKA</span> ist ein interdisziplinäres Designbüro, welches in den Bereichen Szenografie, Grafik, Corporate Design, online und offline, denkt und arbeitet. Erika hält die Balance zwischen angemessener Ernsthaftigkeit und spielerisch-emotionaler Gestaltung.</p>
     </div>
