@@ -8,4 +8,5 @@ mitarbeiterdescription: " ist der Gründer des Studio Erika. Während und nach d
   Schule für Gestaltung St. Gallen. "
 mitarbeiteremail: fk@studioerika.de
 mitarbeiterimage: erika_fabian.jpg
+order: "1"
 ---
