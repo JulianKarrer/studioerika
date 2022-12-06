@@ -2,6 +2,8 @@ backend:
   name: git-gateway
   branch: master
 
+local_backend: true
+
 media_folder: static/img
 public_folder: /img
 
@@ -23,87 +25,94 @@ collections:
       - { label: "Bild", name: "mitarbeiterimage", widget: "image", allow_multiple: false }
       - { label: "Reihenfolge", name: "order", widget: "string", default: "9" }
 
-    - name: "projekte"
-      label: "Projekte"
-      folder: "content/projekte"
-      create: true
-      slug: "index"
-      media_folder: ""
-      public_folder: ""
-      path: "{{title}}/index"
-      editor:
-        preview: false
-      fields:
-        - { label: "Name", name: "title", widget: "string" }
-        - { label: "Headline für Unterseite", name: "header", widget: "text" }
-        - { label: "Grafik und ...", name: "grafikund", widget: "string" }
-        - { label: "Reihenfolge/Priorität (höher wird früher angezeigt)", name: "order", widget: "string", default: "0" }
-        - { label: "Kategorie", name: "category", widget: "select", multiple: false, options: ["Raum","Grafik","Marke","Editorial","Online","Illustration","Spiel"], default: ["Grafik"] }
-        - { label: "KundInnen", name: "client", widget: "string", required: false }
+  - name: "projekte"
+    label: "Projekte"
+    folder: "content/projekte"
+    create: true
+    slug: "index"
+    media_folder: ""
+    public_folder: ""
+    path: "{{title}}/index"
+    editor:
+      preview: false
+    fields:
+      - { label: "Name", name: "title", widget: "string" }
+      - { label: "Headline für Unterseite", name: "header", widget: "text" }
+      - { label: "Grafik und ...", name: "grafikund", widget: "string" }
+      - { label: "Reihenfolge/Priorität (höher wird früher angezeigt)", name: "order", widget: "string", default: "0" }
+      - { label: "Kategorie", name: "category", widget: "select", multiple: false, options: ["Raum","Grafik","Marke","Editorial","Online","Illustration","Spiel"], default: ["Grafik"] }
+      - { label: "KundInnen", name: "client", widget: "string", required: false }
+      - label: "Thumbnail"
+        name: "thumbnail"
+        widget: "image"
+        choose_url: true
+        media_library:
+          config:
+            multiple: false
 
-        - { label: "Info-Text: Aufgabe", name: "aufgabe", widget: "text", required: false }
-        - { label: "Info-Text: Wer? Was? Wieso?", name: "aufgabe", widget: "text", required: false }
-        - { label: "Info-Text: Das hat Erika gemacht", name: "aufgabe", widget: "text", required: false }
+      - { label: "Info-Text: Aufgabe", name: "aufgabe", widget: "text", required: false }
+      - { label: "Info-Text: Wer? Was? Wieso?", name: "werwaswieso", widget: "text", required: false }
+      - { label: "Info-Text: Das hat Erika gemacht", name: "erikamacht", widget: "text", required: false }
 
-        - label: 'Inhalte'
-          name: 'content'
-          widget: 'list'
-          types:
-            - label: 'Bildschirmbreites Bild'
-              name: 'coverimageobject'
-              widget: object
-              summary: '{{fields.coverimage}}'
-              fields:
-                - label: "Full-Sized Bild"
-                  name: "coverimage"
-                  widget: "image"
-                  choose_url: true
-                  media_library:
-                    config:
-                      multiple: false
-            - label: 'Zwei Bilder nebeneinander'
-              name: 'doubleimageobject'
-              widget: object
-              summary: '{{fields.doubleimage}}'
-              fields:
-                - label: "erstes Bild"
-                  name: "doubleimage1"
-                  widget: "image"
-                  choose_url: true
-                  media_library:
-                    config:
-                      multiple: false
-                - label: "zweites Bild"
-                  name: "doubleimage2"
-                  widget: "image"
-                  choose_url: true
-                  media_library:
-                    config:
-                      multiple: false
-            - label: 'Hochkant Bild'
-              name: 'portraitimageobject'
-              widget: object
-              summary: '{{fields.portraitimage}}'
-              fields:
-                - label: "Hochkant Bild"
-                  name: "portraitimage"
-                  widget: "image"
-                  choose_url: true
-                  media_library:
-                    config:
-                      multiple: false
-            - label: 'Youtube Link'
-              name: 'youtubelink'
-              widget: object
-              fields:
-                - { label: URL, name: url, widget: string, default: 'https://www.youtube-nocookie.com/embed/HJ4boSbOX7I' }
-            - label: 'eigenes mp4 Video'
-              name: 'mp4fileobject'
-              widget: object
-              fields:
-              - label: "Video Datei (vorher komprimieren! mehr als 2MB ist schlecht)"
-                name: "mp4file"
-                widget: "file"
+      - label: 'Inhalte'
+        name: 'content'
+        widget: 'list'
+        types:
+          - label: 'Bildschirmbreites Bild'
+            name: 'coverimageobject'
+            widget: object
+            summary: '{{fields.coverimage}}'
+            fields:
+              - label: "Full-Sized Bild"
+                name: "coverimage"
+                widget: "image"
+                choose_url: true
                 media_library:
                   config:
                     multiple: false
+          - label: 'Zwei Bilder nebeneinander'
+            name: 'doubleimageobject'
+            widget: object
+            summary: '{{fields.doubleimage}}'
+            fields:
+              - label: "erstes Bild"
+                name: "doubleimage1"
+                widget: "image"
+                choose_url: true
+                media_library:
+                  config:
+                    multiple: false
+              - label: "zweites Bild"
+                name: "doubleimage2"
+                widget: "image"
+                choose_url: true
+                media_library:
+                  config:
+                    multiple: false
+          - label: 'Hochkant Bild'
+            name: 'portraitimageobject'
+            widget: object
+            summary: '{{fields.portraitimage}}'
+            fields:
+              - label: "Hochkant Bild"
+                name: "portraitimage"
+                widget: "image"
+                choose_url: true
+                media_library:
+                  config:
+                    multiple: false
+          - label: 'Youtube Link'
+            name: 'youtubelink'
+            widget: object
+            fields:
+              - { label: URL, name: url, widget: string, default: 'https://www.youtube-nocookie.com/embed/HJ4boSbOX7I' }
+          - label: 'eigenes mp4 Video'
+            name: 'mp4fileobject'
+            widget: object
+            fields:
+            - label: "Video Datei (vorher komprimieren! mehr als 2MB ist schlecht)"
+              name: "mp4file"
+              widget: "file"
+              media_library:
+                config:
+                  multiple: false

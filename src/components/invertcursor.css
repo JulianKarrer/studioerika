@@ -1,0 +1,9 @@
+/* invert custom pointer's colour scheme */
+
+html {
+  cursor: url("/maus_hover.cur") 12 12, auto;
+}
+
+a {
+  cursor: url("/maus.cur") 12 12, auto;
+}

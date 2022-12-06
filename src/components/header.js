@@ -56,7 +56,7 @@ export default function Header({title}) {
   const isMobile = useIsMobile();
   return <div style={containerStyle}>
     <div style={isMobile?(title !== ""?divStyleMobile:divStyleMobileMainPage):divStyle}>
-      <Link style={linkStyle} activeStyle={linkActiveStyle} to="/">Was</Link>
+      <Link style={linkStyle} activeStyle={linkActiveStyle} to="/was">Was</Link>
       <Link style={linkStyle} activeStyle={linkActiveStyle} to="/wer">Wer</Link>
       <Link style={linkStyle} activeStyle={linkActiveStyle} to="/wie">Wie</Link>
       <Link style={linkStyle} activeStyle={linkActiveStyle} to="/wo">Wo</Link>
