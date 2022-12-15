@@ -2,6 +2,7 @@ import * as React from 'react'
 import { StaticImage } from "gatsby-plugin-image"
 import Slider from 'infinite-react-carousel';
 import Layout from '../components/layout';
+import { useState, useEffect } from 'react';
 
 const locationImageStyle = {}
 
@@ -13,6 +14,7 @@ const textContainerStyle = {
   left: "calc(50vw - 20px)",
   position: "relative",
   transform: "translateX(-50%)",
+  letterSpacing: "0.004em",
 }
 
 const linkStyle = {
@@ -34,6 +36,8 @@ const imageSettings = {
 }
 
 const Wo = () => {
+  const [sliderVisible, setSliderVisible] = useState(false);
+  useEffect(()=>{setSliderVisible(true)},[])
   return (<Layout title="Allgäu">
     <div style={textContainerStyle}>
       <p>Schreib uns per Mail an <a href="mailto:hallo@studioerika.de" style={linkStyle}>hallo@studioerika.de</a><br/>
@@ -43,7 +47,7 @@ const Wo = () => {
       </p>
     </div>
     <div style={{marginBottom: "50px"}}>
-      <Slider {...carouselSettings}>
+      {sliderVisible&&<Slider {...carouselSettings}>
         <StaticImage
           src="../images/wo/besprechungsraum.jpg"
           alt="Unser Besprechungsraum"
@@ -69,7 +73,7 @@ const Wo = () => {
           alt="Unsere Büroküche - optimal zum Kaffee trinken"
           {...imageSettings}
         />
-      </Slider>
+      </Slider>}
     </div>
   </Layout>)
 }

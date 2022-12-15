@@ -1,8 +1,3 @@
-.showonHover{
-  user-select: none;
-  opacity: 0;
-  transition: linear 100ms opacity;
-}
-.showonHover:hover{
-  opacity: 1;
+.underlined > div > span{
+  text-decoration: underline !important;
 }

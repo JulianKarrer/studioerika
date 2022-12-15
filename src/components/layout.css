@@ -14,6 +14,14 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'SuisseIntlBook';
+  src: url('/fonts/SuisseIntl-Book.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
 html {
   background-color: #f5f4f0;
   color: #141414;
@@ -27,6 +35,7 @@ a {
 }
 
 body {
+  background-color: #f5f4f0;
   margin: 0;
   overflow-x: hidden;
 }

@@ -16,7 +16,8 @@ const mainContainerStyle = {
 
 
 const videoStyles = {
-  width: "100%",
+  borderRadius: "14px",
+  maxWidth: "100%",
   maxHeight: "calc(100vh - 300px)",
 }
 

@@ -1,11 +1,12 @@
 import * as React from 'react'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import Layout from '../components/layout'
 import "../components/invertcursor.css"
 import "../components/was.css"
 import { useState } from 'react'
 import { useIsMobile } from '../hooks/useMobile'
+import Fade from 'react-reveal/Fade';
 
 const mainContainerStyle={
   background: "#141414",
@@ -53,35 +54,33 @@ const Selection = ({name, setter, selection, isMobile})=>{
   return <button
     style={{
       ...(isMobile?selectionMenuMobileItem:selectionMenuItem),
-      textDecorationLine: name === selection ? "underline" : "none" ,
     }} 
+    className={name === selection ? "underlined" : ""}
     onClick={()=>{setter(name)}}>
-      {name}
+      <Fade cascade>{name}</Fade>
     </button>
 }
 
 const SelectionMenu = ({selectionSetter, selection, isMobile}) => {
   return <div style={selectionMenuContainer}>
-    {["Alle", "Raum", "Grafik", "Marke", "Editorial", "Online", "Illustration", "Spiel"].map((name,i) => {
+    {["Alle", "Raum", "Grafik", "Marke", "Online", "Spiel"].map((name,i) => {
       return <Selection name={name} setter={selectionSetter} selection={selection} key={i+999} isMobile={isMobile}/>
     })}
   </div>
 }
 
 const GridContainerStyle = {
+  display:"grid",
+  gridTemplateColumns: "1fr 1fr 1fr",
+  gridGap: "20px",
+  marginBottom: "100px",
+}
+
+const GridContainerMobileStyle = {
+  marginBottom: "100px",
   display:"flex",
   flexWrap: "wrap",
   justifyContent: "space-between",
-}
-
-const GridEntryDesktopStyle = {
-  width: "calc(33% - 15px)",
-  marginBottom: "30px",
-}
-
-const GridEntryMobileStyle = {
-  minWidth: "100%",
-  marginBottom: "30px",
 }
 
 const GridTitleStyle = {
@@ -92,16 +91,14 @@ const GridTitleStyle = {
   textAlign: "center",
 }
 
-const GridSubtitleStyle = {
-  fontSize: "12pt",
-  fontFamily: "SuisseWorks, serif",
-  zIndex: "1",
-  textAlign: "center",
-  width: "100%",
-}
-
 const GridEntryStyle = {
   position: "relative",
+}
+
+const GridBigEntryStyle = {
+  position: "relative",
+  gridColumnStart: "2 span",
+  gridRowStart: "2 span",
 }
 
 const TitlesContainerStyle = {
@@ -115,6 +112,8 @@ const TitlesContainerStyle = {
   alignItems: "center",
   justifyContent: "center",
   color: "white",
+  transition: "linear 100ms opacity",
+  zIndex: "2",
 }
 
 const mobileSubtitleStyle = {
@@ -126,35 +125,32 @@ const mobileSubtitleStyle = {
 }
 
 const GridElement = ({node, isMobile}) => {
+  const [hovered, setHovered] = useState(false)
   return <>
-    <div style={{...(isMobile?GridEntryMobileStyle:GridEntryDesktopStyle), ...GridEntryStyle}} >
-      <GatsbyImage image={getImage(node.thumbnail.childImageSharp)} alt={node.title} />
-      {!isMobile&&
-        <div style={TitlesContainerStyle} className='showonHover'>
-          <span style={GridTitleStyle}>{node.title}</span>
-          <span style={GridSubtitleStyle}>{node.category}</span>
-        </div>
+      <div style={{...(node.bigthumbnail?GridBigEntryStyle:GridEntryStyle), marginBottom:isMobile?"50px":"0"}} 
+        onPointerOver={()=>{setHovered(true)}}
+        onPointerOut={()=>{setHovered(false)}}>
+        <Link to={"/projekte/"+node.slug}>
+          {!isMobile&&
+            <div style={{...TitlesContainerStyle, opacity: hovered?1:0}}>
+              <span style={{...GridTitleStyle, color: node.thumbhovercolour}}>{node.title}</span>
+            </div>
+          }
+          <GatsbyImage image={getImage(node.thumbnail.childImageSharp)} alt={node.title} />
+        </Link>
+      {isMobile&&
+        <span style={mobileSubtitleStyle}>{node.title}</span>
       }
-    </div>
-    {isMobile&&
-      <span style={mobileSubtitleStyle}>{node.title}</span>
-    }
+      </div>
   </>
 }
 
 const Grid = ({category, nodes, isMobile}) => {
   return <>
-    <div style={GridContainerStyle}> 
+    <div style={isMobile?GridContainerMobileStyle:GridContainerStyle}> 
       {nodes.filter(
         node => node.node.frontmatter.category === category || category === "Alle"
-      ).map((node,i)=><>
-        <GridElement node={node.node.frontmatter} key={i} isMobile={isMobile} />
-        <GridElement node={node.node.frontmatter} key={i} isMobile={isMobile} />
-        <GridElement node={node.node.frontmatter} key={i} isMobile={isMobile} />
-        <GridElement node={node.node.frontmatter} key={i} isMobile={isMobile} />  
-        <GridElement node={node.node.frontmatter} key={i} isMobile={isMobile} />
-      </>
-      )}
+      ).map((node,i)=><GridElement node={node.node.frontmatter} key={i} isMobile={isMobile} />)}
     </div>
   </>
 }
@@ -182,11 +178,14 @@ query WasQuery {
         frontmatter {
           category
           title
+          slug
           thumbnail {
             childImageSharp {
               gatsbyImageData(placeholder: BLURRED)
             }
           }
+          thumbhovercolour
+          bigthumbnail
         }
       }
     }

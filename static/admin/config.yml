@@ -36,11 +36,11 @@ collections:
     editor:
       preview: false
     fields:
-      - { label: "Name", name: "title", widget: "string" }
+      - { label: "Name", name: "title", widget: "text" }
       - { label: "Headline für Unterseite", name: "header", widget: "text" }
       - { label: "Grafik und ...", name: "grafikund", widget: "string" }
-      - { label: "Reihenfolge/Priorität (höher wird früher angezeigt)", name: "order", widget: "string", default: "0" }
-      - { label: "Kategorie", name: "category", widget: "select", multiple: false, options: ["Raum","Grafik","Marke","Editorial","Online","Illustration","Spiel"], default: ["Grafik"] }
+      - { label: "Reihenfolge/Priorität (höher wird in Übersicht früher angezeigt)", name: "order", widget: "string", default: "0" }
+      - { label: "Kategorie", name: "category", widget: "select", multiple: false, options: ["Raum", "Grafik", "Marke", "Online", "Spiel"], default: ["Grafik"] }
       - { label: "KundInnen", name: "client", widget: "string", required: false }
       - label: "Thumbnail"
         name: "thumbnail"
@@ -49,8 +49,9 @@ collections:
         media_library:
           config:
             multiple: false
+      - { label: 'Farbe des Textes bei Hover auf Thumbnail', name: 'thumbhovercolour', widget: 'color', allowInput: true, default: '#f5f4f0' }
+      - {label: "Großes Thumbnail", name: "bigthumbnail", widget: "boolean", default: false}
 
-      - { label: "Info-Text: Aufgabe", name: "aufgabe", widget: "text", required: false }
       - { label: "Info-Text: Wer? Was? Wieso?", name: "werwaswieso", widget: "text", required: false }
       - { label: "Info-Text: Das hat Erika gemacht", name: "erikamacht", widget: "text", required: false }
 
@@ -70,6 +71,7 @@ collections:
                 media_library:
                   config:
                     multiple: false
+              - { label: Alt-Text / Beschreibung, name: alttext, widget: string, default: 'Bild' }
           - label: 'Zwei Bilder nebeneinander'
             name: 'doubleimageobject'
             widget: object
@@ -82,6 +84,7 @@ collections:
                 media_library:
                   config:
                     multiple: false
+              - { label: Alt-Text / Beschreibung für Bild 1, name: alttext1, widget: string, default: 'Bild' }
               - label: "zweites Bild"
                 name: "doubleimage2"
                 widget: "image"
@@ -89,6 +92,7 @@ collections:
                 media_library:
                   config:
                     multiple: false
+              - { label: Alt-Text / Beschreibung für Bild 2, name: alttext2, widget: string, default: 'Bild' }
           - label: 'Hochkant Bild'
             name: 'portraitimageobject'
             widget: object
@@ -101,6 +105,7 @@ collections:
                 media_library:
                   config:
                     multiple: false
+              - { label: Alt-Text / Beschreibung, name: alttext, widget: string, default: 'Bild' }
           - label: 'Youtube Link'
             name: 'youtubelink'
             widget: object

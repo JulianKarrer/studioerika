@@ -5,6 +5,8 @@ import Slider from 'infinite-react-carousel';
 import useWindowSize from '../hooks/useWindowSize';
 import { useIsMobile } from '../hooks/useMobile';
 import Layout from '../components/layout';
+import { useState } from 'react';
+import { useEffect } from 'react';
 
 const teamImgStyle = {
   left: "calc(50vw - 20px)",
@@ -17,6 +19,7 @@ const headerTextStyle = {
   textDecoration: "none",
   fontSize: "7vmin",
   textAlign: "center",
+  letterSpacing: "-0.005em",
   marginTop: 150,
 }
 
@@ -29,6 +32,7 @@ const headerStyle = {
 
 const accentFont = {
   fontFamily: "ZIGZAG, -apple-system, Roboto, sans-serif, serif",
+  letterSpacing: "0.014em",
 }
 
 const mailtoStyle = {
@@ -40,7 +44,7 @@ const mailtoStyle = {
 const Portrait = ({name, email, imagedata, description}) => {
   const image = getImage(imagedata)
   return(
-  <div style={{width: "min(80%, 600px)", textAlign: "left", marginLeft: "50%", transform: "translateX(-50%)", marginBottom: "100px"}}>
+  <div style={{width: "min(90%, 600px)", textAlign: "left", marginLeft: "50%", transform: "translateX(-50%)", marginBottom: "100px"}}>
     <div style={{pointerEvents: "none", userSelect: "none"}}>
       <GatsbyImage image={image} alt={name} />
       <p style={{maxWidth: "80%"}}><span style={{...accentFont, fontSize: "12pt"}}>{name + " "}</span>{description}</p>
@@ -52,13 +56,15 @@ const Portrait = ({name, email, imagedata, description}) => {
 const PortraitContainer = ({children}) => {
   const isMobile = useIsMobile();
   let size = useWindowSize()
+  const [sliderVisible, setSliderVisible] = useState(false);
+  useEffect(()=>{setSliderVisible(true)},[])
   const sliderSettings = {
     arrows: false,
     arrowsBlock: false,
     autoplay: true,
     autoplaySpeed: 5000,
     centerMode: true,
-    centerPadding: 320*size.width/1400,
+    centerPadding: 380*size.width/1400,
   }
 
   return <>
@@ -70,9 +76,9 @@ const PortraitContainer = ({children}) => {
     </div>}
     {!isMobile&&
       <div style={{marginBottom: "50px", position: "relative", width: "100vw", left: "-20px"}}>
-        <Slider {...sliderSettings} style={{width:"100vw"}}>
+        {sliderVisible&& <Slider {...sliderSettings} style={{width:"100vw"}}>
           {children}
-        </Slider>
+        </Slider>}
       </div>
     }
   </>
@@ -94,8 +100,9 @@ const Wer = ({data}) => {
       <p style={headerTextStyle}><span style={accentFont}>STUDIO ERIKA</span> ist ein interdisziplinäres Designbüro, welches in den Bereichen Szenografie, Grafik, Corporate Design, online und offline, denkt und arbeitet. Erika hält die Balance zwischen angemessener Ernsthaftigkeit und spielerisch-emotionaler Gestaltung.</p>
     </div>
     <PortraitContainer>
-        {data.allMarkdownRemark.nodes.map((node)=>{
+        {data.allMarkdownRemark.nodes.map((node,i)=>{
           return <Portrait 
+            key={i}
             name={node.frontmatter.title}
             email={node.frontmatter.mitarbeiteremail}
             imagedata={node.frontmatter.mitarbeiterimage}

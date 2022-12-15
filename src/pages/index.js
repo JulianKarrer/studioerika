@@ -5,21 +5,24 @@ import useInterval from "../hooks/useInterval"
 import { useMousePos } from "../hooks/useMousePos"
 import ErikaMp4 from "../videos/erikatanzt_quer_web.mp4"
 import Layout from "../components/layout"
+import Fade from "react-reveal/Fade"
 
 const pageStyles = {
   overflow: "hidden",
 }
 
 const bigHeaderStyles = {
-  marginTop: "-20px",
+  marginTop: "-5px",
   fontSize: "14vmin",
-  fontFamily: "ZIGZAG, -apple-system, Roboto, sans-serif, serif"
+  fontFamily: "ZIGZAG, -apple-system, Roboto, sans-serif, serif",
+  lineHeight: "1",
 }
 
 const bigHeaderMobileStyles = {
   marginTop: "30px",
   fontSize: "14vmin",
-  fontFamily: "ZIGZAG, -apple-system, Roboto, sans-serif, serif"
+  fontFamily: "ZIGZAG, -apple-system, Roboto, sans-serif, serif",
+  lineHeight: "1",
 }
 
 const videoContainerStyles = {
@@ -90,17 +93,19 @@ const BigHeader = () => {
   useInterval(()=>{setMobileWord((mobileWord + 1)%headerWordsMobile.length)}, 1000)
 
   return(
-  <div style={isMobile?bigHeaderMobileStyles:bigHeaderStyles}>
-    STUDIO ERIKA<br/>GRAFIK UND<br/>{isMobile&&
-      headerWordsMobile[mobileWord]
-    }{!isMobile&&
-      headerWords[
-        ( Math.floor(mousePos.x/HEADER_GRID_SIZE)
-        + (Math.floor(mousePos.y/HEADER_GRID_SIZE)*3)  )
-        % headerWords.length
-      ]
-    }
-  </div>
+    <Fade>
+      <div style={isMobile?bigHeaderMobileStyles:bigHeaderStyles}>
+        STUDIO ERIKA<br/>GRAFIK UND<br/>{isMobile&&
+          headerWordsMobile[mobileWord]
+        }{!isMobile&&
+          headerWords[
+            ( Math.floor(mousePos.x/HEADER_GRID_SIZE)
+            + (Math.floor(mousePos.y/HEADER_GRID_SIZE)*3)  )
+            % headerWords.length
+          ]
+        }
+      </div>
+    </Fade>
   )
 }
 

@@ -1,6 +1,6 @@
 import React from "react"
-import { Link } from "gatsby"
 import { useIsMobile } from "../hooks/useMobile"
+import { Link } from "gatsby"
 
 const containerStyle = {
   color: "white", 
