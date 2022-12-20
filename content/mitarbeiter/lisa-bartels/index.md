@@ -6,6 +6,6 @@ mitarbeiterdescription: " ist gelernte Kommunikationsdesignerin. Nach ihrem
   Gesellschaft. Sie gibt Inhalten eine Form, stets strukturiert und mit
   ganzheitlichem Blick. "
 mitarbeiteremail: lb@studioerika.de
-mitarbeiterimage: erika_lisa.jpg
+mitarbeiterimage: 20221011-mitarbeiters_7_.jpg
 order: "2"
 ---
