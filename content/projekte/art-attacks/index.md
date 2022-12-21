@@ -6,7 +6,7 @@ order: "0"
 category: Raum
 thumbnail: art_attacks_138.jpg
 thumbhovercolour: "#f5f4f0"
-bigthumbnail: true
+bigthumbnail: false
 werwaswieso: Im Jahr 1971 fand in Nürnberg das nahezu legendäre Bildhauertreffen
   „Symposion Urbanum Nürnberg“ statt. Es entstanden zahlreiche Werke im
   öffentlichen Raum. Diese Kunstwerke wurden allerdings von der Presse, aber
