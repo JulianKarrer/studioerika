@@ -1,5 +1,5 @@
 ---
-title: Risografie Kunstdruck
+title: Risographie Kunstdruck
 header: Ein Koffer voller Erinnerungen
 grafikund: Erinnerungen
 order: "0"
