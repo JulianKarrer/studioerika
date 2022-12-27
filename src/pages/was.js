@@ -89,6 +89,7 @@ const GridTitleStyle = {
   zIndex: "1",
   width: "100%",
   textAlign: "center",
+  wordWrap: "anywhere",
 }
 
 const GridEntryStyle = {
@@ -121,27 +122,32 @@ const mobileSubtitleStyle = {
   fontFamily: "ZIGZAG, non-serif",
   color: "#f5f4f0",
   marginBottom: "40px",
-  marginTop: "-20px"
+  marginTop: "-20px",
+  wordWrap: "anywhere",
 }
 
-const GridElement = ({node, isMobile}) => {
+const GridElement = ({node, isMobile, slug}) => {
   const [hovered, setHovered] = useState(false)
   return <>
-      <div style={{...(node.bigthumbnail?GridBigEntryStyle:GridEntryStyle), marginBottom:isMobile?"50px":"0"}} 
+      {node.thumbnail&&<div style={{...(node.bigthumbnail?GridBigEntryStyle:GridEntryStyle), marginBottom:isMobile?"50px":"0"}} 
         onPointerOver={()=>{setHovered(true)}}
         onPointerOut={()=>{setHovered(false)}}>
-        <Link to={"/projekte/"+node.slug}>
+        <Link to={slug}>
           {!isMobile&&
             <div style={{...TitlesContainerStyle, opacity: hovered?1:0}}>
               <span style={{...GridTitleStyle, color: node.thumbhovercolour}}>{node.title}</span>
             </div>
           }
-          <GatsbyImage image={getImage(node.thumbnail.childImageSharp)} alt={node.title} />
+          {node.thumbnail.childImageSharp&&
+            <GatsbyImage image={getImage(node.thumbnail.childImageSharp)} alt={node.title} />
+          }{!node.thumbnail.childImageSharp&&
+            <img style={{width: "100%"}} src={node.thumbnail.publicURL} alt={node.title} />
+          }
         </Link>
       {isMobile&&
         <span style={mobileSubtitleStyle}>{node.title}</span>
       }
-      </div>
+      </div>}
   </>
 }
 
@@ -150,7 +156,7 @@ const Grid = ({category, nodes, isMobile}) => {
     <div style={isMobile?GridContainerMobileStyle:GridContainerStyle}> 
       {nodes.filter(
         node => node.node.frontmatter.category === category || category === "Alle"
-      ).map((node,i)=><GridElement node={node.node.frontmatter} key={i} isMobile={isMobile} />)}
+      ).map((node,i)=><GridElement node={node.node.frontmatter} slug={node.node.fields.slug} key={i} isMobile={isMobile} />)}
     </div>
   </>
 }
@@ -175,14 +181,17 @@ query WasQuery {
   ) {
     edges {
       node {
+        fields{
+          slug
+        }
         frontmatter {
           category
           title
-          slug
           thumbnail {
             childImageSharp {
               gatsbyImageData(placeholder: BLURRED)
             }
+            publicURL
           }
           thumbhovercolour
           bigthumbnail

@@ -1,12 +1,12 @@
 import * as React from "react"
 import Layout from "../components/layout"
 import "../components/invertcursor.css"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { useState } from "react"
 import { useEffect } from "react"
 import { useRef } from "react"
 import Fade from 'react-reveal/Fade';
 import { Link } from "gatsby-link"
+import Image from "../components/Image"
 
 const mainContainerStyle = {
   background: "#141414",
@@ -27,6 +27,7 @@ const headerContainerStyle = {
 }
 
 const headerStyle = {
+  width: "100%",
   textAlign: "center",
   fontFamily: "ZIGZAG, non-serif",
   textTransform: "uppercase",
@@ -110,11 +111,18 @@ export default function Projekt(props){
         {/* info box */}
         <div style={{...infoContainer, maxHeight: height}} ref={infoRef}>
           <Fade when={!collapsed}>
-            <span>{client}</span>
-            <span style={smallHeader}>Wer? Was? Wieso?</span>
-            <p>{werwaswieso}</p>
-            <span style={smallHeader}>Das hat Erika gemacht:</span>
-            <p>{erikamacht}</p>
+            <div style={{display:"flex", flexDirection:"column"}}>
+              <span>{client}</span>
+              {werwaswieso&&<>
+                <span style={smallHeader}>Wer? Was? Wieso?</span>
+                <p>{werwaswieso}</p>
+              </>
+              }
+              {erikamacht&&<>
+                <span style={smallHeader}>Das hat Erika gemacht:</span>
+                <p>{erikamacht}</p>
+              </>}
+            </div>
           </Fade>
         </div>
 
@@ -126,13 +134,21 @@ export default function Projekt(props){
             if (n.type==="coverimageobject") {
                 return (
                 <div style={{marginBottom: "20px"}} key={i}>
-                  <GatsbyImage image={getImage(n.coverimage.childImageSharp)} alt={n.alttext} />
+                  <Image image={n.coverimage.childImageSharp} alt={n.alttext} url={n.coverimage.publicURL}/>
                 </div>)
             } else if (n.type==="doubleimageobject"){
               return(
               <div style={{marginBottom: "20px", display: "flex", justifyContent: "space-between"}} key={i}>
-                <GatsbyImage image={getImage(n.doubleimage1.childrenImageSharp[0])} alt={n.alttext1} style={{width: "calc(50% - 10px)"}} />
-                <GatsbyImage image={getImage(n.doubleimage2.childrenImageSharp[0])} alt={n.alttext2} style={{width: "calc(50% - 10px)"}}/>
+                <Image 
+                  image={n.doubleimage1.childrenImageSharp[0]} 
+                  alt={n.alttext1} 
+                  style={{width: "calc(50% - 10px)"}}
+                  url={n.doubleimage1.publicURL} />
+                <Image 
+                  image={n.doubleimage2.childrenImageSharp[0]} 
+                  alt={n.alttext1} 
+                  style={{width: "calc(50% - 10px)"}}
+                  url={n.doubleimage2.publicURL} />
               </div>)
             } else if (n.type==="youtubelink"){
               return(

@@ -47,7 +47,7 @@ const Portrait = ({name, email, imagedata, description}) => {
   <div style={{width: "min(90%, 600px)", textAlign: "left", marginLeft: "50%", transform: "translateX(-50%)", marginBottom: "100px"}}>
     <div style={{pointerEvents: "none", userSelect: "none"}}>
       <GatsbyImage image={image} alt={name} />
-      <p style={{maxWidth: "80%"}}><span style={{...accentFont, fontSize: "12pt"}}>{name + " "}</span>{description}</p>
+      <p style={{maxWidth: "80%"}}><span style={{...accentFont, fontSize: "21.3333px"}}>{name + " "}</span>{description}</p>
     </div>
     {email&&<a href={"mailto:"+email} style={{...mailtoStyle, userSelect: "none"}}>{"— "+email}</a>}
   </div>)

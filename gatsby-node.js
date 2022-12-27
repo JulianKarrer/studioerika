@@ -1,4 +1,17 @@
 const path = require(`path`)
+const { createFilePath } = require(`gatsby-source-filesystem`)
+
+exports.onCreateNode = ({ node, getNode, actions }) => {
+  const { createNodeField } = actions
+  if (node.internal.type === `MarkdownRemark`) {
+    const slug = createFilePath({ node, getNode, basePath: `pages` })
+    createNodeField({
+      node,
+      name: `slug`,
+      value: slug,
+    })
+  }
+}
 
 // create pages API
 exports.createPages = async ({ graphql, actions }) => {
@@ -10,7 +23,6 @@ exports.createPages = async ({ graphql, actions }) => {
       edges {
         node {
           frontmatter {
-            slug
             title
             erikamacht
             grafikund
@@ -23,22 +35,28 @@ exports.createPages = async ({ graphql, actions }) => {
                 childImageSharp {
                   gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
                 }
+                publicURL
               }
               doubleimage1 {
                 childrenImageSharp {
                   gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
                 }
+                publicURL
               }
               doubleimage2 {
                 childrenImageSharp {
                   gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
                 }
+                publicURL
               }
               alttext
               alttext1
               alttext2
               url
             }
+          }
+          fields {
+            slug
           }
         }
       }
@@ -47,7 +65,7 @@ exports.createPages = async ({ graphql, actions }) => {
   `)
   result.data.allMarkdownRemark.edges.forEach(edge => {
     createPage({
-      path: `projekte/${edge.node.frontmatter.slug}`,
+      path: `${edge.node.fields.slug}`,
       component: template,
       context: {
         title: edge.node.frontmatter.title,
