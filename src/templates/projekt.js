@@ -7,6 +7,7 @@ import { useRef } from "react"
 import Fade from 'react-reveal/Fade';
 import { Link } from "gatsby-link"
 import Image from "../components/Image"
+import { GatsbySeo } from 'gatsby-plugin-next-seo';
 
 const mainContainerStyle = {
   background: "#141414",
@@ -99,6 +100,10 @@ export default function Projekt(props){
   }, [collapsed])
   return (
     <Layout title={grafikund}>
+    <GatsbySeo
+      title={title}
+      description={header}
+    />
       <div style={mainContainerStyle}>
         {/* header */}
         <div style={headerContainerStyle}>

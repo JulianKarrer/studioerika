@@ -44,6 +44,7 @@ module.exports = {
     },
   },
   "gatsby-transformer-remark",
+  'gatsby-plugin-next-seo',
   // "gatsby-plugin-transition-link",
 ]
 };

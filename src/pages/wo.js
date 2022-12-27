@@ -3,6 +3,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import Slider from 'infinite-react-carousel';
 import Layout from '../components/layout';
 import { useState, useEffect } from 'react';
+import { GatsbySeo } from 'gatsby-plugin-next-seo';
 
 const locationImageStyle = {}
 
@@ -39,6 +40,10 @@ const Wo = () => {
   const [sliderVisible, setSliderVisible] = useState(false);
   useEffect(()=>{setSliderVisible(true)},[])
   return (<Layout title="Allgäu">
+    <GatsbySeo
+        title="Wo?"
+        description="Nehmen Sie mit uns Kontakt auf oder kommen Sie vorbei"
+      />
     <div style={textContainerStyle}>
       <p>Schreib uns per Mail an <a href="mailto:hallo@studioerika.de" style={linkStyle}>hallo@studioerika.de</a><br/>
         Ruf uns an unter der <a href="tel:004983159188639" style={linkStyle}>0831 591 886 39</a><br/>

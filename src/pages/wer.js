@@ -7,6 +7,7 @@ import { useIsMobile } from '../hooks/useMobile';
 import Layout from '../components/layout';
 import { useState } from 'react';
 import { useEffect } from 'react';
+import { GatsbySeo } from 'gatsby-plugin-next-seo';
 
 const teamImgStyle = {
   left: "calc(50vw - 20px)",
@@ -99,6 +100,10 @@ const PortraitContainer = ({children, isMobile}) => {
 const Wer = ({data}) => {
   const isMobile = useIsMobile();
   return (<Layout title="Team">
+    <GatsbySeo
+        title="Wer?"
+        description="Das Team von Studio Erika stellt sich vor."
+      />
      <StaticImage
       src="../images/erika_team.jpg"
       alt="Das Team von Studio Erika"

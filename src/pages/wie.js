@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import "../components/invertcursor.css"
 import Wie600 from "../videos/wie-600.mp4"
+import { GatsbySeo } from "gatsby-plugin-next-seo"
 
 const mainContainerStyle = {
   background: "#141414",
@@ -23,6 +24,10 @@ const videoStyles = {
 
 const Wie = ()=>{
   return <Layout title="Prozess">
+    <GatsbySeo
+        title="Wie?"
+        description="Unser kreativer Schaffensprozess visualisiert."
+      />
     <div style={mainContainerStyle}>
       <video controls={false} muted loop playsInline autoPlay style={videoStyles}>
         <source src={Wie600} type={"video/mp4"}/>

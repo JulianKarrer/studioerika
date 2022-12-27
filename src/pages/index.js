@@ -6,6 +6,7 @@ import { useMousePos } from "../hooks/useMousePos"
 import ErikaMp4 from "../videos/erikatanzt_quer_web.mp4"
 import Layout from "../components/layout"
 import Fade from "react-reveal/Fade"
+import { GatsbySeo } from "gatsby-plugin-next-seo"
 
 const pageStyles = {
   overflow: "hidden",
@@ -113,6 +114,10 @@ const IndexPage = () => {
   const isMobile = useIsMobile()
   return (
     <Layout title="">
+      <GatsbySeo
+        title="Studio Erika"
+        description="Studio Erika ist ein interdisziplinäres Designbüro."
+      />
       <main style={{...pageStyles, ...(isMobile?{minHeight: "calc(100vh + 100px)"}:{})}}>
         <BigHeader />
         <div style={videoContainerStyles}>

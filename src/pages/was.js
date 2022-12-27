@@ -7,6 +7,7 @@ import "../components/was.css"
 import { useState } from 'react'
 import { useIsMobile } from '../hooks/useMobile'
 import Fade from 'react-reveal/Fade';
+import { GatsbySeo } from 'gatsby-plugin-next-seo'
 
 const mainContainerStyle={
   background: "#141414",
@@ -166,6 +167,10 @@ const Was = ({data}) => {
   const isMobile = useIsMobile();
   const [category, setCategory] = useState("Alle")
   return <Layout title="Unfug">
+    <GatsbySeo
+        title="Was?"
+        description="Eine Übersicht über Studio Erikas Werke und Projekte"
+      />
     <div style={mainContainerStyle}>
       <SelectionMenu selectionSetter={setCategory} selection={category} isMobile={isMobile}/>
       <Grid category={category} nodes={data.allMarkdownRemark.edges} isMobile={isMobile}/>
