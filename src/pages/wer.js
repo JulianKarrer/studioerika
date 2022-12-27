@@ -40,21 +40,32 @@ const mailtoStyle = {
   color: "#141414"
 }
 
+const portraitContainer = {
+  width: "min(90%, 600px)",
+  textAlign: "left",
+  marginLeft: "50%",
+  transform: "translateX(-50%)",
+  marginBottom: "100px",
+}
+const portraitContainerMobile = {
+  textAlign: "left",
+  marginBottom: "100px",
+}
 
-const Portrait = ({name, email, imagedata, description}) => {
+
+const Portrait = ({name, email, imagedata, description, isMobile}) => {
   const image = getImage(imagedata)
   return(
-  <div style={{width: "min(90%, 600px)", textAlign: "left", marginLeft: "50%", transform: "translateX(-50%)", marginBottom: "100px"}}>
+  <div style={isMobile?portraitContainerMobile:portraitContainer}>
     <div style={{pointerEvents: "none", userSelect: "none"}}>
       <GatsbyImage image={image} alt={name} />
-      <p style={{maxWidth: "80%"}}><span style={{...accentFont, fontSize: "21.3333px"}}>{name + " "}</span>{description}</p>
+      <p style={{maxWidth: isMobile?"100%":"80%"}}><span style={{...accentFont, fontSize: "21.3333px"}}>{name + " "}</span>{description}</p>
     </div>
     {email&&<a href={"mailto:"+email} style={{...mailtoStyle, userSelect: "none"}}>{"— "+email}</a>}
   </div>)
 }
 
-const PortraitContainer = ({children}) => {
-  const isMobile = useIsMobile();
+const PortraitContainer = ({children, isMobile}) => {
   let size = useWindowSize()
   const [sliderVisible, setSliderVisible] = useState(false);
   useEffect(()=>{setSliderVisible(true)},[])
@@ -70,7 +81,7 @@ const PortraitContainer = ({children}) => {
   return <>
     {isMobile&&
     <div style={{position: "relative", overflow: "hidden"}}>
-      <div style={{marginBottom: "150px", width: "125%", position: "relative", left: "-12.5%"}}>
+      <div style={{marginBottom: "150px", width: isMobile?"100%":"125%", position: "relative", left: isMobile?"0":"-12.5%"}}>
         {children}
       </div>
     </div>}
@@ -86,6 +97,7 @@ const PortraitContainer = ({children}) => {
 
 
 const Wer = ({data}) => {
+  const isMobile = useIsMobile();
   return (<Layout title="Team">
      <StaticImage
       src="../images/erika_team.jpg"
@@ -99,7 +111,7 @@ const Wer = ({data}) => {
     <div style={headerStyle}>
       <p style={headerTextStyle}><span style={accentFont}>STUDIO ERIKA</span> ist ein interdisziplinäres Designbüro, welches in den Bereichen Szenografie, Grafik, Corporate Design, online und offline, denkt und arbeitet. Erika hält die Balance zwischen angemessener Ernsthaftigkeit und spielerisch-emotionaler Gestaltung.</p>
     </div>
-    <PortraitContainer>
+    <PortraitContainer isMobile={isMobile}>
         {data.allMarkdownRemark.nodes.map((node,i)=>{
           return <Portrait 
             key={i}
@@ -107,6 +119,7 @@ const Wer = ({data}) => {
             email={node.frontmatter.mitarbeiteremail}
             imagedata={node.frontmatter.mitarbeiterimage}
             description={node.frontmatter.mitarbeiterdescription}
+            isMobile={isMobile}
           />
         })}
     </PortraitContainer>
