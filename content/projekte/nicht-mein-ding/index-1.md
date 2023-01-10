@@ -25,4 +25,32 @@ content:
   - type: coverimageobject
     alttext: Bild
     coverimage: erika_hfgulm_genderimdesign_1_titel.jpg
+  - type: coverimageobject
+    alttext: Bild
+    coverimage: erika_hfgulm_genderimdesign_2.jpg
+  - type: coverimageobject
+    alttext: Bild
+    coverimage: erika_hfgulm_genderimdesign_3.jpg
+  - type: doubleimageobject
+    alttext1: Bild
+    alttext2: Bild
+    doubleimage1: erika_hfgulm_genderimdesign_4.jpg
+    doubleimage2: erika_hfgulm_genderimdesign_5.jpg
+  - type: coverimageobject
+    alttext: Bild
+    coverimage: erika_hfgulm_genderimdesign_6.jpg
+  - type: doubleimageobject
+    alttext1: Bild
+    alttext2: Bild
+    doubleimage1: erika_hfgulm_genderimdesign_7.gif
+    doubleimage2: erika_hfgulm_genderimdesign_8.gif
+  - type: coverimageobject
+    alttext: Bild
+    coverimage: erika_hfgulm_genderimdesign_10.jpg
+  - type: coverimageobject
+    alttext: Bild
+    coverimage: erika_hfgulm_genderimdesign_11.jpg
+  - type: coverimageobject
+    alttext: Bild
+    coverimage: erika_hfgulm_genderimdesign_12.jpg
 ---
