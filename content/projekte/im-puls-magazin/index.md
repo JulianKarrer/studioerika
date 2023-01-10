@@ -1,6 +1,6 @@
 ---
 title: Im:puls Magazin
-header: Im:puls 75 Jahre BFS Glas und Schmuck
+header: "Im:puls Magazin: 75 Jahre BFS Glas und Schmuck"
 grafikund: Jubiläum
 order: "10"
 category: Grafik
