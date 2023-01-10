@@ -33,4 +33,7 @@ content:
   - type: coverimageobject
     alttext: Bild
     coverimage: erika_stadtbibelothek_flyer_6.jpg
+  - type: coverimageobject
+    alttext: Bild
+    coverimage: erika_stadtbibelothek_flyer_7.jpg
 ---
