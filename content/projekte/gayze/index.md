@@ -15,4 +15,19 @@ werwaswieso: "Wo und wie manifestierte sich lesbisches, schwules und trans*
 erikamacht: "Eine interaktive Karte, die den queeren Orten Münchens neues Leben
   einhaucht, indem sie die historischen Spuren der Community und die Geschichten
   der Orte erkundet. "
+content:
+  - type: coverimageobject
+    alttext: Bild
+    coverimage: erika_gayze_titelbild_1.jpg
+  - type: mp4fileobject
+    mp4file: erika_gayze_website_2.mp4
+  - type: mp4fileobject
+    mp4file: erika_gayze_website_3.mp4
+  - type: mp4fileobject
+    mp4file: erika_gayze_website_4.mp4
+  - type: mp4fileobject
+    mp4file: erika_gayze_website_5.mp4
+  - type: coverimageobject
+    alttext: Bild
+    coverimage: erika_gayze_website_6.jpg
 ---
