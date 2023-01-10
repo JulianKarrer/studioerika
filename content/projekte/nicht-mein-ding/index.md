@@ -1,7 +1,7 @@
 ---
 title: Nicht mein Ding
 header: Nicht mein Ding – Gender im Design
-grafikund: Gender
+grafikund: Dinge
 order: "0"
 category: Raum
 client: HfG-Archiv Ulm
