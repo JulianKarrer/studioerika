@@ -3,7 +3,7 @@ title: Risographie Kunstdruck
 header: Skurrile Erinnerungen schaffen
 grafikund: Bild
 order: "0"
-category: Grafik
+category: Spiel
 thumbnail: erika_risographie_kunstnacht_1_titel.jpg
 thumbhovercolour: "#141414"
 bigthumbnail: false
