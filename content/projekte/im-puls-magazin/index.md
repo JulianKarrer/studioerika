@@ -18,4 +18,11 @@ erikamacht: Das Magazin »Im:puls«, welches Bilder von Schmuck-Arbeiten mit
   mittels neongrüner Risographie-Karten im Magazin ergänzt. Der neongrün
   leuchtende Jubiläumssiebdruck auf dem Softcover wurde eigens von Schüler*innen
   in Handarbeit aufgebracht.
+content:
+  - type: coverimageobject
+    alttext: Bild
+    coverimage: erika_bfsschmuckschule_katalog_1_titel.jpg
+  - type: coverimageobject
+    alttext: Bild
+    coverimage: erika_bfsschmuckschule_katalog_2.jpg
 ---
