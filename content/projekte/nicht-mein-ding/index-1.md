@@ -21,4 +21,8 @@ erikamacht: >-
   experimentellem, freiem Umgang mit den Gestaltungsmitteln. 
 
   Die Publikation wurde von avedition verlegt und ist überall im Buchhandel erhältlich.
+content:
+  - type: coverimageobject
+    alttext: Bild
+    coverimage: erika_hfgulm_genderimdesign_1_titel.jpg
 ---
