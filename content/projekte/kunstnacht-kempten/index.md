@@ -17,4 +17,32 @@ erikamacht: Ein neues Erscheinungsbild für das »Junge Kunstfest« und eine
   Außenkommunikation, Infostand und Katalog. Die von Lena Gröner gezeichneten
   Illustrationen für das »Junge Kunstfest« bedienen sich dem Koffer voller
   Erinnerungen – welches auch das Thema des Tages ist.
+content:
+  - type: mp4fileobject
+    mp4file: img_6962.mp4
+  - type: coverimageobject
+    alttext: Bild
+    coverimage: erika_kulturamtkempten_kunstnacht_2.jpg
+  - type: coverimageobject
+    alttext: Bild
+    coverimage: erika_kulturamtkempten_kunstnacht_3.jpg
+  - type: doubleimageobject
+    alttext1: Bild
+    alttext2: Bild
+    doubleimage1: erika_kulturamtkempten_kunstnacht_4.jpg
+    doubleimage2: erika_kulturamtkempten_kunstnacht_5.jpg
+  - type: coverimageobject
+    alttext: Bild
+    coverimage: erika_kulturamtkempten_kunstnacht_6.jpg
+  - type: doubleimageobject
+    alttext1: Bild
+    alttext2: Bild
+    doubleimage1: erika_kulturamtkempten_kunstnacht_7.jpg
+    doubleimage2: erika_kulturamtkempten_kunstnacht_8.jpg
+  - type: coverimageobject
+    alttext: Bild
+    coverimage: erika_kulturamtkempten_kunstnacht_9.jpg
+  - type: coverimageobject
+    alttext: Bild
+    coverimage: erika_kulturamtkempten_kunstnacht_10.gif
 ---
