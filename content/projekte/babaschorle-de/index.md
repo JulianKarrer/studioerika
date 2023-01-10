@@ -5,7 +5,7 @@ grafikund: Babas
 order: "0"
 category: Online
 client: Baba Schorle
-thumbnail: kopf_baba2.gif
+thumbnail: erika_babawebsite_1_titel.gif
 thumbhovercolour: "#141414"
 bigthumbnail: false
 werwaswieso: "Die Baba-Schorle ist eine Weinschorle mit besonders hochwertigen
