@@ -15,4 +15,22 @@ erikamacht: "Einen Flyer, der alle wichtigen Informationen kompakt
   der Begegnung und der Freiheit. Liebevoll von Viola Konrad illustriert, bilden
   diese Grundsätze nun die Basis der Gestaltung. Kleine Besonderheit des Flyers:
   Das abtrennbare Lesezeichen."
+content:
+  - type: coverimageobject
+    alttext: Bild
+    coverimage: erika_stadtbibelothek_flyer_1_titel.jpg
+  - type: coverimageobject
+    alttext: Bild
+    coverimage: erika_stadtbibelothek_flyer_2.jpg
+  - type: doubleimageobject
+    alttext1: Bild
+    alttext2: Bild
+    doubleimage1: erika_stadtbibelothek_flyer_3.jpg
+    doubleimage2: erika_stadtbibelothek_flyer_4.jpg
+  - type: coverimageobject
+    alttext: Bild
+    coverimage: erika_stadtbibelothek_flyer_5.jpg
+  - type: coverimageobject
+    alttext: Bild
+    coverimage: erika_stadtbibelothek_flyer_6.jpg
 ---
