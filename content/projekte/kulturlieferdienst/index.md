@@ -3,8 +3,8 @@ title: Kulturlieferdienst
 header: Der Kulturlieferdienst
 grafikund: Lieferdienst
 order: "40"
-category:
-  - Grafik
+category: Grafik
+client: Kulturamt Kempten
 thumbnail: erika_kulturamtkempten_kulturlieferdienst_1_titel.gif
 thumbhovercolour: "#f5f4f0"
 bigthumbnail: false
