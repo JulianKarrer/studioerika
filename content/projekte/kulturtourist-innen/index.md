@@ -6,7 +6,7 @@ order: "90"
 category: Grafik
 client: "Kulturgold Stuttgart "
 thumbnail: erika_kulturgoldstuttgart_kulturtouristen_1_titel.jpg
-thumbhovercolour: "#f5f4f0"
+thumbhovercolour: "#141414"
 bigthumbnail: false
 werwaswieso: Die Agentur Kulturgold aus Stuttgart hat durch ihre Kulturforschung
   fünf Typen/Personas von Kulturtourist*innen herausgearbeitet. Diese sollen nun
