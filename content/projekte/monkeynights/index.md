@@ -24,4 +24,12 @@ content:
   - type: coverimageobject
     alttext: Bild
     coverimage: erika_karabrewbar_monkeynights_2.jpg
+  - type: doubleimageobject
+    alttext1: Bild
+    alttext2: Bild
+    doubleimage1: erika_karabrewbar_monkeynights_3.jpg
+    doubleimage2: erika_karabrewbar_monkeynights_4.jpg
+  - type: coverimageobject
+    alttext: Bild
+    coverimage: erika_karabrewbar_monkeynights_5.jpg
 ---
