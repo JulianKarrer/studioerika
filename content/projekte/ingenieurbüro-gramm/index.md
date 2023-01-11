@@ -16,4 +16,9 @@ erikamacht: Eine »digitale Visitenkarte« mit spielerisch-interaktiven
   Pflegeaufwand für eine solche Seite sind gering – perfekt für einen ersten
   Auftritt im Internet. Weitere Elemente und Seiten können jederzeit hinzugefügt
   werden.
+content:
+  - type: mp4fileobject
+    mp4file: erika_gramm_website_2.mp4
+  - type: mp4fileobject
+    mp4file: erika_gramm_website_3.mp4
 ---
