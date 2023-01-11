@@ -17,4 +17,15 @@ erikamacht: Eine Website, deren Einstieg über eine visuell spannende
   3D-Animation der Handwerke gelingt. Die übersichtliche Struktur, insbesondere
   im Bereich der Bewerbung, gibt interessierten Bewerber*innen einen umfassenden
   Überblick über die Schule und ihre Ausbildung.
+content:
+  - type: coverimageobject
+    alttext: Bild
+    coverimage: erika_bfs_titelbild_1.jpg
+  - type: mp4fileobject
+    mp4file: erika_bfs_website_2.mp4
+  - type: coverimageobject
+    alttext: Bild
+    coverimage: erika_bfs_website_3.png
+  - type: mp4fileobject
+    mp4file: erika_bfs_website_4.mp4
 ---
