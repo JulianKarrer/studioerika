@@ -15,6 +15,18 @@ werwaswieso: Im Rahmen der Erstellung eines neuen Erscheinungsbildes für utopla
 erikamacht: "Eine Website, die anhand von vielen Animationen und Illustrationen
   die Inhalte der sozial-ökonomischen Beratung sichtbar macht. Ein Blog zur
   Veröffentlichung von Inhalten bildet das Herz der Website. Die mit
-  suchmaschinen-optimierten Texten gefüllte Website ist so aufbereitet, dass sie
+  suchmaschinenoptimierten Texten gefüllte Website ist so aufbereitet, dass sie
   von der Kundin selbst gepflegt und ergänzt werden kann. "
+content:
+  - type: coverimageobject
+    alttext: Bild
+    coverimage: erika_utoplan_titelbild_1.jpg
+  - type: mp4fileobject
+    mp4file: erika_utoplan_website_doku_1_klein.mp4
+  - type: mp4fileobject
+    mp4file: erika_utoplan_website_doku_2_klein.mp4
+  - type: mp4fileobject
+    mp4file: erika_utoplan_website_doku_3_klein.mp4
+  - type: mp4fileobject
+    mp4file: erika_utoplan_website_doku_4_klein.mp4
 ---
