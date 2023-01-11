@@ -20,4 +20,16 @@ erikamacht: "Eine Website, auf der bisher unveröffentlichtes Material,
   zielgerichtet an die richtige Stelle im umfangreichen Archiv. Die geschickte
   Programmierung sorgt für kurze Ladezeiten und eine einfache Pflege der
   zahlreichen Daten und Inhalte. "
+content:
+  - type: coverimageobject
+    alttext: Bild
+    coverimage: erika_hfgulm_titelbild_1.jpg
+  - type: mp4fileobject
+    mp4file: erika_hfgulm_website_1.mp4
+  - type: mp4fileobject
+    mp4file: erika_hfgulm_website_2.mp4
+  - type: mp4fileobject
+    mp4file: erika_hfgulm_website_3.mp4
+  - type: mp4fileobject
+    mp4file: erika_hfgulm_website_4.mp4
 ---
