@@ -7,7 +7,7 @@ category: Raum
 client: NS Dokumentationszentrum München
 thumbnail: erika_nsdoku_tobeseen_titel.jpg
 thumbhovercolour: "#141414"
-bigthumbnail: false
+bigthumbnail: true
 werwaswieso: In der Ausstellung TO BE SEEN sollen Geschichten von LGBTIQ* in der
   ersten Hälfte des 20. Jahrhunderts sichtbar werden. Eine eigenständige, sich
   von der Dauerausstellung unterscheidende Ausstellungsgestaltung soll die
