@@ -2,7 +2,7 @@
 title: Baba Schorle
 header: "So lecker, man möchte darin Baden. "
 grafikund: Babas
-order: "0"
+order: "40"
 category: Marke
 client: Baba Schorle
 thumbnail: erika_karabrew_baba_1_title.jpg
