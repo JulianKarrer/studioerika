@@ -2,7 +2,7 @@
 title: TO BE SEEN
 header: TO BE SEEN – queer lives 1900-1950
 grafikund: Queer
-order: "0"
+order: "10"
 category: Raum
 client: NS Dokumentationszentrum München
 thumbnail: erika_nsdoku_tobeseen_titel.jpg
