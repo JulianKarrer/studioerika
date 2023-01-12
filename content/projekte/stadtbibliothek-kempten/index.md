@@ -5,7 +5,7 @@ grafikund: Bibliothek
 order: "110"
 category: Grafik
 client: Stadtbibliothek Kempten
-thumbnail: erika_stadtbibelothek_flyer_1_titel.jpg
+thumbnail: erika_stadtbibelothek_flyer_4.jpg
 thumbhovercolour: "#141414"
 bigthumbnail: false
 werwaswieso: Die Stadtbibliothek Kempten möchte mittels eines einfachen Flyers
