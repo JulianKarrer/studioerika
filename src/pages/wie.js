@@ -6,20 +6,24 @@ import { GatsbySeo } from "gatsby-plugin-next-seo"
 
 const mainContainerStyle = {
   background: "#141414",
-  minHeight: "calc(100vh - 280px)",
+  minHeight: "calc(100vh)",
   margin: "-20px",
-  marginBottom: "50px",
-  padding: "150px 20px 20vh 20px",
+  marginBottom:"40px",
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
 }
 
-
-const videoStyles = {
-  borderRadius: "14px",
+const innerContainer = {
   maxWidth: "100%",
-  maxHeight: "calc(100vh - 300px)",
+  maxHeight: "70vh",
+  margin: "20px"
+}
+
+const containedObject = {
+  maxWidth: "100%",
+  maxHeight: "100%",
+  height: "70vh",
 }
 
 const Wie = ()=>{
@@ -29,9 +33,11 @@ const Wie = ()=>{
         description="Unser kreativer Schaffensprozess visualisiert."
       />
     <div style={mainContainerStyle}>
-      <video controls={false} muted loop playsInline autoPlay style={videoStyles}>
-        <source src={Wie600} type={"video/mp4"}/>
-      </video>
+      <div style={innerContainer}>
+        <video controls={false} muted loop playsInline autoPlay style={containedObject}>
+          <source src={Wie600} type={"video/mp4"}/>
+        </video>
+      </div>
     </div>
   </Layout>
 }

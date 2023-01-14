@@ -167,7 +167,7 @@ export default function Projekt(props){
         </div>
 
         <Link to="/was">
-          <RoundButton content="zurück" collapsed={true} setCollapsed={()=>{}} />
+          <RoundButton content="zur Übersicht" collapsed={true} setCollapsed={()=>{}} />
         </Link>
         <div style={{marginBottom: "100px"}}></div>
 
