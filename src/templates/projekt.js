@@ -10,7 +10,6 @@ import Image from "../components/Image"
 import { GatsbySeo } from 'gatsby-plugin-next-seo';
 import { graphql } from 'gatsby'
 import { useIsMobile } from "../hooks/useMobile"
-import { GridEntryStyle, TitlesContainerStyle } from "../pages/was"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 const mainContainerStyle = {
@@ -122,6 +121,23 @@ const GridTitleStyle = {
   width: "100%",
   textAlign: "center",
   wordWrap: "anywhere",
+}
+const GridEntryStyle = {
+  position: "relative",
+}
+const TitlesContainerStyle = {
+  display: "flex",
+  flexDirection: "column",
+  position: "absolute",
+  top:"0",
+  left:"0",
+  width:"100%",
+  height: "100%",
+  alignItems: "center",
+  justifyContent: "center",
+  color: "white",
+  transition: "linear 100ms opacity",
+  zIndex: "2",
 }
 const GridElement = ({node, isMobile, slug}) => {
   const [hovered, setHovered] = useState(false)

@@ -94,7 +94,7 @@ const GridTitleStyle = {
   wordWrap: "anywhere",
 }
 
-export const GridEntryStyle = {
+const GridEntryStyle = {
   position: "relative",
 }
 
@@ -104,7 +104,7 @@ const GridBigEntryStyle = {
   gridRowStart: "2 span",
 }
 
-export const TitlesContainerStyle = {
+const TitlesContainerStyle = {
   display: "flex",
   flexDirection: "column",
   position: "absolute",
@@ -129,7 +129,7 @@ const mobileSubtitleStyle = {
   wordWrap: "anywhere",
 }
 
-export const GridElement = ({node, isMobile, slug}) => {
+const GridElement = ({node, isMobile, slug}) => {
   const [hovered, setHovered] = useState(false)
   return <>
       {node.thumbnail&&<div style={{...(node.bigthumbnail?GridBigEntryStyle:GridEntryStyle), 
@@ -172,7 +172,7 @@ const Grid = ({category, nodes, isMobile}) => {
       else {
         if (smallSinceBig < 2) {return i}
         // also check if any big thumbnail is the third entry in a row
-        if (i % 3 == 2) {return i}
+        if (i % 3 === 2) {return i}
         smallSinceBig = 0
       }
     }
@@ -191,7 +191,7 @@ const Grid = ({category, nodes, isMobile}) => {
       if (problem<0){setBetterNodes(ns); return}
       maxShuffles--;
 
-      let other = problem==ns.length-1?0:problem+1
+      let other = problem===ns.length-1?0:problem+1
       while(other<ns.length-1 && ns[other].node.frontmatter.bigthumbnail){other++}
 
       [ns[problem], ns[other]] = [ns[other], ns[problem]]

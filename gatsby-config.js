@@ -54,5 +54,6 @@ module.exports = {
       purge:true,
     }
   },
+  `gatsby-plugin-netlify`,
 ]
 };
