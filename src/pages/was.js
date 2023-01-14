@@ -8,6 +8,7 @@ import { useState } from 'react'
 import { useIsMobile } from '../hooks/useMobile'
 import Fade from 'react-reveal/Fade';
 import { GatsbySeo } from 'gatsby-plugin-next-seo'
+import { useEffect } from 'react'
 
 const mainContainerStyle={
   background: "#141414",
@@ -123,14 +124,17 @@ const mobileSubtitleStyle = {
   fontFamily: "ZIGZAG, non-serif",
   color: "#f5f4f0",
   marginBottom: "40px",
-  marginTop: "-20px",
+  top: "5px",
+  position: "relative",
   wordWrap: "anywhere",
 }
 
 export const GridElement = ({node, isMobile, slug}) => {
   const [hovered, setHovered] = useState(false)
   return <>
-      {node.thumbnail&&<div style={{...(node.bigthumbnail?GridBigEntryStyle:GridEntryStyle), marginBottom:isMobile?"50px":"0"}} 
+      {node.thumbnail&&<div style={{...(node.bigthumbnail?GridBigEntryStyle:GridEntryStyle), 
+        marginBottom:isMobile?"20px":"0",
+      }} 
         onPointerOver={()=>{setHovered(true)}}
         onPointerOut={()=>{setHovered(false)}}>
         <Link to={slug}>
@@ -154,11 +158,53 @@ export const GridElement = ({node, isMobile, slug}) => {
 }
 
 const Grid = ({category, nodes, isMobile}) => {
+  const [betterNodes, setBetterNodes] = useState(nodes)
+
+  // when the sequence of big and small nodes is wrong, empty slots can appear in the grid.
+  // these scenarios are checked for and avoided
+  const isNodesOk = (ns)=>{
+    let smallSinceBig = 0
+    // check if there are at least two small thumbnails between each big thumbnailed-node
+    for(let i = 0; i<ns.length; i++){
+      if (!ns[i].node.frontmatter.bigthumbnail){
+        smallSinceBig ++;
+      }
+      else {
+        if (smallSinceBig < 2) {return i}
+        // also check if any big thumbnail is the third entry in a row
+        if (i % 3 == 2) {return i}
+        smallSinceBig = 0
+      }
+    }
+    return -1
+  }
+
+  useEffect(()=>{
+    let ns = Array.from(nodes.filter(
+      node => node.node.frontmatter.category === category || category === "Alle"
+    ))
+    
+    // upper bound on shuffle operations to avoid locking in impossible configurations
+    let maxShuffles = 10000;
+    while(maxShuffles>0){
+      const problem = isNodesOk(ns)
+      if (problem<0){setBetterNodes(ns); return}
+      maxShuffles--;
+
+      let other = problem==ns.length-1?0:problem+1
+      while(other<ns.length-1 && ns[other].node.frontmatter.bigthumbnail){other++}
+
+      [ns[problem], ns[other]] = [ns[other], ns[problem]]
+      
+      // ns = ns.map(value => ({ value, sort: Math.random() }))
+      // .sort((a, b) => a.sort - b.sort)
+      // .map(({ value }) => value)
+    }
+  }, [nodes, category])
+
   return <>
     <div style={isMobile?GridContainerMobileStyle:GridContainerStyle}> 
-      {nodes.filter(
-        node => node.node.frontmatter.category === category || category === "Alle"
-      ).map((node,i)=><GridElement node={node.node.frontmatter} slug={node.node.fields.slug} key={i} isMobile={isMobile} minigrid={false}/>)}
+      {betterNodes.map((node,i)=><GridElement node={node.node.frontmatter} slug={node.node.fields.slug} key={i} isMobile={isMobile} minigrid={false}/>)}
     </div>
   </>
 }
