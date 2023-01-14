@@ -5,7 +5,7 @@ grafikund: Persönlichkeiten
 order: "90"
 category: Grafik
 client: "Kulturgold Stuttgart "
-thumbnail: erika_kulturgoldstuttgart_kulturtouristen_1_titel.jpg
+thumbnail: erika_kulturgoldstuttgart_kulturtouristen_2.jpg
 thumbhovercolour: "#141414"
 bigthumbnail: false
 werwaswieso: Die Agentur Kulturgold aus Stuttgart hat durch ihre Kulturforschung
@@ -19,10 +19,10 @@ erikamacht: Eine kleine Serie, in der fünf digitale Illustrationen den
 content:
   - type: coverimageobject
     alttext: Bild
-    coverimage: erika_kulturgoldstuttgart_kulturtouristen_1_titel.jpg
+    coverimage: erika_kulturgoldstuttgart_kulturtouristen_2.jpg
   - type: coverimageobject
     alttext: Bild
-    coverimage: erika_kulturgoldstuttgart_kulturtouristen_2.jpg
+    coverimage: erika_kulturgoldstuttgart_kulturtouristen_1_titel.jpg
   - type: coverimageobject
     alttext: Bild
     coverimage: erika_kulturgoldstuttgart_kulturtouristen_3.jpg

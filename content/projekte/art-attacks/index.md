@@ -2,7 +2,7 @@
 title: Art Attacks
 header: Art Attacks – Zwischen Kunst und Vandalismus.
 grafikund: Vandalismus
-order: "0"
+order: "30"
 category: Raum
 thumbnail: art_attacks_138.jpg
 thumbhovercolour: "#f5f4f0"

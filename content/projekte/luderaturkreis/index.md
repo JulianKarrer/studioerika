@@ -3,7 +3,7 @@ title: Luderaturkreis
 header: "Das H und Oe der Literatur "
 grafikund: Luder
 order: "0"
-category: Spiel
+category: Marke
 client: "Luderaturkreis "
 thumbnail: erika_luderaturkreis_1_titel.jpg
 thumbhovercolour: "#141414"

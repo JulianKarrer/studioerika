@@ -7,7 +7,7 @@ category: Raum
 client: HfG-Archiv Ulm, Bauhaus Dessau
 thumbnail: erika_bauhaus_ausstellungsfieber_1_titel.jpg
 thumbhovercolour: "#f5f4f0"
-bigthumbnail: false
+bigthumbnail: true
 werwaswieso: "Das HfG-Archiv Ulm widmet sich mit der Ausstellung
   »Ausstellungsfieber« erstmals der Ausstellungstätigkeit der ehemaligen HfG-Ulm
   und ihrer Studierenden – und schließt damit ein gefördertes, vierjähriges

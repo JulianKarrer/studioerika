@@ -7,7 +7,7 @@ category: Grafik
 client: Hfg Ulm Archiv und Museum Ulm
 thumbnail: erika_hfgulm_genderimdesign_1_titel.jpg
 thumbhovercolour: "#141414"
-bigthumbnail: false
+bigthumbnail: true
 werwaswieso: "Nach der Ausstellung „Nicht mein Ding - Gender im Design“ des HfG
   Ulm Archivs und des Museums Ulm folgte eine umfassende Publikation, die anhand
   zahlreicher Beispiele die Ausstellung dokumentiert und partizipative

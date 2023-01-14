@@ -2,7 +2,7 @@
 title: HfG-Archiv Ulm
 header: Ein Archiv vom Archiv
 grafikund: Archivierung
-order: "0"
+order: "20"
 category: Online
 client: HfG-Archiv Ulm, Museum Ulm
 thumbnail: erika_hfgulm_titelbild_1.jpg
