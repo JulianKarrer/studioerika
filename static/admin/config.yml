@@ -27,7 +27,7 @@ collections:
 
   - name: "projekte"
     label: "Projekte"
-    folder: "content/projekte"
+    folder: "/static/content/projekte"
     create: true
     slug: "index"
     media_folder: ""
@@ -121,3 +121,5 @@ collections:
               media_library:
                 config:
                   multiple: false
+                media_folder:
+                  /static/cmsfiles

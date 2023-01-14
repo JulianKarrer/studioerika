@@ -8,6 +8,10 @@ import Fade from 'react-reveal/Fade';
 import { Link } from "gatsby-link"
 import Image from "../components/Image"
 import { GatsbySeo } from 'gatsby-plugin-next-seo';
+import { graphql } from 'gatsby'
+import { useIsMobile } from "../hooks/useMobile"
+import { GridEntryStyle, TitlesContainerStyle } from "../pages/was"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 const mainContainerStyle = {
   background: "#141414",
@@ -88,11 +92,69 @@ const RoundButton = ({content, collapsed, setCollapsed, style}) => {
   </button>
 }
 
+const GridContainerStyle = {
+  display:"grid",
+  gridTemplateColumns: "1fr 1fr 1fr 1fr",
+  gridGap: "20px",
+  marginBottom: "100px",
+}
+
+const GridContainerMobileStyle = {
+  display:"grid",
+  gridTemplateColumns: "1fr 1fr",
+  gridGap: "20px",
+  marginBottom: "100px",
+}
+
+
+const mobileGridSubtitleStyle = {
+  fontSize: "14pt",
+  fontFamily: "ZIGZAG, non-serif",
+  color: "#f5f4f0",
+  marginBottom: "0px",
+  marginTop: "-20px",
+  wordWrap: "anywhere",
+}
+const GridTitleStyle = {
+  fontSize: "16pt",
+  fontFamily: "ZIGZAG, non-serif",
+  zIndex: "1",
+  width: "100%",
+  textAlign: "center",
+  wordWrap: "anywhere",
+}
+const GridElement = ({node, isMobile, slug}) => {
+  const [hovered, setHovered] = useState(false)
+  return <>
+      {node.thumbnail&&<div style={GridEntryStyle} 
+        onPointerOver={()=>{setHovered(true)}}
+        onPointerOut={()=>{setHovered(false)}}>
+        <Link to={slug}>
+          {!isMobile&&
+            <div style={{...TitlesContainerStyle, opacity: hovered?1:0}}>
+              <span style={{...GridTitleStyle, color: node.thumbhovercolour}}>{node.title}</span>
+            </div>
+          }
+          {node.thumbnail.childImageSharp&&
+            <GatsbyImage image={getImage(node.thumbnail.childImageSharp)} alt={node.title} />
+          }{!node.thumbnail.childImageSharp&&
+            <img style={{width: "100%"}} src={node.thumbnail.publicURL} alt={node.title} />
+          }
+        </Link>
+      {isMobile&&
+        <span style={mobileGridSubtitleStyle}>{node.title}</span>
+      }
+      </div>}
+  </>
+}
+
 export default function Projekt(props){
-  const {title, erikamacht, grafikund, header, werwaswieso, client, content} = props.pageContext;
+  const {title, category, erikamacht, grafikund, header, werwaswieso, client, content} = props.pageContext;
   const [collapsed, setCollapsed] = useState(true);
   const [height, setHeight] = useState(0);
   const infoRef = useRef(null);
+  const isMobile = useIsMobile();
+  const recommended = props.data.allMarkdownRemark.edges;
   useEffect(()=>{
     if (infoRef && infoRef.current){
       setHeight(collapsed?0:infoRef.current.scrollHeight)
@@ -135,7 +197,7 @@ export default function Projekt(props){
         {/* content */}
         <div style={contentContainer}>
           {content&&content.map((n,i)=>{
-            console.log(n.type)
+            console.log(n)
             if (n.type==="coverimageobject") {
                 return (
                 <div style={{marginBottom: "20px"}} key={i}>
@@ -160,9 +222,36 @@ export default function Projekt(props){
               <div style={{marginBottom: "20px", display: "flex", justifyContent: "space-between"}} key={i}>
                 <iframe style={{width: "100%", height: "calc(0.5625 * calc(100vw - 40px))",}} src={n.url} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
               </div>)
+            } else if (n.type==="mp4fileobject"){
+              return(
+              <video controls={false} muted loop playsInline autoPlay style={{width: "100%"}}>
+                <source src={""+n.mp4file} type={"video/mp4"}/>
+              </video>
+              )
             } else {
               return <></>
             }
+          })}
+        </div>
+
+        {/* recommended further content*/}
+        <div style={{...infoContainer, maxHeight: "", marginBottom: "20px"}}>
+          <Fade>
+            <div style={{display:"flex", flexDirection:"column"}}>
+              <span style={{fontFamily: "ZIGZAG"}}>{"Ähnliche Projekte"}</span>
+            </div>
+          </Fade>
+        </div>
+        <div style={isMobile?GridContainerMobileStyle:GridContainerStyle}> 
+          {recommended.filter(
+            node => (node.node.frontmatter.category === category || category === "Alle") && node.node.frontmatter.title !== title
+          ).slice(0,8)
+            .map(value => ({ value, sort: Math.random() }))
+            .sort((a, b) => a.sort - b.sort)
+            .map(({ value }) => value)
+          .map((node,i)=>{
+            node.node.frontmatter.bightumbnail = false
+            return <GridElement node={node.node.frontmatter} slug={node.node.fields.slug} key={i} isMobile={isMobile} minigrid={true}/>
           })}
         </div>
 
@@ -175,3 +264,33 @@ export default function Projekt(props){
     </Layout>
   )
 }
+
+
+export const query = graphql`
+query WasQuery {
+  allMarkdownRemark(
+    filter: {fileAbsolutePath: {regex: "/(projekte)/"}}
+    sort: {frontmatter: {order: DESC}}
+  ) {
+    edges {
+      node {
+        fields{
+          slug
+        }
+        frontmatter {
+          category
+          title
+          thumbnail {
+            childImageSharp {
+              gatsbyImageData(placeholder: BLURRED)
+            }
+            publicURL
+          }
+          thumbhovercolour
+          bigthumbnail
+        }
+      }
+    }
+  }
+}
+`

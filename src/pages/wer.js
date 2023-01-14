@@ -8,6 +8,7 @@ import Layout from '../components/layout';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import { GatsbySeo } from 'gatsby-plugin-next-seo';
+import { Fade } from 'react-reveal';
 
 const teamImgStyle = {
   left: "calc(50vw - 20px)",
@@ -53,6 +54,23 @@ const portraitContainerMobile = {
   marginBottom: "100px",
 }
 
+const smallHeader = {
+  fontSize: "9pt",
+  marginTop: 50,
+  marginBottom: "-15px",
+}
+const infoContainer = {
+  background: "#141414",
+  color: "#f5f4f0",
+  display: "flex",
+  flexDirection: "column",
+  margin: "-20px",
+  padding: "20px",
+  paddingBottom: "40px",
+  marginBottom: "20px",
+  lineHeight: 1.4,
+  letterSpacing: "1px",
+}
 
 const Portrait = ({name, email, imagedata, description, isMobile}) => {
   const image = getImage(imagedata)
@@ -109,12 +127,12 @@ const Wer = ({data}) => {
       alt="Das Team von Studio Erika"
       layout="fixed"
       placeholder="BLURRED"
-      width={200}
-      height={300}
+      width={300}
+      height={450}
       style={teamImgStyle}
     />
     <div style={headerStyle}>
-      <p style={headerTextStyle}><span style={accentFont}>STUDIO ERIKA</span> ist ein interdisziplinäres Designbüro, welches in den Bereichen Szenografie, Grafik, Corporate Design, online und offline, denkt und arbeitet. Erika hält die Balance zwischen angemessener Ernsthaftigkeit und spielerisch-emotionaler Gestaltung.</p>
+      <p style={headerTextStyle}><span style={accentFont}>STUDIO ERIKA</span> ist ein detailverliebtes Designbüro, welches in den Bereichen Szenografie, Grafik, Corporate Design und Webdesign denkt und arbeitet. Charakteristisch für das Studio ist die Balance zwischen Professionalität und spielerisch-emotionaler Gestaltung, bei der Individualität stets den Kern der Arbeit bildet.</p>
     </div>
     <PortraitContainer isMobile={isMobile}>
         {data.allMarkdownRemark.nodes.map((node,i)=>{
@@ -128,6 +146,30 @@ const Wer = ({data}) => {
           />
         })}
     </PortraitContainer>
+
+    <div style={infoContainer}>
+      <Fade>
+        <div style={{display:"flex", flexDirection:"column"}}>
+          <>
+            <span style={smallHeader}>Arbeite mit uns</span>
+            <p>
+              Pflichtpraktikum (6 Monate) <br/><br/>
+              Wir suchen halbjährlich eine Praktikant:in aus dem Bereich Grafik-Design oder Kommunikationsdesign für ein 4–6-monatiges Pflichtpraktikum im Studium. Das Praktikum findet als bezahltes Präsenz-Praktikum in unserem Büro in Kempten im Allgäu statt.
+              Sende uns doch gerne ein PDF-Portfolio (oder Downloadlink) und deinem frühestmöglichen Startzeitpunkt an 
+              <a href='mailto:hallo@studioerika.de' style={{color: "#f5f4f0"}}> hallo@studioerika.de</a>
+            </p>
+          </>
+          <>
+            <span style={smallHeader}>Initiativbewerbung</span>
+            <p>
+              Gerne kannst du uns auch einfach so dein Portfolio schicken. Vielleicht passt es gerade? In jedem Fall haben wir dich dann auf dem Schirm! Sende uns doch gerne ein PDF-Portfolio (oder Downloadlink) an 
+              <a href='mailto:hallo@studioerika.de' style={{color: "#f5f4f0"}}> hallo@studioerika.de</a>
+            </p>
+          </>
+        </div>
+      </Fade>
+    </div>
+
   </Layout>)
 }
 

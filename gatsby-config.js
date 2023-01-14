@@ -46,5 +46,13 @@ module.exports = {
   "gatsby-transformer-remark",
   'gatsby-plugin-next-seo',
   // "gatsby-plugin-transition-link",
+  {
+    resolve:'gatsby-plugin-copy-files-enhanced',
+    options:{
+      source:`${__dirname}/content/projekte`,
+      destination:'/projekte/',
+      purge:true,
+    }
+  },
 ]
 };

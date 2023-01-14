@@ -93,7 +93,7 @@ const GridTitleStyle = {
   wordWrap: "anywhere",
 }
 
-const GridEntryStyle = {
+export const GridEntryStyle = {
   position: "relative",
 }
 
@@ -103,7 +103,7 @@ const GridBigEntryStyle = {
   gridRowStart: "2 span",
 }
 
-const TitlesContainerStyle = {
+export const TitlesContainerStyle = {
   display: "flex",
   flexDirection: "column",
   position: "absolute",
@@ -127,7 +127,7 @@ const mobileSubtitleStyle = {
   wordWrap: "anywhere",
 }
 
-const GridElement = ({node, isMobile, slug}) => {
+export const GridElement = ({node, isMobile, slug}) => {
   const [hovered, setHovered] = useState(false)
   return <>
       {node.thumbnail&&<div style={{...(node.bigthumbnail?GridBigEntryStyle:GridEntryStyle), marginBottom:isMobile?"50px":"0"}} 
@@ -140,7 +140,8 @@ const GridElement = ({node, isMobile, slug}) => {
             </div>
           }
           {node.thumbnail.childImageSharp&&
-            <GatsbyImage image={getImage(node.thumbnail.childImageSharp)} alt={node.title} />
+            <GatsbyImage image={getImage(node.thumbnail.childImageSharp)} alt={node.title} 
+              /*account for aspect ratio in big thumb*/ style={{paddingBottom: node.bigthumbnail?"9px":0}}/>
           }{!node.thumbnail.childImageSharp&&
             <img style={{width: "100%"}} src={node.thumbnail.publicURL} alt={node.title} />
           }
@@ -157,7 +158,7 @@ const Grid = ({category, nodes, isMobile}) => {
     <div style={isMobile?GridContainerMobileStyle:GridContainerStyle}> 
       {nodes.filter(
         node => node.node.frontmatter.category === category || category === "Alle"
-      ).map((node,i)=><GridElement node={node.node.frontmatter} slug={node.node.fields.slug} key={i} isMobile={isMobile} />)}
+      ).map((node,i)=><GridElement node={node.node.frontmatter} slug={node.node.fields.slug} key={i} isMobile={isMobile} minigrid={false}/>)}
     </div>
   </>
 }

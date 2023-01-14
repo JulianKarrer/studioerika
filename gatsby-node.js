@@ -24,6 +24,7 @@ exports.createPages = async ({ graphql, actions }) => {
         node {
           frontmatter {
             title
+            category
             erikamacht
             grafikund
             header
@@ -53,6 +54,7 @@ exports.createPages = async ({ graphql, actions }) => {
               alttext1
               alttext2
               url
+              mp4file
             }
           }
           fields {
@@ -69,6 +71,7 @@ exports.createPages = async ({ graphql, actions }) => {
       component: template,
       context: {
         title: edge.node.frontmatter.title,
+        category: edge.node.frontmatter.category,
         erikamacht: edge.node.frontmatter.erikamacht,
         grafikund: edge.node.frontmatter.grafikund,
         header: edge.node.frontmatter.header,
