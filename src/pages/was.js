@@ -9,6 +9,7 @@ import { useIsMobile } from '../hooks/useMobile'
 import Fade from 'react-reveal/Fade';
 import { GatsbySeo } from 'gatsby-plugin-next-seo'
 import { useEffect } from 'react'
+import { useLocalStorage } from 'react-use'
 
 const mainContainerStyle={
   background: "#141414",
@@ -212,7 +213,7 @@ const Grid = ({category, nodes, isMobile}) => {
 
 const Was = ({data}) => {
   const isMobile = useIsMobile();
-  const [category, setCategory] = useState("Alle")
+  const [category, setCategory] = useLocalStorage("was-category","Alle")
   return <Layout title="Unfug">
     <GatsbySeo
         title="Was?"

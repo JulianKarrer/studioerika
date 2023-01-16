@@ -71,11 +71,11 @@ const Wo = () => {
           
     <div style={mainContainerStyle}>
       <div style={innerContainer}>
-      <button 
-            onClick={() => window.open("mailto:hallo@studioerika.de", '_blank', 'noreferrer')} 
-              style={roundButton}>
-            {"Schreib uns"}
-          </button>
+        <button 
+          onClick={() => window.open("mailto:hallo@studioerika.de", '_blank', 'noreferrer')} 
+            style={roundButton}>
+          {"Schreib uns"}
+        </button>
         {/* <div style={containedObject}> */}
           {sliderVisible&&<Slider {...carouselSettings}>
             <StaticImage

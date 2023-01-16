@@ -55,6 +55,12 @@ exports.createPages = async ({ graphql, actions }) => {
               alttext2
               url
               mp4file
+              portraitimage{
+                childImageSharp {
+                  gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
+                }
+                publicURL
+              }
             }
           }
           fields {

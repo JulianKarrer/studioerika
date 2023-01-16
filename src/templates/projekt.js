@@ -219,6 +219,11 @@ export default function Projekt(props){
                 <div style={{marginBottom: "20px"}} key={i}>
                   <Image image={n.coverimage.childImageSharp} alt={n.alttext} url={n.coverimage.publicURL}/>
                 </div>)
+            } else if (n.type==="portraitimage") {
+              return (
+              <div style={{marginBottom: "20px"}} key={i}>
+                <Image image={n.portraitimage.childImageSharp} alt={n.alttext} url={n.portraitimage.publicURL}/>
+              </div>)
             } else if (n.type==="doubleimageobject"){
               return(
               <div style={{marginBottom: "20px", display: "flex", justifyContent: "space-between"}} key={i}>

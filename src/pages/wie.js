@@ -1,7 +1,7 @@
-import React from "react"
+import React, { useState } from "react"
 import Layout from "../components/layout"
 import "../components/invertcursor.css"
-import Wie600 from "../videos/wie-600.mp4"
+import Wie600 from "../videos/wie-720.mp4"
 import { GatsbySeo } from "gatsby-plugin-next-seo"
 
 const mainContainerStyle = {
@@ -15,18 +15,39 @@ const mainContainerStyle = {
 }
 
 const innerContainer = {
+  position: "relative",
   maxWidth: "100%",
   maxHeight: "70vh",
-  margin: "20px"
+  width: "min(calc(100vw - 40px), calc(70vh * 1.4))",
+  margin: "20px",
 }
 
 const containedObject = {
   maxWidth: "100%",
-  maxHeight: "100%",
-  height: "70vh",
+}
+
+const roundButton = {
+  position:"absolute",
+  background: "#f5f4f0",
+  color: "#141414",
+  left: "30%",
+  top: "0px",
+  transform: "translate3d(-50%, -50%, 0px)",
+  border: "2px solid #f5f4f0",
+  borderRadius: "50%",
+  height: "80px",
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  width: "80px",
+  cursor: "url('/maus.cur') 12 12, auto",
+  fontFamily: "SuisseIntlBook, Sans-serif",
+  zIndex: 2,
 }
 
 const Wie = ()=>{
+  const [muted, setMuted] = useState(true)
+
   return <Layout title="Prozess">
     <GatsbySeo
         title="Wie?"
@@ -34,7 +55,13 @@ const Wie = ()=>{
       />
     <div style={mainContainerStyle}>
       <div style={innerContainer}>
-        <video controls={false} muted loop playsInline autoPlay style={containedObject}>
+        <button 
+          onClick={() => setMuted(!muted)} 
+            style={roundButton}>
+          {muted?"Ton aus":"Ton an"}
+        </button>
+
+        <video controls={false} muted={muted} loop playsInline autoPlay style={containedObject}>
           <source src={Wie600} type={"video/mp4"}/>
         </video>
       </div>
