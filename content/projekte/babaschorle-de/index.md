@@ -1,4 +1,5 @@
 ---
+backend-title: babaschorle.de
 title: babaschorle.de
 header: So lecker, man möchte sie online bestellen.
 grafikund: Babas
@@ -26,4 +27,11 @@ content:
     mp4file: erika_babawebsite_5.mp4
   - type: mp4fileobject
     mp4file: erika_babawebsite_6.mp4
+  - type: image-video
+    image-video-left: true
+    image-video-imageobject:
+      alttext: Bild
+      image-video-image: out.jpg
+    image-video-mp4fileobject:
+      image-video-mp4file: erika_babawebsite_6.mp4
 ---

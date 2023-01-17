@@ -1,4 +1,5 @@
 ---
+backend-title: Allgäuer Heimatwerk
 title: Allgäuer Heimatwerk
 header: Tradition weitergeben
 grafikund: Tradition

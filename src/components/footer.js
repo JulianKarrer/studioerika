@@ -52,7 +52,11 @@ export default function Footer() {
   const isMobile = useIsMobile();
   return <div style={{...(isMobile?containerMobileStyle:{})}}>
     <div style={{...adressStyle, ...(isMobile?rowMobileStyle:leftStyle)}}>
-      <span>MEHLSTRAßE 1, 87435 KEMPTEN<br/></span>
+      <span>
+        <a href="https://www.google.com/maps/place/Studio+Erika+%E2%80%93+Grafik+und+Unfug/@47.7250247,10.3180975,17.58z/data=!4m13!1m7!3m6!1s0x479c7911df652fd3:0xebe7db517241cd3d!2sMehlstra%C3%9Fe+1,+018953+Kempten+(Allg%C3%A4u)!3b1!8m2!3d47.7249499!4d10.3186744!3m4!1s0x479c7967c63fcd95:0x22f947ddc60c7484!8m2!3d47.7250321!4d10.3186925" style={adressStyle} target="_blank" rel="noopener noreferrer" >
+          MEHLSTRAßE 1, 87435 KEMPTEN<br/>
+        </a>
+      </span>
       <span style={{display: "flex", flexDirection: "column"}}>
         <a style={{...adressStyle, marginRight: "10px"}} href="tel:004983159188639">TEL 0831 591 886 39</a> 
         <a style={adressStyle} href="mailto:hallo@studioerika.de">HALLO@STUDIOERIKA.DE</a>

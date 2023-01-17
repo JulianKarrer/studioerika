@@ -27,7 +27,7 @@ collections:
 
   - name: "projekte"
     label: "Projekte"
-    folder: "/static/content/projekte"
+    folder: "content/projekte"
     create: true
     slug: "index"
     media_folder: ""
@@ -36,6 +36,7 @@ collections:
     editor:
       preview: false
     fields:
+      - { label: "Name im Backend", name: "backend-title", widget: "string" }
       - { label: "Name", name: "title", widget: "text" }
       - { label: "Headline für Unterseite", name: "header", widget: "text" }
       - { label: "Grafik und ...", name: "grafikund", widget: "string" }
@@ -59,6 +60,36 @@ collections:
         name: 'content'
         widget: 'list'
         types:
+          - label: "Bild + Video"
+            name: "image-video"
+            widget: "object"
+            fields:
+            - {label: "Bild links, Video rechts (falsch = andersrum)", name: "image-video-left", widget: "boolean", default: true}
+            - label: 'bild'
+              name: 'image-video-imageobject'
+              widget: object
+              summary: '{{fields.coverimage}}'
+              fields:
+                - label: "Full-Sized Bild"
+                  name: "image-video-image"
+                  widget: "image"
+                  choose_url: true
+                  media_library:
+                    config:
+                      multiple: false
+                - { label: Alt-Text / Beschreibung, name: alttext, widget: string, default: 'Bild' }
+            - label: 'MP4'
+              name: 'image-video-mp4fileobject'
+              widget: object
+              fields:
+              - label: "Video Datei (vorher komprimieren! mehr als 2MB ist schlecht)"
+                name: "image-video-mp4file"
+                widget: "file"
+                media_library:
+                  config:
+                    multiple: false
+                  media_folder:
+                    /static/cmsfiles
           - label: 'Bildschirmbreites Bild'
             name: 'coverimageobject'
             widget: object

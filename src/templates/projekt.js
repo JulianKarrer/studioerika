@@ -173,6 +173,7 @@ export default function Projekt(props){
   const recommended = props.data.allMarkdownRemark.edges;
   useEffect(()=>{
     if (infoRef && infoRef.current){
+      console.log(content)
       setHeight(collapsed?0:infoRef.current.scrollHeight)
     }
   }, [collapsed])
@@ -245,9 +246,24 @@ export default function Projekt(props){
               </div>)
             } else if (n.type==="mp4fileobject"){
               return(
-              <video controls={false} muted loop playsInline autoPlay style={{width: "100%"}}>
+              <video controls={false} muted loop playsInline autoPlay style={{width: "100%", marginBottom: "20px",}}>
                 <source src={""+n.mp4file} type={"video/mp4"}/>
               </video>
+              )
+              } else if (n.type==="image-video"){
+              return(
+                <div style={{display: "flex", marginBottom: "20px", justifyContent: "space-between", 
+                  flexDirection: n.image_video_left?"row":"row-reverse"
+                }}>
+                  <Image 
+                    image={n.image_video_imageobject.image_video_image.childImageSharp} 
+                    alt={n.alttext1} 
+                    style={{width: "calc(50% - 10px)"}}
+                    url={n.image_video_imageobject.image_video_image.publicURL} />
+                  <video controls={false} muted loop playsInline autoPlay style={{width: "calc(50% - 10px)"}}>
+                    <source src={"/"+n.image_video_mp4fileobject.image_video_mp4file.relativePath} type={"video/mp4"}/>
+                  </video>
+                </div>
               )
             } else {
               return <></>
