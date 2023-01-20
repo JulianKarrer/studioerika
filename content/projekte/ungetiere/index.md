@@ -3,7 +3,7 @@ backend-title: Ungetiere
 title: Ungetiere
 header: Die Ungetiere sind los!
 grafikund: Ungetiere
-order: "0"
+order: "140"
 category: Spiel
 thumbnail: ungetier_titelbild_.gif
 thumbhovercolour: "#f5f4f0"
