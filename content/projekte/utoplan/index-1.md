@@ -1,6 +1,6 @@
 ---
 backend-title: utoplan Website
-title: utoplan
+title: utoplan.de
 header: Die Utopie online
 grafikund: Beratung
 order: "220"
