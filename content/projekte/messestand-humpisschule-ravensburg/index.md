@@ -1,6 +1,6 @@
 ---
 backend-title: "Humpisschule Ravensburg: Messestand"
-title: "Humpisschule Ravensburg Messestand "
+title: "Humpisschule Messestand "
 header: Kompakt verpackt – Modularer Messestand
 grafikund: Module
 order: "420"
@@ -9,10 +9,10 @@ client: Humpisschule Ravensburg
 thumbnail: humpis3.jpg
 thumbhovercolour: "#141414"
 bigthumbnail: false
-werwaswieso: "Praktisch, auffallend und in den Kofferraum sollte er passen – der
-  Messestand für die Humpisschule Ravensburg. Auf verschiedensten Bildungsmessen
-  möchte sich die kaufmännische Schule zeigen, auffallen und mit interessierten
-  Schüler*innen ins Gespräch kommen. "
+werwaswieso: "Praktisch, auffallend sollte er sein und in den Kofferraum passen
+  – der Messestand für die Humpisschule Ravensburg. Auf verschiedensten
+  Bildungsmessen möchte sich die kaufmännische Schule zeigen, auffallen und mit
+  interessierten Schüler*innen ins Gespräch kommen. "
 erikamacht: "Einen speziell entworfenen, modularen Messestand aus
   direktbedruckten Multiplexplatten. Die Elemente lassen sich je nach
   Ausrichtung der Messe mitnehmen und zusammenstecken. Ergänzt wird das System
