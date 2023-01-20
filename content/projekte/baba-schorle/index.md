@@ -34,6 +34,9 @@ content:
     alttext2: Bild
     doubleimage1: erika_karabrew_baba_4.png
     doubleimage2: erika_karabrew_baba_5.jpg
+  - type: coverimageobject
+    alttext: Bild
+    coverimage: erika_karabrew_baba_6.png
   - type: doubleimageobject
     alttext1: Bild
     alttext2: Bild
@@ -42,4 +45,6 @@ content:
   - type: coverimageobject
     alttext: Bild
     coverimage: erika_karabrew_baba_9.png
+  - type: mp4fileobject
+    mp4file: baba_animation_10_klein.mp4
 ---
