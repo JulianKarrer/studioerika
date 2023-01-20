@@ -4,7 +4,7 @@ title: |-
   Wolken
   kuckucks
   raum
-header: Wolkenkuckucksraum – Schaukeln, Spielen, Bauen und Buzzern!
+header: Schaukeln, Spielen, Bauen und Buzzern!
 grafikund: Interaktion
 order: "50"
 category: Raum
