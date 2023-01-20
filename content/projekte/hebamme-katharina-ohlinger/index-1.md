@@ -1,9 +1,8 @@
 ---
 backend-title: Ohlinger.at
 title: |-
-  Hebamme 
-  Katharina 
-  Ohlinger
+  katharina
+  ohlinger.at
 header: Doing more by doing less.
 grafikund: Neues Leben
 order: "0"
