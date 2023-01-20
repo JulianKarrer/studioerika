@@ -1,7 +1,7 @@
 ---
 backend-title: Onebookaweek
 title: Onebookaweek
-header: "Experimentiert, gescheitert, weiterentwickelt … Onebookaweek  "
+header: "Eine Woche – ein Buch – ein Jahr "
 grafikund: viele Bücher
 order: "0"
 category: Spiel
