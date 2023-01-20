@@ -1,4 +1,5 @@
 ---
+backend-title: "NSDoku: TO BE SEEN"
 title: TO BE SEEN
 header: TO BE SEEN – queer lives 1900-1950
 grafikund: Queer
@@ -6,7 +7,7 @@ order: "10"
 category: Raum
 client: NS Dokumentationszentrum München
 thumbnail: erika_nsdoku_tobeseen_titel.jpg
-thumbhovercolour: "#141414"
+thumbhovercolour: "#f5f4f0"
 bigthumbnail: true
 werwaswieso: In der Ausstellung TO BE SEEN sollen Geschichten von LGBTIQ* in der
   ersten Hälfte des 20. Jahrhunderts sichtbar werden. Eine eigenständige, sich
