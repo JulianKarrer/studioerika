@@ -1,4 +1,5 @@
 ---
+backend-title: Art Attacks
 title: Art Attacks
 header: Art Attacks – Zwischen Kunst und Vandalismus.
 grafikund: Vandalismus
@@ -53,6 +54,13 @@ content:
     doubleimage2: img_0725_.jpg
     alttext1: Nahaufnahme Art Attacks
     alttext2: Nahaufnahme Art Attacks
+  - type: image-video
+    image-video-left: true
+    image-video-imageobject:
+      alttext: Bild
+      image-video-image: 9.jpg
+    image-video-mp4fileobject:
+      image-video-mp4file: ausstellungsfieber_video.mov
   - type: coverimageobject
     coverimage: art_attacks_149.jpg
     alttext: Ausstellungsansicht Art Attacks
