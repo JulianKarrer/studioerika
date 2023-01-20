@@ -1,5 +1,5 @@
 ---
-backend-title: BFS
+backend-title: BFS Website
 title: bfs-ngl.de
 header: Altes Handwerk, neue Gestaltung
 grafikund: Schmuck
