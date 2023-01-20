@@ -3,11 +3,11 @@ backend-title: Kultur 2030!
 title: Kultur 2030!
 header: Kulturvisionen für die Stadt Kempten
 grafikund: Zukunft
-order: "0"
+order: "90"
 category: Grafik
 client: Kulturamt Kempten
 thumbnail: erika_kulturamtkempten_kultru2030__1_titel.jpg
-thumbhovercolour: "#f5f4f0"
+thumbhovercolour: "#141414"
 bigthumbnail: false
 werwaswieso: Zusammen mit der Agentur »Kulturgold« (Stuttgart) hat das Kulturamt
   Kempten in vielen verschiedenen partizipativen Workshops und Formaten ein
