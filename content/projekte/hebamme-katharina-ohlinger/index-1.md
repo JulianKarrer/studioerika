@@ -1,7 +1,7 @@
 ---
 backend-title: Ohlinger.at
 title: |-
-  katharina
+  katharina-
   ohlinger.at
 header: Doing more by doing less.
 grafikund: Neues Leben
