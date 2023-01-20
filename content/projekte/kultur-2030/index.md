@@ -1,5 +1,5 @@
 ---
-backend-title: Kultur 2030!
+backend-title: "Kulturamt Kempten: Kultur 2030!"
 title: Kultur 2030!
 header: Kulturvisionen für die Stadt Kempten
 grafikund: Zukunft
