@@ -1,6 +1,6 @@
 ---
 backend-title: EGS.de
-title: EGS
+title: EGS.de
 header: Informationen im Quadrat
 grafikund: Blau
 order: "0"
