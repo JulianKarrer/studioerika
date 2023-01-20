@@ -1,8 +1,9 @@
 ---
+backend-title: "Stadtbibliothek Kempten: Lebendige Bibliothek"
 title: Lebendige Bibliothek
 header: Allgäuer Natur- und Erlebniswelten in der Lebendigen Bibliothek
 grafikund: Natur
-order: "0"
+order: "200"
 category: Grafik
 client: Stadtbibliothek Kempten, Stadtbücherei Sonthofen, Bücherei Wertach
 thumbnail: erika_stadtbibelothek_lebendigebibelothek_1_titel.jpg
