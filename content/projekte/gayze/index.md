@@ -1,5 +1,6 @@
 ---
-title: gayze
+backend-title: gayze.de
+title: gayze.de
 header: gayze - Auf der Spuren queeren Lebens.
 grafikund: Queeres Leben
 order: "0"
