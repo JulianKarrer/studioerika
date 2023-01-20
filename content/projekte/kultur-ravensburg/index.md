@@ -1,6 +1,7 @@
 ---
+backend-title: Kultur Ravensburg
 title: Kultur Ravensburg
-header: Erscheinungsbild in Sicht
+header: Marke in Sicht
 grafikund: Kultur
 order: "0"
 category: Marke
