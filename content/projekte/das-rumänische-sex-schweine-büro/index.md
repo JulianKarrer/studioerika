@@ -44,4 +44,12 @@ content:
     mp4file: erika_kunstnacht_8_video.mp4
   - type: mp4fileobject
     mp4file: erika_kunstnacht_9_video.mp4
+  - type: coverimageobject
+    alttext: Bild
+    coverimage: erika_kunstnacht_10.jpg
+  - type: doubleimageobject
+    alttext1: Bild
+    alttext2: Bild
+    doubleimage1: erika_kunstnacht_11.jpg
+    doubleimage2: erika_kunstnacht_12.jpg
 ---
