@@ -3,7 +3,7 @@ backend-title: Kettershausen Glücksweg
 title: Glücksweg Wasserspiel
 header: Auf den Spuren der Natur - der Glücksweg »Wasserspiel«
 grafikund: Wasser
-order: "0"
+order: "320"
 category: Raum
 client: Naturgemeinde Kettershausen
 thumbnail: erika_kettershausen_gluecksweg_wasserspiel_1_titel.jpg
