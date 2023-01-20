@@ -1,10 +1,11 @@
 ---
+backend-title: "Museum Ulm, HfG Ulm Archiv: Nicht mein Ding Buch"
 title: Nicht mein Ding
 header: "Besondere Buchgestaltung - voll Erikas Ding! "
 grafikund: Gender
-order: "0"
+order: "400"
 category: Grafik
-client: Hfg Ulm Archiv und Museum Ulm
+client: HfG Ulm Archiv und Museum Ulm
 thumbnail: erika_hfgulm_genderimdesign_1_titel.jpg
 thumbhovercolour: "#141414"
 bigthumbnail: true
