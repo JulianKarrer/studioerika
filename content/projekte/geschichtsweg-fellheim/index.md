@@ -1,9 +1,9 @@
 ---
-backend-title: Fellheim
+backend-title: "Fellheim: Geschichtsweg"
 title: Geschichtsweg Fellheim
 header: Geschichtsweg Fellheim – Vergangenheit sichtbar machen
 grafikund: Geschichte
-order: "0"
+order: "320"
 category: Raum
 client: Gemeinde Fellheim
 thumbnail: erika_fellheim_geschichtsweg_1_titel.jpg
