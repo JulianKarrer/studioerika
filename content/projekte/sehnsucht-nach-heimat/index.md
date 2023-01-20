@@ -1,12 +1,13 @@
 ---
+backend-title: "Museum Füssen: Sehnsucht nach Heimat"
 title: Sehnsucht nach Heimat
 header: Sehnsucht nach Heimat – Ein neuer Blick auf historische Tracht
 grafikund: Tracht
-order: "0"
+order: "500"
 category: Raum
 client: "Museum der Stadt Füssen "
 thumbnail: erika_museumstadtfuessen_sehnsuchtheimat_1_titel.jpg
-thumbhovercolour: "#f5f4f0"
+thumbhovercolour: "#141414"
 bigthumbnail: false
 werwaswieso: "Trachten sind Teil der Geschichte und Trachten haben eine
   Geschichte: Fünf Füssener Trachtenvereine zeigen ihre Traditionen und
