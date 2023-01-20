@@ -1,8 +1,9 @@
 ---
+backend-title: "HfG-Archiv Ulm: Nicht mein Ding Ausstellung"
 title: Nicht mein Ding
 header: Nicht mein Ding – Gender im Design
 grafikund: Dinge
-order: "0"
+order: "340"
 category: Raum
 client: HfG-Archiv Ulm
 thumbnail: erika_hfgulm_gender_1_titel.jpg
