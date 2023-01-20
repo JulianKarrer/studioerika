@@ -5,7 +5,7 @@ title: |-
   moebus.de
 header: Im eigenen Rhythmus
 grafikund: Rhythmus
-order: "0"
+order: "390"
 category: Online
 client: Angelika Möbus
 thumbnail: erika_moebus_titelbild_1.jpg
