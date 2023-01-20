@@ -1,5 +1,5 @@
 ---
-backend-title: Art Attacks
+backend-title: "Neues Museum Nürnberg: Art Attacks"
 title: Art Attacks
 header: Art Attacks – Zwischen Kunst und Vandalismus.
 grafikund: Vandalismus
