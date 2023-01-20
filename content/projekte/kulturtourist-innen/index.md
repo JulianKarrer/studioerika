@@ -3,8 +3,8 @@ backend-title: "Kulturgold: Kulturtourimus"
 title: |-
   Kulturtou-
   rist*innen
-header: Kleine Persönlichkeiten liebevoll illustriert
-grafikund: Persönlichkeiten
+header: Personas liebevoll illustriert
+grafikund: Kulturtourist*innen
 order: "380"
 category: Grafik
 client: "Kulturgold Stuttgart "
