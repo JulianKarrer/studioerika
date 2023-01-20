@@ -1,6 +1,6 @@
 ---
 backend-title: "Museum Füssen: Sehnsucht nach Heimat"
-title: Sehnsucht nach Heimat
+title: Trachenkultur im Füssener Land
 header: Sehnsucht nach Heimat – Ein neuer Blick auf historische Tracht
 grafikund: Tracht
 order: "500"
