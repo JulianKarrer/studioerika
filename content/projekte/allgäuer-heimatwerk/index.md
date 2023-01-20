@@ -3,7 +3,7 @@ backend-title: Allgäuer Heimatwerk
 title: Allgäuer Heimatwerk
 header: Tradition weitergeben
 grafikund: Tradition
-order: "0"
+order: "310"
 category: Marke
 client: Allgäuer Heimatwerk
 thumbnail: vektor-smartobjekt.png
