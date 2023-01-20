@@ -50,7 +50,7 @@ content:
     coverimage: art_attacks_088.jpg
     alttext: Ausstellungsansicht Art Attacks
   - type: image-video
-    image-video-left: true
+    image-video-left: false
     image-video-imageobject:
       alttext: Bild
       image-video-image: 9.jpg
