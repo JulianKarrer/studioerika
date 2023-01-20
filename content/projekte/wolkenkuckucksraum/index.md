@@ -1,5 +1,9 @@
 ---
-title: Wolkenkuckucksraum
+backend-title: Wolkenkuckucksraum
+title: |-
+  Wolken
+  kuckucks
+  raum
 header: Wolkenkuckucksraum – Schaukeln, Spielen, Bauen und Buzzern!
 grafikund: Interaktion
 order: "0"
@@ -13,7 +17,7 @@ werwaswieso: In einem Durchgangsraum zwischen dem Museum Ulm und der Kunsthalle
   einlädt, auf vielfältige Weise mit dem Museum und seinen Sammlungsbeständen in
   Austausch zu treten.
 erikamacht: "Verschiedene Stationen bieten Möglichkeiten zur spielerischen
-  Auseinandersetzung. So fordert die über einen „Buzzer“ zufällig ausgelöste
+  Auseinandersetzung. So fordert die über einen »Buzzer« zufällig ausgelöste
   Karte dazu auf das hässlichste Objekt im Museum Ulm zu finden. Mit einem
   Holzsteckspiel lassen sich fantasievolle Museumsgebilde und Luftschlösser
   bauen und an einem Glücksrad Sammlungsobjekte von der Archäologie bis zum
