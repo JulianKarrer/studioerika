@@ -1,8 +1,9 @@
 ---
-title: Messestand Humpisschule Ravensburg
+backend-title: "Humpisschule Ravensburg: Messestand"
+title: "Humpisschule Ravensburg Messestand "
 header: Kompakt verpackt – Modularer Messestand
 grafikund: Module
-order: "0"
+order: "420"
 category: Raum
 client: Humpisschule Ravensburg
 thumbnail: humpis3.jpg
