@@ -21,5 +21,8 @@ erikamacht: Eine Interaktive Installation, die Besucher*innen an der KunstNacht
   Gebäudes zu verschaffen. Unser Projekt betreibt eine Erinnerungskultur auf
   Mikroebene und erfasst im Kern die Erinnerung als solche – Sie ist niemals
   vollständig und nie ganz verlässlich.
-content: []
+content:
+  - type: coverimageobject
+    alttext: Bild
+    coverimage: erika_kunstnacht_1_titel.jpg
 ---
