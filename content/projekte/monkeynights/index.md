@@ -1,5 +1,5 @@
 ---
-backend-title: Monkeynights
+backend-title: "Kara Brew Bar: Monkeynights"
 title: Monkeynights
 header: "Affengeile Partynächte – die Monkeynights  "
 grafikund: Party
