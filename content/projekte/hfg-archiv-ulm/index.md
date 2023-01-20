@@ -1,6 +1,6 @@
 ---
 backend-title: HfG-Archiv Ulm Website
-title: HfG-Archiv Ulm
+title: hfgulmarchiv.de
 header: Ein Archiv vom Archiv
 grafikund: Archivierung
 order: "20"
