@@ -1,9 +1,6 @@
 ---
 backend-title: Angelika Möbus
-title: |-
-  Hebamme 
-  Angelika 
-  Möbus
+title: angelika-moebus.de
 header: Im eigenen Rhythmus
 grafikund: Rhythmus
 order: "0"
