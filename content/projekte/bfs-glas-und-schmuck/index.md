@@ -1,6 +1,6 @@
 ---
 backend-title: BFS
-title: BFS Glas und Schmuck
+title: bfs-ngl.de
 header: Altes Handwerk, neue Gestaltung
 grafikund: Schmuck
 order: "0"
