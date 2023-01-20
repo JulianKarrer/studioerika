@@ -1,6 +1,9 @@
 ---
-title: Ausstellungsfieber
-header: Ulm im Ausstellungsfieber
+backend-title: Ausstellungsfieber
+title: |-
+  Ausstellungs-
+  fieber
+header: Von Ulm ins Bauhaus
 grafikund: Bauhaus
 order: "0"
 category: Raum
@@ -19,8 +22,8 @@ erikamacht: >
   größten gemeinsamen Nenner bildet dabei den Ausstellungsaufbau und –transport.
   So werden Transportboxen aus dem Depot umfunktioniert zu Vitrinen und
   Schaukästen. Besonderes Highlight ist der »Pflückkatalog«, den sich
-  Besucher*innen an unterschiedlichen Stellen im Haus zusammensammeln und mit
-  nach Hause nehmen können. 
+  Besucher*innen an unterschiedlichen Stationen zusammensammeln und mit nach
+  Hause nehmen können. 
 
 
   Die temporäre Ausstellung wurde zunächst im HfG-Archiv präsentiert und zog dann weiter in das historische Bauhausgebäude in Dessau (Unesco Welt-Kulturerbe). 
