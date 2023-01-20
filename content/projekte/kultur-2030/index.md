@@ -6,7 +6,7 @@ grafikund: Zukunft
 order: "0"
 category: Grafik
 client: Kulturamt Kempten
-thumbnail: erika_kulturamtkempten_kultru2030__1_titel.png
+thumbnail: erika_kulturamtkempten_kultru2030__1_titel.jpg
 thumbhovercolour: "#f5f4f0"
 bigthumbnail: false
 werwaswieso: Zusammen mit der Agentur »Kulturgold« (Stuttgart) hat das Kulturamt
@@ -25,7 +25,7 @@ erikamacht: "Eine umfangreiche Publikation, in der Ziele, Maßnahmen und
 content:
   - type: coverimageobject
     alttext: Bild
-    coverimage: erika_kulturamtkempten_kultru2030__1_titel.png
+    coverimage: erika_kulturamtkempten_kultru2030__1_titel.jpg
   - type: coverimageobject
     alttext: Bild
     coverimage: erika_kulturamtkempten_kultru2030__2.jpg
