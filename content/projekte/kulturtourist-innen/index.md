@@ -1,8 +1,11 @@
 ---
-title: Kulturtourist*innen
+backend-title: "Kulturgold: Kulturtourimus"
+title: |-
+  Kulturtou-
+  rist*innen
 header: Kleine Persönlichkeiten liebevoll illustriert
 grafikund: Persönlichkeiten
-order: "90"
+order: "380"
 category: Grafik
 client: "Kulturgold Stuttgart "
 thumbnail: erika_kulturgoldstuttgart_kulturtouristen_2.jpg
