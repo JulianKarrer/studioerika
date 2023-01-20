@@ -3,7 +3,7 @@ backend-title: "Kulturamt Kempten: Kulturlieferdienst"
 title: |-
   Kulturliefer-
   dienst
-header: Der Kulturlieferdienst
+header: Kultur kommt in die Tüte
 grafikund: Lieferdienst
 order: "230"
 category: Grafik
