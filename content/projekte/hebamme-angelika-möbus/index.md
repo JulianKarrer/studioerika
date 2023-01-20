@@ -1,5 +1,9 @@
 ---
-title: Hebamme Angelika Möbus
+backend-title: Angelika Möbus
+title: |-
+  Hebamme 
+  Angelika 
+  Möbus
 header: Im eigenen Rhythmus
 grafikund: Rhythmus
 order: "0"
