@@ -26,7 +26,7 @@ content:
     alttext: Bild
     coverimage: erika_tigaienhofen_1_titel.jpg
   - type: youtubelink
-    url: https://www.youtube.com/watch?v=DjWYWnJqhc8&t=3s
+    url: "https://www.youtube.com/watch?v=DjWYWnJqhc8&t=3s "
   - type: doubleimageobject
     alttext1: Bild
     alttext2: Bild
