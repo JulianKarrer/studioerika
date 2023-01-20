@@ -1,4 +1,5 @@
 ---
+backend-title: "Kunsthalle Kempten "
 title: "Kunsthalle Kempten "
 header: Außen wirkungsvoll – die Kunsthalle
 grafikund: Kunst
