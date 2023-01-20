@@ -23,7 +23,7 @@ content:
   - type: coverimageobject
     alttext: Bild
     coverimage: erika_onebookaweek_1_title.jpg
-  - type: portraitimageobject
+  - type: coverimageobject
     alttext: Bild
-    portraitimage: erika_onebookaweek_2.jpg
+    coverimage: erika_onebookaweek_2.jpg
 ---
