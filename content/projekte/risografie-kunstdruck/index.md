@@ -1,4 +1,5 @@
 ---
+backend-title: Risographie Kunstdruck Festwoche
 title: Risographie Kunstdruck
 header: "Ein Wimmelbild zur Kemptener Festwoche "
 grafikund: Festwoche
