@@ -1,6 +1,6 @@
 ---
 backend-title: Gramm.de
-title: Ingenieurbüro Gramm
+title: ib-gramm.de
 header: "Digitale Visitenkarte – Ingenieurbüro Gramm "
 grafikund: Ingenieurwesen
 order: "0"
