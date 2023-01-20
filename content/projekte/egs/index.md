@@ -1,4 +1,5 @@
 ---
+backend-title: EGS.de
 title: EGS
 header: Informationen im Quadrat
 grafikund: Blau
@@ -10,11 +11,11 @@ thumbhovercolour: "#141414"
 bigthumbnail: false
 werwaswieso: "Die im Schwarzwald liegende Steuerkanzlei EGS betreut kompetent
   und zuverlässig Kund*innen aus ganz Deutschland. Im Zuge des neuen
-  Erscheinungsbildes soll das EGS Steuerbüro einen neuen Online-Auftritt
+  Erscheinungsbildes soll das EGS Steuerbüro einen zeitgemäßen Online-Auftritt
   bekommen, der die Seriosität und Agilität unterstreicht. "
 erikamacht: "Eine Website, die alle Inhalte und Arbeitsfelder klar und gut
-  strukturiert aufbereitet. Das Design ist zeitgemäß und vermittelt Seriosität
-  und Vertrauenswürdigkeit. Das blaue, positionswechselnde Quadrat aus dem
+  strukturiert aufbereitet. Das Design vermittelt Seriosität und
+  Vertrauenswürdigkeit. Das blaue, positionswechselnde Quadrat aus dem
   Erscheinungsbild wird auch hier zum Kern der Gestaltung. Die Website wurde von
   der Oberfläche bis in die Tiefe ausgestaltet: Auch in den Fotos der
   Mitarbeitenden findet sich das blaue Quadrat wieder."
