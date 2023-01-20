@@ -3,7 +3,7 @@ backend-title: EGS.de
 title: EGS.de
 header: Informationen im Quadrat
 grafikund: Blau
-order: "0"
+order: "440"
 category: Online
 client: EGS Steuerbüro Götz & Schafroth
 thumbnail: erika_egs_titelbild_1.jpg
