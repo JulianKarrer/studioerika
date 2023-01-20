@@ -9,7 +9,7 @@ grafikund: Nachwuchs
 order: "240"
 category: Marke
 client: "Katharina Ohlinger "
-thumbnail: erika_ohlinger_1_titel.gif
+thumbnail: erika_ohlinger_1_titel_n.gif
 thumbhovercolour: "#141414"
 bigthumbnail: false
 werwaswieso: >
