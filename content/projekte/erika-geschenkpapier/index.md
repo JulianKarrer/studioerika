@@ -1,8 +1,9 @@
 ---
+backend-title: "Erika: Geschenkpapier"
 title: Erika Geschenkpapier
 header: Feinstes Geschenkpapier
 grafikund: Geschenke
-order: "0"
+order: "330"
 category: Spiel
 thumbnail: erika_geschenkpapier_1_titel.jpg
 thumbhovercolour: "#f5f4f0"
