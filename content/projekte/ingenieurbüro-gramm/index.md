@@ -1,4 +1,5 @@
 ---
+backend-title: Gramm.de
 title: Ingenieurbüro Gramm
 header: "Digitale Visitenkarte – Ingenieurbüro Gramm "
 grafikund: Ingenieurwesen
@@ -12,10 +13,10 @@ werwaswieso: Auch für kleine Unternehmen ist es wichtig, im Internet Präsenz z
   zeigen. Dafür wünscht sich das Ingenieurbüro Gramm den richtigen Auftritt.
 erikamacht: Eine »digitale Visitenkarte« mit spielerisch-interaktiven
   Grafikelementen, die das Ingenieurbüro in ein besonderes Licht rückt. Die
-  Visitenkarte stellt alle Informationen bereit. Der Programmierungs- und
+  Website stellt alle Informationen bereit. Der Programmierungs- und
   Pflegeaufwand für eine solche Seite sind gering – perfekt für einen ersten
-  Auftritt im Internet. Weitere Elemente und Seiten können jederzeit hinzugefügt
-  werden.
+  Auftritt im Internet. Weitere Elemente und Unterseiten können jederzeit
+  hinzugefügt werden.
 content:
   - type: mp4fileobject
     mp4file: erika_gramm_website_2.mp4
