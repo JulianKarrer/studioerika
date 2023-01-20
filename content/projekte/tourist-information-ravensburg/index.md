@@ -3,7 +3,7 @@ backend-title: "Tourist Information Ravensburg "
 title: "Tourist Information Ravensburg "
 header: Turm und Spiel - die Tourist Information Ravensburg
 grafikund: Turm und Spiel
-order: "0"
+order: "360"
 category: Raum
 client: "Stadt Ravensburg "
 thumbnail: erika_stadtravensburg_touristeninfomation_1_titel.jpg
