@@ -1,7 +1,7 @@
 ---
 backend-title: "BFS Glas und Schmuck: Im:puls Magazin"
 title: Im:puls Magazin
-header: "Im:puls Magazin: 75 Jahre BFS Glas und Schmuck"
+header: 75 Jahre BFS Glas und Schmuck
 grafikund: Jubiläum
 order: "60"
 category: Grafik
