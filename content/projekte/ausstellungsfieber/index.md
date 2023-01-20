@@ -1,11 +1,11 @@
 ---
-backend-title: Ausstellungsfieber
+backend-title: "HfG-Archiv Ulm: Ausstellungsfieber"
 title: |-
   Ausstellungs-
   fieber
 header: Von Ulm ins Bauhaus
 grafikund: Bauhaus
-order: "0"
+order: "280"
 category: Raum
 client: HfG-Archiv Ulm, Bauhaus Dessau
 thumbnail: erika_bauhaus_ausstellungsfieber_1_titel.jpg
