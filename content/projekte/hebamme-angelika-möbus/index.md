@@ -1,6 +1,8 @@
 ---
 backend-title: Angelika Möbus
-title: angelika-moebus.de
+title: |-
+  angelika-
+  moebus.de
 header: Im eigenen Rhythmus
 grafikund: Rhythmus
 order: "0"
