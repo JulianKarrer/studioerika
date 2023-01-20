@@ -1,6 +1,9 @@
 ---
 backend-title: Hebamme Katharina Ohlinger Marke
-title: Hebamme Katharina Ohlinger
+title: |-
+  Hebamme 
+  Katharina 
+  Ohlinger
 header: "Organisch, reduziert und lebendig.  "
 grafikund: Nachwuchs
 order: "240"
