@@ -1,6 +1,8 @@
 ---
 backend-title: "Kulturamt Kempten: Kulturlieferdienst"
-title: Kulturlieferdienst
+title: |-
+  Kulturliefer-
+  dienst
 header: Der Kulturlieferdienst
 grafikund: Lieferdienst
 order: "230"
