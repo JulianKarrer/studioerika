@@ -28,10 +28,9 @@ const containedObject = {
 
 const roundButton = {
   position:"absolute",
-  background: "#f5f4f0",
-  color: "#141414",
+  transition: "color 700ms ease-in-out 0s",
   left: "30%",
-  top: "0px",
+  bottom: "-80px",
   transform: "translate3d(-50%, -50%, 0px)",
   border: "2px solid #f5f4f0",
   borderRadius: "50%",
@@ -57,8 +56,8 @@ const Wie = ()=>{
       <div style={innerContainer}>
         <button 
           onClick={() => setMuted(!muted)} 
-            style={roundButton}>
-          {muted?"Ton aus":"Ton an"}
+            style={{...roundButton, color:muted?"#141414":"#f5f4f0", background:muted?"#f5f4f0":"#141414"}}>
+          {muted?"Ton an":"Ton aus"}
         </button>
 
         <video controls={false} muted={muted} loop playsInline autoPlay style={containedObject}>

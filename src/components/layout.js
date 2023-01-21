@@ -5,7 +5,7 @@ import { useIdle, useInterval } from "react-use"
 import "./layout.css"
 import useWindowSize from "../hooks/useWindowSize"
 
-const IDLE_TIME_TO_SCREENSAVER = 30000e3;
+const IDLE_TIME_TO_SCREENSAVER = 10e3;
 const SCREENSAVER_TIME_PER_BUBBLE = 1e3;
 
 const Canvas = ({positions,dimensions, ...props}) => {
@@ -58,7 +58,7 @@ export default function Layout({ children, title }) {
       <Header title={title} />
       {children}
     </div>
-    <div style={{marginTop: "50px", position: "relative", padding: "20px"}}>
+    <div style={{marginTop: "80px", position: "relative", padding: "20px"}}>
       <Footer />
     </div>
   </>

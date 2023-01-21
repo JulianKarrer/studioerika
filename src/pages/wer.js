@@ -58,6 +58,7 @@ const smallHeader = {
   fontSize: "9pt",
   marginTop: 50,
   marginBottom: "-15px",
+  fontFamily: "SuisseIntlBook, -apple-system, Roboto, sans-serif, serif"
 }
 const infoContainer = {
   background: "#141414",
@@ -153,16 +154,15 @@ const Wer = ({data}) => {
           <>
             <span style={smallHeader}>Arbeite mit uns</span>
             <p>
-              Pflichtpraktikum (6 Monate) <br/><br/>
-              Wir suchen halbjährlich eine Praktikant:in aus dem Bereich Grafik-Design oder Kommunikationsdesign für ein 4–6-monatiges Pflichtpraktikum im Studium. Das Praktikum findet als bezahltes Präsenz-Praktikum in unserem Büro in Kempten im Allgäu statt.
-              Sende uns doch gerne ein PDF-Portfolio (oder Downloadlink) und deinem frühestmöglichen Startzeitpunkt an 
+              <br/>
+              Pflichtpraktikum (4-6 Monate)<br/><br/>
+              Wir suchen halbjährlich eine*n Praktikant*in aus dem Bereich Grafik- oder Kommunikationsdesign für ein Pflichtpraktikum im Studium. Das bezahlte Praktikum findet in Präsenz in unserem Studio in Kempten im Allgäu statt. Sende uns doch gerne dein Portfolio und deinen frühestmöglichen Startzeitpunkt an
               <a href='mailto:hallo@studioerika.de' style={{color: "#f5f4f0"}}> hallo@studioerika.de</a>
-            </p>
-          </>
-          <>
-            <span style={smallHeader}>Initiativbewerbung</span>
-            <p>
-              Gerne kannst du uns auch einfach so dein Portfolio schicken. Vielleicht passt es gerade? In jedem Fall haben wir dich dann auf dem Schirm! Sende uns doch gerne ein PDF-Portfolio (oder Downloadlink) an 
+
+              <br/><br/><br/>
+              Initiativbewerbung<br/>
+              <br/>
+            Gerne kannst du uns auch einfach so dein Portfolio schicken. Vielleicht passt es gerade? In jedem Fall haben wir dich dann auf dem Schirm! Sende uns doch gerne dein Portfolio an
               <a href='mailto:hallo@studioerika.de' style={{color: "#f5f4f0"}}> hallo@studioerika.de</a>
             </p>
           </>

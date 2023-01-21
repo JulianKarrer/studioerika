@@ -9,7 +9,7 @@ import { useIsMobile } from '../hooks/useMobile'
 import Fade from 'react-reveal/Fade';
 import { GatsbySeo } from 'gatsby-plugin-next-seo'
 import { useEffect } from 'react'
-import { useLocalStorage } from 'react-use'
+import {useLocalStorage} from '../hooks/useLocalStorage'
 
 const mainContainerStyle={
   background: "#141414",

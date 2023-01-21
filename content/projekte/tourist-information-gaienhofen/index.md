@@ -1,4 +1,5 @@
 ---
+backend-title: Tourist Information Gaienhofen
 title: Tourist Information Gaienhofen
 header: "Eintauchen und Erkunden - Tiefgang auf der Halbinsel Höri   "
 grafikund: Insel
@@ -25,7 +26,7 @@ content:
     alttext: Bild
     coverimage: erika_tigaienhofen_1_titel.jpg
   - type: youtubelink
-    url: https://youtu.be/DjWYWnJqhc8
+    url: https://www.youtube-nocookie.com/embed/DjWYWnJqhc8
   - type: doubleimageobject
     alttext1: Bild
     alttext2: Bild
