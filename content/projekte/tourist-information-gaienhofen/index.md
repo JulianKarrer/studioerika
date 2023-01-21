@@ -3,7 +3,7 @@ backend-title: Tourist Information Gaienhofen
 title: Tourist Information Gaienhofen
 header: "Eintauchen und Erkunden - Tiefgang auf der Halbinsel Höri   "
 grafikund: Insel
-order: "0"
+order: "160"
 category: Raum
 client: Tourist Information Gaienhofen
 thumbnail: erika_tigaienhofen_1_titel.jpg

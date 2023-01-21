@@ -1,8 +1,9 @@
 ---
+backend-title: "Stadtbibliothek Kempten: Lebendige Bibliothek"
 title: Lebendige Bibliothek
 header: Allgäuer Natur- und Erlebniswelten in der Lebendigen Bibliothek
 grafikund: Natur
-order: "0"
+order: "200"
 category: Grafik
 client: Stadtbibliothek Kempten, Stadtbücherei Sonthofen, Bücherei Wertach
 thumbnail: erika_stadtbibelothek_lebendigebibelothek_1_titel.jpg
@@ -13,11 +14,10 @@ werwaswieso: »Nature Writing«, die sich mit Naturbeobachtung auseinandersetzt.
   vereint.
 erikamacht: Eine Gestaltung, welche von Humboldts Naturforschungen und
   Zeichnungen inspiriert und mittels Materials der Bibliothek realisiert wurde.
-  Pflanzen- und Tierbestimmungsbücher und Bücher über die Allgäuer Flora und
-  Fauna liefern das Bildmaterial für die verspielten Collagen, die zum Entdecken
-  einladen. Ein Gesamtmotiv fasst alle Unterprojekte zusammen. Darüber hinaus
-  erhält jedes Projekt sein eigenes Motiv, in dem sich Schrift und Natur
-  verweben.
+  Allgäuer Pflanzen- und Tierbestimmungsbücher aus der Stadtbibliothek liefern
+  das Bildmaterial für die verspielten Collagen, die zum Entdecken einladen. Ein
+  Gesamtmotiv fasst alle Unterprojekte zusammen. Darüber hinaus erhält jedes
+  Projekt sein eigenes Motiv, in dem sich Schrift und Natur verweben.
 content:
   - type: coverimageobject
     alttext: Bild

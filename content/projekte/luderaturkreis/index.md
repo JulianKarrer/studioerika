@@ -1,8 +1,9 @@
 ---
+backend-title: Luderaturkreis
 title: Luderaturkreis
 header: "Das H und Oe der Literatur "
 grafikund: Luder
-order: "0"
+order: "490"
 category: Marke
 client: "Luderaturkreis "
 thumbnail: erika_luderaturkreis_1_titel.jpg

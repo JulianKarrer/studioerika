@@ -1,8 +1,9 @@
 ---
+backend-title: "Fellheim: Geschichtsweg"
 title: Geschichtsweg Fellheim
 header: Geschichtsweg Fellheim – Vergangenheit sichtbar machen
 grafikund: Geschichte
-order: "0"
+order: "110"
 category: Raum
 client: Gemeinde Fellheim
 thumbnail: erika_fellheim_geschichtsweg_1_titel.jpg
@@ -12,13 +13,13 @@ werwaswieso: >
   Fellheim war von 1670 bis 1942 eine jüdische Gemeinde im heutigen Landkreis
   Unterallgäu. Die Geschichte des Doppeldorfes soll nun wieder sichtbar gemacht
   werden – direkt an den Orten, Gebäuden und Wegen, wo sie stattfand. 
-erikamacht: Einen Geschichtsweg, der die interessante Geschichte der
+erikamacht: Einen Geschichtsweg, der die interessante Vergangenheit der
   unscheinbaren Orte preisgibt. Wie sich die Geschichte des Ortes immer mehr
   veränderte, so verändern sich auch die einzelnen Stationen, die in der
-  Materialität von der Cortenstahl-Tür der Synagoge inspiriert sind. Die
-  eingefräste Typografie macht die einschneidende Geschichte bereits aus der
+  Materialität von der Cortenstahl-Tür der Ehemaligen Synagoge inspiriert sind.
+  Die eingefräste Typografie macht die einschneidende Geschichte bereits aus der
   Ferne sichtbar. Die geschickte Wegeleitung durch historischen Ortsplan und
-  Schildchen zum Geschichtsweg im selben Material hilft den Besuchenden die
+  Schildern zum Geschichtsweg im selben Material hilft den Besuchenden die
   gesamte Geschichte zu erfassen.
 content:
   - type: coverimageobject

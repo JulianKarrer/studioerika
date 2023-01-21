@@ -1,4 +1,5 @@
 ---
+backend-title: "NS Doku To be Seen "
 title: TO BE SEEN
 header: TO BE SEEN – queer lives 1900-1950
 grafikund: Queer
@@ -13,11 +14,11 @@ werwaswieso: In der Ausstellung TO BE SEEN sollen Geschichten von LGBTIQ* in der
   von der Dauerausstellung unterscheidende Ausstellungsgestaltung soll die
   Inhalte präsentieren.
 erikamacht: Eine modulare Ausstellungsgestaltung, die historischen Exponaten und
-  der Vielfalt queeren Lebens Raum gibt. Sexualität ist fluide und nicht
-  abgrenzbar – die holografischen Elemente in der Ausstellungsarchitektur nehmen
-  hierauf Bezug. Sie tauchen den Raum in eine Vielfalt von Farben, die sich je
-  nach Blickwinkel neu entfalten. Die temporäre Sonderausstellung richtet den
-  Blick auf die Vielfältigkeit der Geschlechter, Körper und Identitäten und wird
+  der Vielfalt queeren Lebens Raum gibt. Sexualität und Gender ist ein Spektrum
+  – die irisierenden Elemente in der Ausstellungsarchitektur nehmen hierauf
+  Bezug. Sie tauchen den Raum in eine Vielfalt von Farben, die sich je nach
+  Blickwinkel neu entfalten. Die temporäre Sonderausstellung richtet den Blick
+  auf die Vielfältigkeit der Geschlechter, Körper und Identitäten und wird
   international diskutiert.
 content:
   - type: coverimageobject

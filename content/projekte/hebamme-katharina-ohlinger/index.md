@@ -1,11 +1,15 @@
 ---
-title: Hebamme Katharina Ohlinger
+backend-title: Hebamme Katharina Ohlinger Marke
+title: |-
+  Hebamme 
+  Katharina 
+  Ohlinger
 header: "Organisch, reduziert und lebendig.  "
 grafikund: Nachwuchs
-order: "0"
+order: "240"
 category: Marke
 client: "Katharina Ohlinger "
-thumbnail: erika_ohlinger_1_titel.gif
+thumbnail: erika_ohlinger_1_titel_n.gif
 thumbhovercolour: "#141414"
 bigthumbnail: false
 werwaswieso: >
@@ -28,6 +32,12 @@ content:
   - type: coverimageobject
     alttext: Bild
     coverimage: erika_ohlinger_3.jpg
+  - type: coverimageobject
+    alttext: Bild
+    coverimage: erika_ohlinger_1_titel.gif
+  - type: coverimageobject
+    alttext: Bild
+    coverimage: erika_ohlinger_5.jpg
   - type: doubleimageobject
     alttext1: Bild
     alttext2: Bild
@@ -35,5 +45,5 @@ content:
     doubleimage2: erika_ohlinger_7.gif
   - type: coverimageobject
     alttext: Bild
-    coverimage: erika_ohlinger_1_titel.gif
+    coverimage: erika_ohlinger_4.gif
 ---

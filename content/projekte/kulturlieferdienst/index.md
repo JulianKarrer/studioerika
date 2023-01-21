@@ -1,9 +1,11 @@
 ---
-backend-title: Kulturlieferdienst
-title: Kulturlieferdienst
-header: Der Kulturlieferdienst
+backend-title: "Kulturamt Kempten: Kulturlieferdienst"
+title: |-
+  Kulturliefer-
+  dienst
+header: Kultur kommt in die Tüte
 grafikund: Lieferdienst
-order: "40"
+order: "230"
 category: Grafik
 client: Kulturamt Kempten
 thumbnail: erika_kulturamtkempten_kulturlieferdienst_1_titel.gif
@@ -18,6 +20,9 @@ erikamacht: "Eine prägnantes Erscheinungsbild nebst moderner Webseite. Als
   Informationsplattform über Kulturakteure, Fördermöglichkeiten, aktuelle
   Veranstaltungen und dem Kulturentwicklungsprozess (Kultur 2030!) etabliert."
 content:
+  - type: coverimageobject
+    alttext: Bild
+    coverimage: erika_kulturamtkempten_kulturlieferdienst_1_titel.gif
   - type: coverimageobject
     alttext: Bild
     coverimage: erika_kulturamtkempten_kulturlieferdienst_2.jpg

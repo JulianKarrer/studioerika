@@ -1,8 +1,9 @@
 ---
+backend-title: Kettershausen Glücksweg
 title: Glücksweg Wasserspiel
 header: Auf den Spuren der Natur - der Glücksweg »Wasserspiel«
 grafikund: Wasser
-order: "0"
+order: "320"
 category: Raum
 client: Naturgemeinde Kettershausen
 thumbnail: erika_kettershausen_gluecksweg_wasserspiel_1_titel.jpg
@@ -15,10 +16,11 @@ werwaswieso: Entlang der Seen, Moore und der Iller wird die Kraft des Wassers
 erikamacht: "Die Ausgestaltung eines Naturlehrpfades, der verschiedenste
   Informationseinheiten und Erlebnisstationen umfasst, welche in einem
   harmonischen Einklang mit der Natur stehen und sie auf besondere Art erlebbar
-  machen. Transparente Materialien und Acrylröhren widmen sich dem Thema
-  »Wasserspiel«. Für Kinder gibt es zudem ein Heftchen, das in einem
+  machen. Transparente Materialien übersetzen das Thema »Wasser« und dienen als
+  Informationsträger. Für Kinder gibt es zudem ein Heftchen, das in einem
   interaktiven Zusammenspiel mit dem Pfad steht: So gibt es z. B. kleine
-  Aufgaben und eine liebevolle Geschichte, die sich über den Weg erstrecken."
+  Aufgaben und eine liebevolle Geschichte des kleinen Wassertropfens auf der
+  Suche nach dem vierblättrigen Kleeblatt, die sich über den Weg erstrecken."
 content:
   - type: coverimageobject
     alttext: Bild

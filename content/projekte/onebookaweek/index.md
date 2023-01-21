@@ -1,8 +1,9 @@
 ---
+backend-title: Onebookaweek
 title: Onebookaweek
-header: "Experimentiert, gescheitert, weiterentwickelt … Onebookaweek  "
+header: "Eine Woche – ein Buch – ein Jahr "
 grafikund: viele Bücher
-order: "0"
+order: "180"
 category: Spiel
 thumbnail: erika_onebookaweek_1_title.jpg
 thumbhovercolour: "#141414"
@@ -22,7 +23,7 @@ content:
   - type: coverimageobject
     alttext: Bild
     coverimage: erika_onebookaweek_1_title.jpg
-  - type: portraitimageobject
+  - type: coverimageobject
     alttext: Bild
-    portraitimage: erika_onebookaweek_2.jpg
+    coverimage: erika_onebookaweek_2.jpg
 ---

@@ -1,8 +1,11 @@
 ---
-title: "Kunsthalle Kempten "
+backend-title: "Kunsthalle Kempten "
+title: |-
+  Kunsthalle 
+  Kempten 
 header: Außen wirkungsvoll – die Kunsthalle
 grafikund: Kunst
-order: "0"
+order: "80"
 category: Marke
 client: "Kunsthalle Kempten "
 thumbnail: erika_kulturamtkempten_kunsthalle_5.png

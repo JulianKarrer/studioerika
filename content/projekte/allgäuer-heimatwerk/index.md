@@ -3,7 +3,7 @@ backend-title: Allgäuer Heimatwerk
 title: Allgäuer Heimatwerk
 header: Tradition weitergeben
 grafikund: Tradition
-order: "0"
+order: "310"
 category: Marke
 client: Allgäuer Heimatwerk
 thumbnail: vektor-smartobjekt.png
@@ -14,11 +14,11 @@ werwaswieso: Das Heimatwerk hat es sich zur Aufgabe gemacht, Allgäuer Bräuche
   Traditionen über Näharbeiten, traditionelle Küche, Kräuterwissen,
   Brauchtumstänze und sogar Klosterarbeiten an die folgenden Generationen
   weitergegeben und bewahrt.
-erikamacht: "Ein Erscheinungsbild, dessen Kern eine prägnante Typografie von der
-  Vergangenheit inspiriert und mit der Gegenwart im Einklang bildet. Tradition
-  und Moderne werden in Wortmarke und Monogram geschickt vereint. Ein eigens
-  entwickelter Muster-Stoff wird in den Kursen verwendet und lässt Marke und
-  Kurse verschmelzen. "
+erikamacht: "Ein Erscheinungsbild, dessen Kern eine prägnante Typografie – von
+  der Vergangenheit inspiriert und mit der Gegenwart im Einklang – bildet.
+  Tradition und Moderne werden in Wortmarke und Monogram geschickt vereint. Ein
+  eigens entwickelter Muster-Stoff wird in den Kursen verwendet und lässt Marke
+  und Kurse verschmelzen. "
 content:
   - type: coverimageobject
     alttext: Bild

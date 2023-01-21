@@ -1,8 +1,9 @@
 ---
+backend-title: "Kunsthalle Kempten: Museumsmobil"
 title: Museumsmobil
 header: Mobilität für’s Museum – Museumsmobil
 grafikund: Shop
-order: "0"
+order: "210"
 category: Raum
 client: Kunsthalle Kempten
 thumbnail: erika_kulturamtkempten_kunsthallekempten_musumsmobil_1_titel.jpg

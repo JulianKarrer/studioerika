@@ -1,12 +1,13 @@
 ---
-title: utoplan
+backend-title: utoplan Website
+title: utoplan.de
 header: Die Utopie online
 grafikund: Beratung
-order: "0"
+order: "220"
 category: Online
 client: utoplan
 thumbnail: erika_utoplan_titelbild_1.jpg
-thumbhovercolour: "#f5f4f0"
+thumbhovercolour: "#141414"
 bigthumbnail: false
 werwaswieso: Im Rahmen der Erstellung eines neuen Erscheinungsbildes für utoplan
   wird ein neuer Online-Auftritt ausgearbeitet, der die sozial-ökonomische

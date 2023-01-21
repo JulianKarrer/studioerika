@@ -1,8 +1,9 @@
 ---
+backend-title: "Kempten Ost: Ost.Magazin"
 title: Ost.Magazin
 header: "Ost.Magazin – liebevoll illustriert, bestens informiert. "
 grafikund: Himmelsrichtungen
-order: "60"
+order: "270"
 category: Grafik
 client: "Stadtteilbüro Kempten Ost "
 thumbnail: erika_kempten-ost_ost.magazin_1_titel.jpg

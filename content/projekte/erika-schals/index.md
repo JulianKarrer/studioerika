@@ -1,8 +1,9 @@
 ---
+backend-title: Erika Schals
 title: Erika Schals
 header: »Oh so schön die Erika!«
 grafikund: Schals
-order: "0"
+order: "290"
 category: Spiel
 thumbnail: erika_schals_1_titel.png
 thumbhovercolour: "#f5f4f0"

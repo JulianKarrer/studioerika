@@ -1,8 +1,9 @@
 ---
+backend-title: Risographie Kunstdruck Festwoche
 title: Risographie Kunstdruck
 header: "Ein Wimmelbild zur Kemptener Festwoche "
 grafikund: Festwoche
-order: "0"
+order: "480"
 category: Spiel
 thumbnail: erika_festwoche_risografie_1_titel.jpg
 thumbhovercolour: "#f5f4f0"

@@ -1,8 +1,9 @@
 ---
+backend-title: EGS Wirtschaft und Steuer Marke
 title: EGS Wirtschaft und Steuer
 header: Neue Positionen einnehmen mit EGS Wirtschaft und Steuer
 grafikund: Steuer
-order: "0"
+order: "300"
 category: Marke
 client: EGS Wirtschaft und Steuer
 thumbnail: erika_egs_3.jpg

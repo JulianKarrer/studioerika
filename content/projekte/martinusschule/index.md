@@ -1,8 +1,9 @@
 ---
+backend-title: Martinusschule
 title: Martinusschule
 header: "Ein Erscheinungsbild für alle! "
 grafikund: Schule
-order: "0"
+order: "430"
 category: Marke
 client: Martinusschule Ravensburg
 thumbnail: erika_matrinus_2.jpg

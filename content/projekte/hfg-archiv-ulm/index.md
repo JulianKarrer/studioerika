@@ -1,15 +1,16 @@
 ---
-title: HfG-Archiv Ulm
+backend-title: HfG-Archiv Ulm Website
+title: hfgulmarchiv.de
 header: Ein Archiv vom Archiv
 grafikund: Archivierung
 order: "20"
 category: Online
 client: HfG-Archiv Ulm, Museum Ulm
 thumbnail: erika_hfgulm_titelbild_1.jpg
-thumbhovercolour: "#f5f4f0"
+thumbhovercolour: "#141414"
 bigthumbnail: false
 werwaswieso: Das Archiv der HfG Ulm widmet sich mit der Ausstellung
-  „Ausstellungsfieber“ erstmals der Ausstellungstätigkeit der HFG Ulm und ihrer
+  »Ausstellungsfieber« erstmals der Ausstellungstätigkeit der HfG Ulm und ihrer
   Studierenden – und schließt damit ein gefördertes vierjähriges
   Forschungsprojekt ab. Die erarbeiteten Inhalte der Ausstellung sollen online
   zugänglich gemacht werden.

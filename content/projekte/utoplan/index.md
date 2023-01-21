@@ -1,12 +1,13 @@
 ---
+backend-title: utoplan marke
 title: utoplan
 header: Zwischen den Hockern.
 grafikund: Sozial-Ökologisches
-order: "0"
+order: "120"
 category: Marke
 client: utoplan
 thumbnail: erika_utoplan_1_titel.jpg
-thumbhovercolour: "#f5f4f0"
+thumbhovercolour: "#141414"
 bigthumbnail: false
 werwaswieso: Kommunikation auf Augenhöhe durch alle Unternehmensebenen hinweg.
   Für die sozial ökologische Unternehmensberaterin Brit Doleschal ein Kern ihrer
@@ -47,4 +48,6 @@ content:
   - type: coverimageobject
     alttext: Bild
     coverimage: erika_utoplan_10.jpg
+  - type: mp4fileobject
+    mp4file: erika_utoplan_website_doku_2_klein.mp4
 ---

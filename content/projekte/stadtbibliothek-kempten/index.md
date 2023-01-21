@@ -1,8 +1,9 @@
 ---
+backend-title: Stadtbibliothek Kempten
 title: Stadtbibliothek Kempten
 header: "Ein Ort des Informierens "
 grafikund: Bibliothek
-order: "110"
+order: "510"
 category: Grafik
 client: Stadtbibliothek Kempten
 thumbnail: erika_stadtbibelothek_flyer_4.jpg
