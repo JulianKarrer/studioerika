@@ -76,6 +76,16 @@ exports.createPages = async ({ graphql, actions }) => {
                   publicURL
                 }
               }
+              video_video_1 {
+                mp4filevv1 {
+                  relativePath
+                }
+              }
+              video_video_2 {
+                mp4filevv2 {
+                  relativePath
+                }
+              }
             }
           }
           fields {

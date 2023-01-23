@@ -34,4 +34,9 @@ content:
       image-video-image: out.jpg
     image-video-mp4fileobject:
       image-video-mp4file: erika_babawebsite_6.mp4
+  - type: video-video
+    video-video-1:
+      mp4filevv1: erika_babawebsite_3.mp4
+    video-video-2:
+      mp4filevv2: erika_babawebsite_6.mp4
 ---

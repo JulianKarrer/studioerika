@@ -90,6 +90,34 @@ collections:
                     multiple: false
                   media_folder:
                     /static/cmsfiles
+          - label: "Video + Video"
+            name: "video-video"
+            widget: "object"
+            fields:
+            - label: 'video 1'
+              name: 'video-video-1'
+              widget: object
+              fields:
+              - label: "Video Datei (vorher komprimieren! mehr als 2MB ist schlecht)"
+                name: "mp4filevv1"
+                widget: "file"
+                media_library:
+                  config:
+                    multiple: false
+                  media_folder:
+                    /static/cmsfiles
+            - label: 'video 2'
+              name: 'video-video-2'
+              widget: object
+              fields:
+              - label: "Video Datei (vorher komprimieren! mehr als 2MB ist schlecht)"
+                name: "mp4filevv2"
+                widget: "file"
+                media_library:
+                  config:
+                    multiple: false
+                  media_folder:
+                    /static/cmsfiles
           - label: 'Bildschirmbreites Bild'
             name: 'coverimageobject'
             widget: object

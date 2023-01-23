@@ -164,7 +164,7 @@ const Grid = ({category, nodes, isMobile}) => {
   // when the sequence of big and small nodes is wrong, empty slots can appear in the grid.
   // these scenarios are checked for and avoided
   const isNodesOk = (ns)=>{
-    let smallSinceBig = 0
+    let smallSinceBig = 2
     // check if there are at least two small thumbnails between each big thumbnailed-node
     for(let i = 0; i<ns.length; i++){
       if (!ns[i].node.frontmatter.bigthumbnail){
@@ -189,13 +189,20 @@ const Grid = ({category, nodes, isMobile}) => {
     let maxShuffles = 10000;
     while(maxShuffles>0){
       const problem = isNodesOk(ns)
-      if (problem<0){setBetterNodes(ns); return}
+      if (problem<0){setBetterNodes(ns); console.log("ok"); return}
       maxShuffles--;
 
-      let other = problem===ns.length-1?0:problem+1
-      while(other<ns.length-1 && ns[other].node.frontmatter.bigthumbnail){other++}
+      // choose the next greater index of a small thumbnail to swap with the problematic one
+      let other = (problem+1)%ns.length
+      while (ns[other].node.frontmatter.bigthumbnail){
+        other = (other+1)%ns.length;
+        console.log(problem, other)
+      }
 
-      [ns[problem], ns[other]] = [ns[other], ns[problem]]
+      // swap the problematic and the 'other' element
+      let temp = ns[other]
+      ns[other] = ns[problem]
+      ns[problem] = temp
       
       // ns = ns.map(value => ({ value, sort: Math.random() }))
       // .sort((a, b) => a.sort - b.sort)

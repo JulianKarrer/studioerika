@@ -250,7 +250,7 @@ export default function Projekt(props){
                 <source src={n.mp4file} type={"video/mp4"}/>
               </video>
               )
-              } else if (n.type==="image-video"){
+            } else if (n.type==="image-video"){
               return(
                 <div style={{display: "flex", marginBottom: "20px", justifyContent: "space-between", 
                   flexDirection: n.image_video_left?"row":"row-reverse"
@@ -264,6 +264,17 @@ export default function Projekt(props){
                     <source src={"/"+n.image_video_mp4fileobject.image_video_mp4file.relativePath} type={"video/mp4"}/>
                   </video>
                 </div>
+              )
+            } else if (n.type==="video-video"){
+              return(
+              <div style={{display: "flex", marginBottom: "20px", justifyContent: "space-between" }}>
+                <video controls={false} muted loop playsInline autoPlay style={{width: "calc(50% - 10px)"}}>
+                  <source src={"/"+n.video_video_1.mp4filevv1.relativePath} type={"video/mp4"}/>
+                </video>
+                <video controls={false} muted loop playsInline autoPlay style={{width: "calc(50% - 10px)"}}>
+                  <source src={"/"+n.video_video_2.mp4filevv2.relativePath} type={"video/mp4"}/>
+                </video>
+              </div>
               )
             } else {
               return <></>
