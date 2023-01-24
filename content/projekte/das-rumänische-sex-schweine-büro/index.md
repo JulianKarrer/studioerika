@@ -41,10 +41,11 @@ content:
   - type: coverimageobject
     alttext: Bild
     coverimage: erika_kunstnacht_7.jpg
-  - type: mp4fileobject
-    mp4file: erika_kunstnacht_8_video.mp4
-  - type: mp4fileobject
-    mp4file: erika_kunstnacht_9_video.mp4
+  - type: video-video
+    video-video-1:
+      mp4filevv1: erika_kunstnacht_8_video.mp4
+    video-video-2:
+      mp4filevv2: erika_kunstnacht_9_video.mp4
   - type: coverimageobject
     alttext: Bild
     coverimage: erika_kunstnacht_10.jpg
