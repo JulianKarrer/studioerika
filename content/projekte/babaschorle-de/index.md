@@ -20,9 +20,7 @@ content:
   - type: mp4fileobject
     mp4file: erika_babawebsite_3.mp4
   - type: mp4fileobject
-    mp4file: erika_babawebsite_3.mp4
-  - type: mp4fileobject
-    mp4file: erika_babawebsite_3.mp4
+    mp4file: erika_babawebsite_4.mp4
   - type: mp4fileobject
     mp4file: erika_babawebsite_5.mp4
   - type: mp4fileobject
