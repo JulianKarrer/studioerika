@@ -8,7 +8,7 @@ grafikund: Rhythmus
 order: "390"
 category: Online
 client: Angelika Möbus
-thumbnail: erika_moebus_titelbild_1.jpg
+thumbnail: erika_moebus_titelbild_1_.jpg
 thumbhovercolour: "#141414"
 bigthumbnail: false
 werwaswieso: "Achtsamkeit, Ruhe und Erfahrung zeichnen die Hebamme Angelika
