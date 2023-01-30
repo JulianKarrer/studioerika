@@ -32,7 +32,7 @@ const roundButton = {
   left: "30%",
   bottom: "-80px",
   transform: "translate3d(-50%, -50%, 0px)",
-  border: "2px solid #f5f4f0",
+  border: "2px solid #000000",
   borderRadius: "50%",
   height: "80px",
   display: "flex",

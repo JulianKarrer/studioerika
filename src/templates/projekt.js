@@ -37,7 +37,8 @@ const headerStyle = {
   textTransform: "uppercase",
   fontSize: "10vmin",
   lineHeight: "1",
-  margin: 0
+  margin: 0,
+  marginTop: "5px"
 }
 
 const infoContainer = {
@@ -124,6 +125,7 @@ const GridTitleStyle = {
 }
 const GridEntryStyle = {
   position: "relative",
+  lineHeight: "1"
 }
 const TitlesContainerStyle = {
   display: "flex",
@@ -158,14 +160,17 @@ const GridElement = ({node, isMobile, slug}) => {
           }
         </Link>
       {isMobile&&
-        <span style={mobileGridSubtitleStyle}>{node.title}</span>
+        <>
+          <div style={{marginTop: "5px"}}></div>
+          <span style={mobileGridSubtitleStyle}>{node.title}</span>
+        </>
       }
       </div>}
   </>
 }
 
 export default function Projekt(props){
-  const {title, category, erikamacht, grafikund, header, werwaswieso, client, content} = props.pageContext;
+  const {title, category, erikamacht, grafikund, header, werwaswieso, client, content, slug} = props.pageContext;
   const [collapsed, setCollapsed] = useState(true);
   const [height, setHeight] = useState(0);
   const infoRef = useRef(null);
@@ -173,7 +178,7 @@ export default function Projekt(props){
   const recommended = props.data.allMarkdownRemark.edges;
   useEffect(()=>{
     if (infoRef && infoRef.current){
-      // console.log(content)
+      // console.log((slug.match(/\//g) || []).length >= 4?"../":"")
       setHeight(collapsed?0:infoRef.current.scrollHeight)
     }
   }, [collapsed])
@@ -212,9 +217,8 @@ export default function Projekt(props){
 
 
         {/* content */}
-        <div style={contentContainer}>
+        <div style={contentContainer}>  
           {content&&content.map((n,i)=>{
-            console.log(n)
             if (n.type==="coverimageobject") {
                 return (
                 <div style={{marginBottom: "20px"}} key={i}>
@@ -247,7 +251,7 @@ export default function Projekt(props){
             } else if (n.type==="mp4fileobject"){
               return(
               <video controls={false} muted loop playsInline autoPlay style={{width: "100%", marginBottom: "20px",}}>
-                <source src={n.mp4file} type={"video/mp4"}/>
+                <source src={((slug.match(/\//g) || []).length >= 4?"../":"") + n.mp4file} type={"video/mp4"}/>
               </video>
               )
             } else if (n.type==="image-video"){

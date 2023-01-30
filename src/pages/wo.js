@@ -4,6 +4,7 @@ import Slider from 'infinite-react-carousel';
 import Layout from '../components/layout';
 import { useState, useEffect } from 'react';
 import { GatsbySeo } from 'gatsby-plugin-next-seo';
+import { useIsMobile } from '../hooks/useMobile';
 
 const mainContainerStyle = {
   minHeight: "100vh",
@@ -90,6 +91,7 @@ const bothTextsContainer = {
 
 const Wo = () => {
   const [sliderVisible, setSliderVisible] = useState(false);
+  const isMobile = useIsMobile();
   useEffect(()=>{setSliderVisible(true)},[])
   return (<Layout title="Allgäu">
     <GatsbySeo
@@ -108,7 +110,7 @@ const Wo = () => {
           <a href="https://www.google.com/maps/place/Studio+Erika+%E2%80%93+Grafik+und+Unfug/@47.7250247,10.3180975,17.58z/data=!4m13!1m7!3m6!1s0x479c7911df652fd3:0xebe7db517241cd3d!2sMehlstra%C3%9Fe+1,+018953+Kempten+(Allg%C3%A4u)!3b1!8m2!3d47.7249499!4d10.3186744!3m4!1s0x479c7967c63fcd95:0x22f947ddc60c7484!8m2!3d47.7250321!4d10.3186925" style={linkStyle} target="_blank" rel="noopener noreferrer" >
             Mehlstraße 1
           </a> vorbei,<br/>
-          ruf uns an unter <a style={{...linkStyle}} href="tel:004983159188639"> 0831 591 886 39 </a> an<br/>
+          ruf uns unter {isMobile?<br/>:<></>} <a style={{...linkStyle}} href="tel:004983159188639"> 0831 591 886 39 </a> an<br/>
           oder schreibe uns eine <a style={linkStyle} href="mailto:hallo@studioerika.de">Mail</a>.</span>
         </div>
       </div>

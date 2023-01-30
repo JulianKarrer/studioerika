@@ -93,16 +93,21 @@ const GridTitleStyle = {
   width: "100%",
   textAlign: "center",
   wordWrap: "anywhere",
+  lineHeight: "1",
 }
 
 const GridEntryStyle = {
   position: "relative",
+  display: "flex",
+  flexDirection: "column",
 }
 
 const GridBigEntryStyle = {
   position: "relative",
   gridColumnStart: "2 span",
   gridRowStart: "2 span",
+  display: "flex",
+  flexDirection: "column",
 }
 
 const TitlesContainerStyle = {
@@ -124,24 +129,25 @@ const mobileSubtitleStyle = {
   fontSize: "30pt",
   fontFamily: "ZIGZAG, non-serif",
   color: "#f5f4f0",
-  marginBottom: "40px",
+  // marginBottom: "5px",
   top: "5px",
   position: "relative",
   wordWrap: "anywhere",
+  lineHeight: "1",
 }
 
 const GridElement = ({node, isMobile, slug}) => {
   const [hovered, setHovered] = useState(false)
   return <>
       {node.thumbnail&&<div style={{...(node.bigthumbnail?GridBigEntryStyle:GridEntryStyle), 
-        marginBottom:isMobile?"20px":"0",
+        marginBottom:isMobile?"20px":"0", width:isMobile?"100%":""
       }} 
         onPointerOver={()=>{setHovered(true)}}
         onPointerOut={()=>{setHovered(false)}}>
         <Link to={slug}>
           {!isMobile&&
             <div style={{...TitlesContainerStyle, opacity: hovered?1:0}}>
-              <span style={{...GridTitleStyle, color: node.thumbhovercolour}}>{node.title}</span>
+              <span style={{...GridTitleStyle, color: node.thumbhovercolour, whiteSpace: "pre-wrap"}}>{node.title}</span>
             </div>
           }
           {node.thumbnail.childImageSharp&&
@@ -152,7 +158,7 @@ const GridElement = ({node, isMobile, slug}) => {
           }
         </Link>
       {isMobile&&
-        <span style={mobileSubtitleStyle}>{node.title}</span>
+        <span style={{...mobileSubtitleStyle, whiteSpace: "pre-wrap"}}>{node.title}</span>
       }
       </div>}
   </>
@@ -183,20 +189,20 @@ const Grid = ({category, nodes, isMobile}) => {
   useEffect(()=>{
     let ns = Array.from(nodes.filter(
       node => node.node.frontmatter.category === category || category === "Alle"
-    ))
+    )).sort((a, b) =>parseInt(a.node.frontmatter.order) - parseInt(b.node.frontmatter.order) )
     
     // upper bound on shuffle operations to avoid locking in impossible configurations
-    let maxShuffles = 10000;
+    let maxShuffles = 1000;
     while(maxShuffles>0){
       const problem = isNodesOk(ns)
-      if (problem<0){setBetterNodes(ns); console.log("ok"); return}
+      if (problem<0){setBetterNodes(ns); return}
       maxShuffles--;
 
       // choose the next greater index of a small thumbnail to swap with the problematic one
       let other = (problem+1)%ns.length
       while (ns[other].node.frontmatter.bigthumbnail){
         other = (other+1)%ns.length;
-        console.log(problem, other)
+        // console.log(problem, other)
       }
 
       // swap the problematic and the 'other' element
@@ -245,11 +251,16 @@ query WasQuery {
           slug
         }
         frontmatter {
+          order
           category
           title
           thumbnail {
             childImageSharp {
-              gatsbyImageData(placeholder: BLURRED)
+              gatsbyImageData(
+                placeholder: BLURRED
+                quality: 75
+                webpOptions: {quality: 75}
+              )
             }
             publicURL
           }

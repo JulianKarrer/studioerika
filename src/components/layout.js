@@ -5,8 +5,8 @@ import { useIdle, useInterval } from "react-use"
 import "./layout.css"
 import useWindowSize from "../hooks/useWindowSize"
 
-const IDLE_TIME_TO_SCREENSAVER = 10e3;
-const SCREENSAVER_TIME_PER_BUBBLE = 1e3;
+const IDLE_TIME_TO_SCREENSAVER = 25e3;
+const SCREENSAVER_TIME_PER_BUBBLE = 3e3;
 
 const Canvas = ({positions,dimensions, ...props}) => {
   const ref = useRef(null)

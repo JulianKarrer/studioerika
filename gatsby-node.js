@@ -34,19 +34,34 @@ exports.createPages = async ({ graphql, actions }) => {
               type
               coverimage {
                 childImageSharp {
-                  gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
+                  gatsbyImageData(
+                    placeholder: BLURRED
+                    layout: FULL_WIDTH
+                    quality: 75
+                    webpOptions: {quality: 75}
+                  )
                 }
                 publicURL
               }
               doubleimage1 {
                 childrenImageSharp {
-                  gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
+                  gatsbyImageData(
+                    placeholder: BLURRED
+                    layout: FULL_WIDTH
+                    quality: 75
+                    webpOptions: {quality: 75}
+                  )
                 }
                 publicURL
               }
               doubleimage2 {
                 childrenImageSharp {
-                  gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
+                  gatsbyImageData(
+                    placeholder: BLURRED
+                    layout: FULL_WIDTH
+                    quality: 75
+                    webpOptions: {quality: 75}
+                  )
                 }
                 publicURL
               }
@@ -57,7 +72,12 @@ exports.createPages = async ({ graphql, actions }) => {
               mp4file
               portraitimage {
                 childImageSharp {
-                  gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
+                  gatsbyImageData(
+                    placeholder: BLURRED
+                    layout: FULL_WIDTH
+                    quality: 75
+                    webpOptions: {quality: 75}
+                  )
                 }
                 publicURL
               }
@@ -71,7 +91,12 @@ exports.createPages = async ({ graphql, actions }) => {
                 alttext
                 image_video_image {
                   childImageSharp {
-                    gatsbyImageData(placeholder: BLURRED, layout: CONSTRAINED)
+                    gatsbyImageData(
+                      placeholder: BLURRED
+                      layout: FULL_WIDTH
+                      quality: 75
+                      webpOptions: {quality: 75}
+                    )
                   }
                   publicURL
                 }
@@ -109,6 +134,7 @@ exports.createPages = async ({ graphql, actions }) => {
         werwaswieso: edge.node.frontmatter.werwaswieso,
         client: edge.node.frontmatter.client,
         content: edge.node.frontmatter.content,
+        slug: edge.node.fields.slug,
       },
     })
   })
