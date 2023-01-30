@@ -29,11 +29,13 @@ content:
   - type: coverimageobject
     alttext: Bild
     coverimage: erika_nsdoku_tobeseen_3.jpg
-  - type: mp4fileobject
-    mp4file: sequenz-01_5_1_klein.mp4
-  - type: portraitimageobject
-    alttext: Bild
-    portraitimage: erika_nsdoku_tobeseen_5.jpg
+  - type: image-video
+    image-video-left: false
+    image-video-imageobject:
+      alttext: Bild
+      image-video-image: erika_nsdoku_tobeseen_5.jpg
+    image-video-mp4fileobject:
+      image-video-mp4file: sequenz-01_5_1_klein.mp4
   - type: coverimageobject
     alttext: Bild
     coverimage: erika_nsdoku_tobeseen_6.jpg

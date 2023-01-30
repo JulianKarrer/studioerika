@@ -29,6 +29,9 @@ content:
   - type: coverimageobject
     alttext: Bild
     coverimage: erika_karabrew_baba_3.jpg
+  - type: coverimageobject
+    alttext: Bild
+    coverimage: img_1455.jpg
   - type: doubleimageobject
     alttext1: Bild
     alttext2: Bild

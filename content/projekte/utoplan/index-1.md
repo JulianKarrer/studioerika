@@ -23,11 +23,11 @@ content:
     alttext: Bild
     coverimage: erika_utoplan_titelbild_1.jpg
   - type: mp4fileobject
-    mp4file: erika_utoplan_website_doku_1_klein.mp4
+    mp4file: erika-utoplan-website-doku-1-klein.mp4
   - type: mp4fileobject
-    mp4file: erika_utoplan_website_doku_2_klein.mp4
+    mp4file: erika-utoplan-website-doku-2-klein.mp4
   - type: mp4fileobject
-    mp4file: erika_utoplan_website_doku_3_klein.mp4
+    mp4file: erika-utoplan-website-doku-3-klein.mp4
   - type: mp4fileobject
-    mp4file: erika_utoplan_website_doku_4_klein.mp4
+    mp4file: erika-utoplan-website-doku-4-klein.mp4
 ---
