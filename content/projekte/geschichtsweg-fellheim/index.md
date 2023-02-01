@@ -6,8 +6,8 @@ grafikund: Geschichte
 order: "110"
 category: Raum
 client: Gemeinde Fellheim
-thumbnail: erika_fellheim_geschichtsweg_1_titel.jpg
-thumbhovercolour: "#f5f4f0"
+thumbnail: erika_fellheim_geschichtsweg_3.jpg
+thumbhovercolour: "#141414"
 bigthumbnail: false
 werwaswieso: >
   Fellheim war von 1670 bis 1942 eine jüdische Gemeinde im heutigen Landkreis
