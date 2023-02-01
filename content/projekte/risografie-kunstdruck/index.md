@@ -5,7 +5,7 @@ header: "Ein Wimmelbild zur Kemptener Festwoche "
 grafikund: Festwoche
 order: "480"
 category: Spiel
-thumbnail: erika_festwoche_risografie_1_titel.jpg
+thumbnail: erika_festwoche_risografie_2.jpg
 thumbhovercolour: "#f5f4f0"
 bigthumbnail: false
 erikamacht: Eine wimmelnde Illustration von 75 verschiedenen Personen zum 75.
