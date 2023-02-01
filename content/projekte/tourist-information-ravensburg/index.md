@@ -6,7 +6,7 @@ grafikund: Turm und Spiel
 order: "360"
 category: Raum
 client: "Stadt Ravensburg "
-thumbnail: erika_stadtravensburg_touristeninfomation_1_titel.jpg
+thumbnail: erika_stadtravensburg_touristeninfomation_6.jpg
 thumbhovercolour: "#f5f4f0"
 bigthumbnail: false
 werwaswieso: "Türme und Spielen sind zwei zentrale Charakteristika, die
