@@ -7,7 +7,7 @@ order: "440"
 category: Online
 client: EGS Steuerbüro Götz & Schafroth
 thumbnail: erika_egs_titelbild_neu.jpg
-thumbhovercolour: "#141414"
+thumbhovercolour: "#f5f4f0"
 bigthumbnail: false
 werwaswieso: "Die im Schwarzwald liegende Steuerkanzlei EGS betreut kompetent
   und zuverlässig Kund*innen aus ganz Deutschland. Im Zuge des neuen
