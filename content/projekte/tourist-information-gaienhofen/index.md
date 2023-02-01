@@ -6,7 +6,7 @@ grafikund: Insel
 order: "160"
 category: Raum
 client: Tourist Information Gaienhofen
-thumbnail: erika_tigaienhofen_1_titel.jpg
+thumbnail: erika_tigaienhofen_5.jpg
 thumbhovercolour: "#141414"
 bigthumbnail: false
 werwaswieso: Gaienhofen liegt auf der Halbinsel Höri am Bodensee und ist ein
