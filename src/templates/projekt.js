@@ -170,7 +170,7 @@ const GridElement = ({node, isMobile, slug}) => {
 }
 
 export default function Projekt(props){
-  const {title, category, erikamacht, grafikund, header, werwaswieso, client, content, slug} = props.pageContext;
+  const {title, category, erikamacht, grafikund, header, werwaswieso, client, content} = props.pageContext;
   const [collapsed, setCollapsed] = useState(true);
   const [height, setHeight] = useState(0);
   const infoRef = useRef(null);

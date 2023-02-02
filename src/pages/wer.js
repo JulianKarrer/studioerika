@@ -129,10 +129,10 @@ const PortraitContainer = ({children, isMobile}) => {
     </div>}
     {!isMobile&&
       <div style={{marginBottom: "50px", position: "relative", width: "100vw", left: "-20px"}}>
-        <div style={{...roundButton, top:"50%", left: "50px"}} 
-          onClick={()=>{if(sliderRef&&sliderRef.current){sliderRef.current.slickPrev()}}}>←</div>
-        <div style={{...roundButton, top:"50%", right: "-20px"}} 
-          onClick={()=>{if(sliderRef&&sliderRef.current){sliderRef.current.slickNext()}}}>→</div>
+        <button style={{...roundButton, top:"50%", left: "50px"}} 
+          onClick={()=>{if(sliderRef&&sliderRef.current){sliderRef.current.slickPrev()}}}>←</button>
+        <button style={{...roundButton, top:"50%", right: "-20px"}} 
+          onClick={()=>{if(sliderRef&&sliderRef.current){sliderRef.current.slickNext()}}}>→</button>
         {sliderVisible&& <Slider {...sliderSettings} style={{width:"100vw"}} ref={sliderRef}>
           {children}
         </Slider>}

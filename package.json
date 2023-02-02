@@ -24,6 +24,7 @@
     "gatsby-plugin-netlify": "^5.1.0",
     "gatsby-plugin-netlify-cms": "^7.4.0",
     "gatsby-plugin-next-seo": "^1.10.0",
+    "gatsby-plugin-offline": "^6.5.0",
     "gatsby-plugin-sharp": "^5.4.0",
     "gatsby-plugin-sitemap": "^6.4.0",
     "gatsby-plugin-transition-link": "^1.20.5",
