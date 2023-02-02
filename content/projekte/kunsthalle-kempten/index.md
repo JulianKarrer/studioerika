@@ -25,7 +25,7 @@ content:
     alttext: Bild
     coverimage: erika_kulturamtkempten_kunsthalle_1_titel.jpg
   - type: mp4fileobject
-    mp4file: 221216_kulturamtkempten_kunsthalle_videoplakate.mp4
+    mp4file: 221216kulturamtkemptenkunsthalleplakatanimantion.mp4
   - type: doubleimageobject
     alttext1: Bild
     alttext2: Bild

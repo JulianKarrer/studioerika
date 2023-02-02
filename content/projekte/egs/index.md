@@ -1,13 +1,13 @@
 ---
 backend-title: EGS.de
-title: EGS.de
+title: egs-wist.de
 header: Informationen im Quadrat
 grafikund: Blau
 order: "440"
 category: Online
 client: EGS Steuerbüro Götz & Schafroth
-thumbnail: erika_egs_titelbild_1.jpg
-thumbhovercolour: "#141414"
+thumbnail: erika_egs_titelbild_neu.jpg
+thumbhovercolour: "#f5f4f0"
 bigthumbnail: false
 werwaswieso: "Die im Schwarzwald liegende Steuerkanzlei EGS betreut kompetent
   und zuverlässig Kund*innen aus ganz Deutschland. Im Zuge des neuen

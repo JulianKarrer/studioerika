@@ -19,7 +19,5 @@ erikamacht: Eine »digitale Visitenkarte« mit spielerisch-interaktiven
   hinzugefügt werden.
 content:
   - type: mp4fileobject
-    mp4file: erika_gramm_website_2.mp4
-  - type: mp4fileobject
-    mp4file: erika_gramm_website_3.mp4
+    mp4file: 230202_gramm_webistedoku_1.mp4
 ---

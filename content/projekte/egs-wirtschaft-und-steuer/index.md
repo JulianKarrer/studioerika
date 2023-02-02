@@ -21,7 +21,7 @@ erikamacht: Ein Erscheinungsbild, schlicht und zeitgemäß. Das blaue Quadrat
   hohen Wiedererkenungswert.
 content:
   - type: mp4fileobject
-    mp4file: briefbogenfürweb.mp4
+    mp4file: briefbogenfuerweb.mp4
   - type: coverimageobject
     alttext: Bild
     coverimage: erika_egs_2.jpg
