@@ -178,7 +178,6 @@ export default function Projekt(props){
   const recommended = props.data.allMarkdownRemark.edges;
   useEffect(()=>{
     if (infoRef && infoRef.current){
-      // console.log((slug.match(/\//g) || []).length >= 4?"../":"")
       setHeight(collapsed?0:infoRef.current.scrollHeight)
     }
   }, [collapsed])
@@ -250,15 +249,15 @@ export default function Projekt(props){
               </div>)
             } else if (n.type==="mp4fileobject"){
               return(
-              <video controls={false} muted loop playsInline autoPlay style={{width: "100%", marginBottom: "20px",}}>
-                <source src={((slug.match(/\//g) || []).length >= 4?"../":"") + n.mp4file} type={"video/mp4"}/>
+              <video controls={false} muted loop playsInline autoPlay style={{width: "100%", marginBottom: "20px",}} key={i}>
+                <source src={"/" + n.mp4file.relativePath} type={"video/mp4"}/>
               </video>
               )
             } else if (n.type==="image-video"){
               return(
                 <div style={{display: "flex", marginBottom: "20px", justifyContent: "space-between", 
                   flexDirection: n.image_video_left?"row":"row-reverse"
-                }}>
+                }} key={i}>
                   <Image 
                     image={n.image_video_imageobject.image_video_image.childImageSharp} 
                     alt={n.alttext1} 
@@ -271,7 +270,7 @@ export default function Projekt(props){
               )
             } else if (n.type==="video-video"){
               return(
-              <div style={{display: "flex", marginBottom: "20px", justifyContent: "space-between" }}>
+              <div style={{display: "flex", marginBottom: "20px", justifyContent: "space-between" }} key={i}>
                 <video controls={false} muted loop playsInline autoPlay style={{width: "calc(50% - 10px)"}}>
                   <source src={"/"+n.video_video_1.mp4filevv1.relativePath} type={"video/mp4"}/>
                 </video>
