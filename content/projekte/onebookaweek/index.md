@@ -35,4 +35,20 @@ content:
     alttext2: Bild
     doubleimage1: erika_onebookaweek_5.jpg
     doubleimage2: erika_onebookaweek_6.jpg
+  - type: coverimageobject
+    alttext: Bild
+    coverimage: erika_onebookaweek_7.jpg
+  - type: doubleimageobject
+    alttext1: Bild
+    alttext2: Bild
+    doubleimage1: erika_onebookaweek_8.jpg
+    doubleimage2: erika_onebookaweek_9.jpg
+  - type: doubleimageobject
+    alttext1: Bild
+    alttext2: Bild
+    doubleimage1: erika_onebookaweek_10.jpg
+    doubleimage2: erika_onebookaweek_11.png
+  - type: coverimageobject
+    alttext: Bild
+    coverimage: erika_onebookaweek_12.jpg
 ---
