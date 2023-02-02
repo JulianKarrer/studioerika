@@ -9,6 +9,7 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import { GatsbySeo } from 'gatsby-plugin-next-seo';
 import { Fade } from 'react-reveal';
+import { useRef } from 'react';
 
 const teamImgStyle = {
   left: "calc(50vw - 20px)",
@@ -75,6 +76,24 @@ const infoContainer = {
   letterSpacing: "1px",
 }
 
+const roundButton = {
+  position:"absolute",
+  color: "#f5f4f0",
+  background: "#141414",
+  zIndex: "2",
+  transform: "translate3d(-50%, -50%, 0px)",
+  border: "2px solid #f5f4f0",
+  borderRadius: "50%",
+  height: "80px",
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  width: "80px",
+  cursor: "url('/maus.cur') 12 12, auto",
+  fontFamily: "SuisseIntlBook, Sans-serif",
+  userSelect: "none",
+}
+
 const Portrait = ({name, email, imagedata, description, isMobile}) => {
   const image = getImage(imagedata)
   return(
@@ -91,6 +110,7 @@ const PortraitContainer = ({children, isMobile}) => {
   let size = useWindowSize()
   const [sliderVisible, setSliderVisible] = useState(false);
   useEffect(()=>{setSliderVisible(true)},[])
+  const sliderRef = useRef(null)
   const sliderSettings = {
     arrows: false,
     arrowsBlock: false,
@@ -109,7 +129,11 @@ const PortraitContainer = ({children, isMobile}) => {
     </div>}
     {!isMobile&&
       <div style={{marginBottom: "50px", position: "relative", width: "100vw", left: "-20px"}}>
-        {sliderVisible&& <Slider {...sliderSettings} style={{width:"100vw"}}>
+        <div style={{...roundButton, top:"50%", left: "50px"}} 
+          onClick={()=>{if(sliderRef&&sliderRef.current){sliderRef.current.slickPrev()}}}>←</div>
+        <div style={{...roundButton, top:"50%", right: "-20px"}} 
+          onClick={()=>{if(sliderRef&&sliderRef.current){sliderRef.current.slickNext()}}}>→</div>
+        {sliderVisible&& <Slider {...sliderSettings} style={{width:"100vw"}} ref={sliderRef}>
           {children}
         </Slider>}
       </div>
