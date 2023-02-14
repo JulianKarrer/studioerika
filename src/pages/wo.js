@@ -19,9 +19,9 @@ const mainContainerStyle = {
 const innerContainer = {
   position: "relative",
   maxWidth: "100%",
-  maxHeight: "70vh",
   width: "min(calc(100vw - 40px), calc(70vh * 1.4))",
   margin: "20px",
+  marginBottom: "calc(45vh - min(calc(100vw - 40px), calc(70vh * 1.4)) * .5625 * 0.5)",
 }
 
 const containedObject = {

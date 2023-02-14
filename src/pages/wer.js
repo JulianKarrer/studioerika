@@ -79,10 +79,10 @@ const infoContainer = {
 const roundButton = {
   position:"absolute",
   color: "#f5f4f0",
-  background: "#141414",
+  background: "#000000",
   zIndex: "2",
   transform: "translate3d(-50%, -50%, 0px)",
-  border: "2px solid #f5f4f0",
+  border: "0px solid #f5f4f0",
   borderRadius: "50%",
   height: "80px",
   display: "flex",

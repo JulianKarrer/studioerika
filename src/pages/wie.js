@@ -56,7 +56,7 @@ const Wie = ()=>{
       <div style={innerContainer}>
         <button 
           onClick={() => setMuted(!muted)} 
-            style={{...roundButton, color:muted?"#141414":"#f5f4f0", background:muted?"#f5f4f0":"#141414"}}>
+            style={{...roundButton, color:muted?"#000000":"#f5f4f0", background:muted?"#f5f4f0":"#000000"}}>
           {muted?"Ton an":"Ton aus"}
         </button>
 
