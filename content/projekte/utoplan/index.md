@@ -1,7 +1,7 @@
 ---
 backend-title: Utoplan Marke
 title: utoplan
-header: "Von Utopie zum Plan. "
+header: "Von der Utopie zum Plan. "
 grafikund: Sozial-Ökologisches
 order: "79"
 category: Marke
