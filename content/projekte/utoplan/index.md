@@ -7,7 +7,7 @@ order: "79"
 category: Marke
 client: Brit Doleschal
 thumbnail: erika_utoplan_1_titel.jpg
-thumbhovercolour: "#f5f4f0"
+thumbhovercolour: "#141414"
 bigthumbnail: false
 werwaswieso: >
   Kommunikation auf Augenhöhe durch alle Unternehmensebenen hinweg. Für die
