@@ -40,4 +40,7 @@ content:
   - type: coverimageobject
     alttext: Bild
     coverimage: img_8297_web.png
+  - type: coverimageobject
+    alttext: Bild
+    coverimage: kuko_bildbearbeitung_2_web.png
 ---
