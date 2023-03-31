@@ -24,4 +24,9 @@ content:
   - type: coverimageobject
     alttext: Bild
     coverimage: img_8312_web.png
+  - type: doubleimageobject
+    alttext1: Bild
+    alttext2: Bild
+    doubleimage1: img_8275_web.png
+    doubleimage2: kuko_bildbearbeitung_1_web.png
 ---
