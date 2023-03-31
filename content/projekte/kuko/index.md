@@ -20,4 +20,8 @@ erikamacht: >-
 
 
   Besonderheit: Das gesamte Heft sowie die einzelnen Beiträge sind mit der Lesezeit versehen. Der Wettkampf um die beste Zeit macht also auch vor den Leser*innen nicht halt.
+content:
+  - type: coverimageobject
+    alttext: Bild
+    coverimage: img_8312_web.png
 ---
