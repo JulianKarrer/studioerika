@@ -37,6 +37,11 @@ content:
     alttext2: Bild
     doubleimage1: kuko_bildbearbeitung_8_web.png
     doubleimage2: kuko_bildbearbeitung_9_web.png
+  - type: doubleimageobject
+    alttext1: Bild
+    alttext2: Bild
+    doubleimage1: kuko_bildbearbeitung_6_web.png
+    doubleimage2: kuko_bildbearbeitung_3_web.png
   - type: coverimageobject
     alttext: Bild
     coverimage: img_8297_web.png
