@@ -1,5 +1,5 @@
 ---
-title: Lisa Bartels
+title: Lisa Krause
 mitarbeiterdescription: " ist gelernte Kommunikationsdesignerin. Nach ihrem
   Studium konzentrierte sie sich im Schwerpunkt auf Kommunikation im Raum und
   arbeitete für renommierte Kunden aus Berliner Kultur, Wirtschaft und
