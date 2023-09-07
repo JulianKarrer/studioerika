@@ -28,14 +28,25 @@ content:
   - type: doubleimageobject
     alttext1: Bild
     alttext2: Bild
-    doubleimage1: vesper_17.jpg
-    doubleimage2: hirsche_7.jpg
+    doubleimage1: vesper_19.jpg
+    doubleimage2: vesper_26.jpg
   - type: portraitimageobject
     alttext: Bild
     portraitimage: vesper_18.jpg
   - type: doubleimageobject
     alttext1: Bild
     alttext2: Bild
-    doubleimage1: vesper_19.jpg
-    doubleimage2: vesper_26.jpg
+    doubleimage1: vesper_17.jpg
+    doubleimage2: hirsche_7.jpg
+  - type: portraitimageobject
+    alttext: Bild
+    portraitimage: vesper_14.jpg
+  - type: doubleimageobject
+    alttext1: Bild
+    alttext2: Bild
+    doubleimage1: vesper_11.jpg
+    doubleimage2: vesper_25.jpg
+  - type: portraitimageobject
+    alttext: Bild
+    portraitimage: vesper_38.jpg
 ---
