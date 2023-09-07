@@ -25,4 +25,12 @@ content:
   - type: coverimageobject
     alttext: Vesper Feinkostbar Außenschild
     coverimage: vesper_7.jpg
+  - type: doubleimageobject
+    alttext1: Bild
+    alttext2: Bild
+    doubleimage1: vesper_19.jpg
+    doubleimage2: vesper_26.jpg
+  - type: portraitimageobject
+    alttext: Bild
+    portraitimage: vesper_18.jpg
 ---
