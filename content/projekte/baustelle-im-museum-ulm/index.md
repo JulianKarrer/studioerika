@@ -49,4 +49,9 @@ content:
   - type: coverimageobject
     alttext: Bild
     coverimage: 20230729_154149.jpg
+  - type: doubleimageobject
+    alttext1: Bild
+    alttext2: Bild
+    doubleimage1: 20230729_133655.jpg
+    doubleimage2: 20230730_143209.jpg
 ---
