@@ -1,5 +1,5 @@
 ---
-backend-title: Vesper Feinkost Bar
+backend-title: Vesper Feinkostbar
 title: Vesper Feinkostbar
 header: Vespern in und mit Riedhirsch
 grafikund: Hirsche
@@ -28,25 +28,32 @@ content:
   - type: doubleimageobject
     alttext1: Bild
     alttext2: Bild
-    doubleimage1: vesper_19.jpg
-    doubleimage2: vesper_26.jpg
-  - type: portraitimageobject
+    doubleimage1: vesper_38.jpg
+    doubleimage2: 230907_vesper_hirsche_hochkant1.jpg
+  - type: coverimageobject
     alttext: Bild
-    portraitimage: vesper_18.jpg
+    coverimage: vesper_19.jpg
   - type: doubleimageobject
     alttext1: Bild
     alttext2: Bild
-    doubleimage1: vesper_17.jpg
-    doubleimage2: hirsche_7.jpg
-  - type: portraitimageobject
-    alttext: Bild
-    portraitimage: vesper_14.jpg
-  - type: doubleimageobject
-    alttext1: Bild
-    alttext2: Bild
-    doubleimage1: vesper_11.jpg
+    doubleimage1: vesper_23.jpg
     doubleimage2: vesper_25.jpg
-  - type: portraitimageobject
+  - type: doubleimageobject
+    alttext1: Bild
+    alttext2: Bild
+    doubleimage1: vesper_26.jpg
+    doubleimage2: vesper_22.jpg
+  - type: coverimageobject
     alttext: Bild
-    portraitimage: vesper_38.jpg
+    coverimage: vesper_11.jpg
+  - type: doubleimageobject
+    alttext1: Bild
+    alttext2: Bild
+    doubleimage1: vesper_16.jpg
+    doubleimage2: vesper_18.jpg
+  - type: doubleimageobject
+    alttext1: Bild
+    alttext2: Bild
+    doubleimage1: vesper_14.jpg
+    doubleimage2: 230907_vesper_hirsche_hochkant2.jpg
 ---
