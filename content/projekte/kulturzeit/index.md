@@ -21,4 +21,8 @@ erikamacht: Eine hochwertige Broschüre, die strukturiert informiert und Lust au
   gestaltete Illustrationen im unverkennbaren Stil der Marke zu finden. Diese
   bilden eine Klammer zu anderen Anwendungen, wie beispielsweise dem
   Kinderherbst.
+content:
+  - type: coverimageobject
+    alttext: Bild
+    coverimage: kulturzeit_titel_klein.jpg
 ---
