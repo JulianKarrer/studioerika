@@ -25,4 +25,14 @@ content:
   - type: coverimageobject
     alttext: Bild
     coverimage: kulturzeit_titel_klein.jpg
+  - type: doubleimageobject
+    alttext1: Bild
+    alttext2: Bild
+    doubleimage1: kulturzeit_topshot_5_klein.jpg
+    doubleimage2: kulturzeit_nahaufnahme3_klein.jpg
+  - type: doubleimageobject
+    alttext1: Bild
+    alttext2: Bild
+    doubleimage1: kulturzeit_topshot_1_klein.jpg
+    doubleimage2: kulturzeit_nahaufnahme1_klein.jpg
 ---
