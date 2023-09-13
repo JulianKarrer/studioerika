@@ -34,5 +34,13 @@ content:
     alttext1: Bild
     alttext2: Bild
     doubleimage1: kulturzeit_topshot_1_klein.jpg
-    doubleimage2: kulturzeit_nahaufnahme1_klein.jpg
+    doubleimage2: kulturzeit_nahaufnahme2_klein.jpg
+  - type: coverimageobject
+    alttext: Bild
+    coverimage: kulturzeit_nahaufnahme5_klein.jpg
+  - type: doubleimageobject
+    alttext1: Bild
+    alttext2: Bild
+    doubleimage1: kulturzeit_topshot_3_klein.jpg
+    doubleimage2: kulturzeit_nahaufnahme4_klein.jpg
 ---
