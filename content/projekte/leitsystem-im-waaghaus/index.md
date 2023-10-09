@@ -45,4 +45,12 @@ content:
     alttext2: Bild
     doubleimage1: auswahl_24.jpg
     doubleimage2: auswahl_31.jpg
+  - type: coverimageobject
+    alttext: Bild
+    coverimage: auswahl_25.jpg
+  - type: doubleimageobject
+    alttext1: Bild
+    alttext2: Bild
+    doubleimage1: auswahl_18.jpg
+    doubleimage2: auswahl_26.jpg
 ---
