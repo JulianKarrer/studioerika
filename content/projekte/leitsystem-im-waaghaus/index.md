@@ -7,7 +7,7 @@ order: "55"
 category: Raum
 client: Kulturamt Ravensburg
 thumbnail: auswahl_17.jpg
-thumbhovercolour: "#f5f4f0"
+thumbhovercolour: "#141414"
 bigthumbnail: false
 werwaswieso: Schon seit über 500 Jahren gehen Menschen im historischen Waaghaus
   in Ravensburg ein und aus. Zunächst wurde es als Kaufhaus mit Tuchsaal und
@@ -23,4 +23,10 @@ erikamacht: "Erika hat ein übersichtliches Leitsystem entwickelt, das die
   stimmiges Gesamtbild. Neben dem Leitsystem wurden Informationstafeln
   entwickelt, die über alle Etagen hinweg die Geschichte des Gebäudes erzählen.
   "
+content:
+  - type: doubleimageobject
+    alttext1: Bild
+    alttext2: Bild
+    doubleimage1: auswahl_1.jpg
+    doubleimage2: auswahl.jpg
 ---
