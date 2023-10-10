@@ -3,7 +3,7 @@ backend-title: Schwörsaal Leitsystem
 title: Leitsystem im Waaghaus
 header: Ein Leitsystem für das Waaghaus in Ravensburg
 grafikund: Leitungen
-order: "55"
+order: "355"
 category: Raum
 client: Kulturamt Ravensburg
 thumbnail: auswahl_17.jpg
