@@ -2,6 +2,7 @@
 # ⚪️ studioerika.de ⚫️
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/083113f4-a08d-49e9-8ae7-ae505b591363/deploy-status)](https://app.netlify.com/sites/cool-peony-f1ea0d/deploys)
+
 Offizielle Website für Studio Erika, ein detailverliebtes Designbüro in Kempten im Allgäu. 
 
 <p align="center">
