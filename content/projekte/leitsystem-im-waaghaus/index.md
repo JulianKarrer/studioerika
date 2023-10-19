@@ -4,7 +4,7 @@ title: Leitsystem im Waaghaus
 header: Ein Leitsystem für das Waaghaus in Ravensburg
 grafikund: Leitungen
 order: "355"
-category: Grafik
+category: Raum
 client: Kulturamt Ravensburg
 thumbnail: auswahl_17.jpg
 thumbhovercolour: "#141414"
