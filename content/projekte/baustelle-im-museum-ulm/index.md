@@ -4,7 +4,7 @@ title: Baustelle im Museum Ulm
 header: "Das Museum aus der Schubkarre "
 grafikund: Bauarbeiten
 order: "122"
-category: Grafik
+category: Raum
 thumbnail: 20230729_134854.jpg
 thumbhovercolour: "#f5f4f0"
 bigthumbnail: false
