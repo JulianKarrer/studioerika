@@ -150,7 +150,7 @@ const Wer = ({data}) => {
         description="Das Team von Studio Erika stellt sich vor."
       />
      <StaticImage
-      src="../images/erika_team.jpg"
+      src="../images/erika_team2.jpg"
       alt="Das Team von Studio Erika"
       layout="fixed"
       placeholder="BLURRED"
