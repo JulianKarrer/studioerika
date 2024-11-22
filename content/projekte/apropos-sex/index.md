@@ -1,7 +1,7 @@
 ---
 backend-title: Apropos Sex
 title: "Apropos Sex "
-header: "Apropos Sex  – Lass und reden! "
+header: "Apropos Sex  – Lass uns reden! "
 grafikund: "Sex im Museum "
 order: "9"
 category: Raum
