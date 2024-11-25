@@ -28,7 +28,7 @@ content:
     alttext: Bild
     coverimage: erika_hfgulm_titelbild_1.jpg
   - type: mp4fileobject
-    mp4file: erika_hfgulm_website_1.mp4
+    mp4file: erika_hfgulm_website_0.mp4
   - type: mp4fileobject
     mp4file: erika_hfgulm_website_2.mp4
   - type: mp4fileobject
