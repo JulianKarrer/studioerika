@@ -1,6 +1,6 @@
 ---
 backend-title: Große Gefühle
-title: Große Gefühle
+title: Grosse Gefühle
 header: "Große Gefühle – Mitmachausstellung für Kinder "
 grafikund: Freude
 order: "8"
