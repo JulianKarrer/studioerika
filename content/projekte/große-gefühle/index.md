@@ -1,5 +1,5 @@
 ---
-backend-title: Große Gefühle
+backend-title: Grosse Gefühle
 title: Grosse Gefühle
 header: "Große Gefühle – Mitmachausstellung für Kinder "
 grafikund: Freude
