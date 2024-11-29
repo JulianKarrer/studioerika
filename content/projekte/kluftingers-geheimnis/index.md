@@ -3,7 +3,7 @@ backend-title: "Kluftinger Ausstellung "
 title: Kluftingers Geheimnis
 header: Kluftingers Geheimnis
 grafikund: Krimirätsel
-order: "1345"
+order: "111"
 category: Raum
 client: "Stadtmuseum Memmingen "
 thumbnail: img_5880.jpg
