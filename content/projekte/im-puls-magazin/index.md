@@ -8,7 +8,7 @@ category: Grafik
 client: Berufsfachschule für Glas und Schmuck Kaufbeuren-Neugablonz
 thumbnail: erika_bfsschmuckschule_katalog_1_titel.jpg
 thumbhovercolour: "#f5f4f0"
-bigthumbnail: true
+bigthumbnail: false
 werwaswieso: Die Berufsfachschule für Glas und Schmuck in Kaufbeuren-Neugablonz
   wird 75 Jahre. Zum Jubiläum soll ein Magazin entstehen, das die Geschichte der
   Schule zeigt.
