@@ -25,4 +25,15 @@ content:
   - type: coverimageobject
     alttext: Bild
     coverimage: kep_01.jpg
+  - type: coverimageobject
+    alttext: Bild
+    coverimage: kep_02.jpg
+  - type: doubleimageobject
+    alttext1: Bild
+    alttext2: Bild
+    doubleimage1: kep_03.jpg
+    doubleimage2: kep_04.jpg
+  - type: coverimageobject
+    alttext: Bild
+    coverimage: kep_05.jpg
 ---
