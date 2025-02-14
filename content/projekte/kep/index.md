@@ -1,6 +1,6 @@
 ---
 backend-title: "KEP Ravensburg "
-title: KEP
+title: Kulturentwicklungsplan Ravensburg
 header: Kompass für die Kulturarbeit der Zukunft
 grafikund: Entwicklung
 order: "86"
@@ -28,12 +28,23 @@ content:
   - type: coverimageobject
     alttext: Bild
     coverimage: kep_02.jpg
+  - type: coverimageobject
+    alttext: Bild
+    coverimage: kep_03.jpg
   - type: doubleimageobject
     alttext1: Bild
     alttext2: Bild
-    doubleimage1: kep_03.jpg
-    doubleimage2: kep_04.jpg
+    doubleimage1: kep_04.jpg
+    doubleimage2: kep_05.jpg
   - type: coverimageobject
     alttext: Bild
-    coverimage: kep_05.jpg
+    coverimage: kep_titelbild.jpg
+  - type: doubleimageobject
+    alttext1: Bild
+    alttext2: Bild
+    doubleimage1: kep_08.jpg
+    doubleimage2: kep_09.jpg
+  - type: coverimageobject
+    alttext: Bild
+    coverimage: kep_10.jpg
 ---
