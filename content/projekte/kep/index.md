@@ -38,7 +38,7 @@ content:
     doubleimage2: kep_05.jpg
   - type: coverimageobject
     alttext: Bild
-    coverimage: kep_titelbild.jpg
+    coverimage: kep_07.jpg
   - type: doubleimageobject
     alttext1: Bild
     alttext2: Bild
