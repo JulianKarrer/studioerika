@@ -36,9 +36,11 @@ content:
   - type: coverimageobject
     alttext: Bild
     coverimage: img_4490.jpg
-  - type: doubleimageobject
-    alttext1: Bild
-    alttext2: Bild
-    doubleimage1: img_0211.jpg
-    doubleimage2: img_0050-2.jpg
+  - type: image-video
+    image-video-left: true
+    image-video-imageobject:
+      alttext: Bild
+      image-video-image: img_0211.jpg
+    image-video-mp4fileobject:
+      image-video-mp4file: img_0048-2_1gs.mp4
 ---
