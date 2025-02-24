@@ -6,8 +6,8 @@ grafikund: Kunstnächte
 order: "150"
 category: Grafik
 client: Kulturamt Kempten
-thumbnail: img_4490.jpg
-thumbhovercolour: "#f5f4f0"
+thumbnail: bildschirmfoto-2c025-02-24-um-11.49.48.png
+thumbhovercolour: "#1c1c1c"
 bigthumbnail: false
 werwaswieso: "Alle 2 Jahre lädt das Kulturamt Kempten zur KunstNacht ein. Über
   75 Kulturschaffende verteilen sich in jener Nacht in der Altstadt und stellen
