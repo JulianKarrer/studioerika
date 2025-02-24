@@ -6,7 +6,7 @@ grafikund: Kunstnächte
 order: "150"
 category: Grafik
 client: Kulturamt Kempten
-thumbnail: erika_kulturamtkempten_kunstnacht_title.jpg
+thumbnail: img_4490.jpg
 thumbhovercolour: "#f5f4f0"
 bigthumbnail: false
 werwaswieso: "Alle 2 Jahre lädt das Kulturamt Kempten zur KunstNacht ein. Über
