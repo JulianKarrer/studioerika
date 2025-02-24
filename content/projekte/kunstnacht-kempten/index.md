@@ -1,7 +1,7 @@
 ---
-backend-title: "Kulturamt Kempten: KunstNacht 22"
+backend-title: "Kulturamt Kempten: KunstNacht 24"
 title: KunstNacht Kempten
-header: KunstNacht 2022 in Kempten
+header: "Alle Augen auf die Kunst "
 grafikund: Kunstnächte
 order: "150"
 category: Grafik
@@ -10,40 +10,40 @@ thumbnail: erika_kulturamtkempten_kunstnacht_title.jpg
 thumbhovercolour: "#f5f4f0"
 bigthumbnail: false
 werwaswieso: "Alle 2 Jahre lädt das Kulturamt Kempten zur KunstNacht ein. Über
-  60 Kulturakteure verteilen sich in jener Nacht in der Altstadt und stellen
-  verschiedenste Arbeiten aus. Wir durften die Werbemittel und auch das
-  Auftreten für das am gleichen Tag stattfindende Junge Kunstfest gestalten. "
-erikamacht: Ein neues Erscheinungsbild für das »Junge Kunstfest« und eine
-  Adaption des KunstNacht-Erscheinungsbildes auf sämtlichen Medien samt
-  Außenkommunikation, Infostand und Katalog. Die von Lena Gröner gezeichneten
-  Illustrationen für das »Junge Kunstfest« bedienen sich dem Koffer voller
-  Erinnerungen – welches auch das Thema des Tages ist.
+  75 Kulturschaffende verteilen sich in jener Nacht in der Altstadt und stellen
+  verschiedenste Arbeiten aus. "
+erikamacht: >-
+  Erika gestaltete ein Erscheinungsbild das Blicke auf sich zog (und
+  zurückwarf). 
+
+  In einer partizipativen Street-Art-Aktion wurden die Wahrzeichen der Stadt zum Leben erweckt und die Kemptner*innen eingeladen, die Straßen mit (wiederablösbaren) Aufklebern zu »beäugen«. 
 content:
+  - type: coverimageobject
+    alttext: Bild
+    coverimage: img_4527.jpg
   - type: mp4fileobject
-    mp4file: img_6962.mp4
+    mp4file: unbenannt-1_conv.mp4
   - type: coverimageobject
     alttext: Bild
-    coverimage: erika_kulturamtkempten_kunstnacht_2.jpg
-  - type: coverimageobject
-    alttext: Bild
-    coverimage: erika_kulturamtkempten_kunstnacht_3.jpg
+    coverimage: img_4579.jpg
   - type: doubleimageobject
     alttext1: Bild
     alttext2: Bild
     doubleimage1: erika_kulturamtkempten_kunstnacht_4.jpg
     doubleimage2: erika_kulturamtkempten_kunstnacht_5.jpg
-  - type: coverimageobject
-    alttext: Bild
-    coverimage: erika_kulturamtkempten_kunstnacht_6.jpg
   - type: doubleimageobject
     alttext1: Bild
     alttext2: Bild
-    doubleimage1: erika_kulturamtkempten_kunstnacht_7.jpg
-    doubleimage2: erika_kulturamtkempten_kunstnacht_8.jpg
+    doubleimage1: img_4563.jpg
+    doubleimage2: img_4574.jpg
+  - type: mp4fileobject
+    mp4file: kuna_website.mp4
   - type: coverimageobject
     alttext: Bild
-    coverimage: erika_kulturamtkempten_kunstnacht_9.jpg
-  - type: coverimageobject
-    alttext: Bild
-    coverimage: erika_kulturamtkempten_kunstnacht_10.gif
+    coverimage: img_4490.jpg
+  - type: doubleimageobject
+    alttext1: Bild
+    alttext2: Bild
+    doubleimage1: img_0211.jpg
+    doubleimage2: img_0050-2.jpg
 ---
