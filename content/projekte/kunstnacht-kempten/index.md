@@ -29,13 +29,8 @@ content:
   - type: doubleimageobject
     alttext1: Bild
     alttext2: Bild
-    doubleimage1: erika_kulturamtkempten_kunstnacht_4.jpg
-    doubleimage2: erika_kulturamtkempten_kunstnacht_5.jpg
-  - type: doubleimageobject
-    alttext1: Bild
-    alttext2: Bild
     doubleimage1: img_4563.jpg
-    doubleimage2: img_4574.jpg
+    doubleimage2: erika_kulturamtkempten_kunstnacht_5.jpg
   - type: mp4fileobject
     mp4file: kuna_website.mp4
   - type: coverimageobject
