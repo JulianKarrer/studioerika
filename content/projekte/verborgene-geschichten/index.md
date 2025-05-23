@@ -3,7 +3,7 @@ backend-title: Verborgene Geschichten
 title: Verborgene Geschichten
 header: Verborgene Geschichten
 grafikund: Taschenlampen
-order: "31"
+order: "25"
 category: Raum
 client: "Stadtmuseum Memmingen "
 thumbnail: titelbild.jpg
