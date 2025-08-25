@@ -32,4 +32,26 @@ content:
     alttext2: Bild
     doubleimage1: priderevolt_14.jpg
     doubleimage2: priderevolt_3.jpg
+  - type: coverimageobject
+    alttext: Bild
+    coverimage: priderevolt_2.jpg
+  - type: doubleimageobject
+    alttext1: Bild
+    alttext2: Bild
+    doubleimage1: priderevolt_6.jpg
+    doubleimage2: priderevolt_11.jpg
+  - type: coverimageobject
+    alttext: Bild
+    coverimage: priderevolt_8.jpg
+  - type: coverimageobject
+    alttext: Bild
+    coverimage: priderevolt_15.jpg
+  - type: doubleimageobject
+    alttext1: Bild
+    alttext2: Bild
+    doubleimage1: priderevolt_4.jpg
+    doubleimage2: priderevolt_5.jpg
+  - type: coverimageobject
+    alttext: Bild
+    coverimage: priderevolt_flugblaetter.jpg
 ---
