@@ -24,4 +24,12 @@ content:
   - type: coverimageobject
     alttext: Bild
     coverimage: priderevolt_0.jpg
+  - type: coverimageobject
+    alttext: Bild
+    coverimage: priderevolt_1.jpg
+  - type: doubleimageobject
+    alttext1: Bild
+    alttext2: Bild
+    doubleimage1: priderevolt_14.jpg
+    doubleimage2: priderevolt_3.jpg
 ---
