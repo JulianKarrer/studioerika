@@ -3,7 +3,7 @@ backend-title: Fehlerfabrik
 title: Die Fehlerfabrik
 header: Wir produzieren die fabelhaftesten Fehler!
 grafikund: Murks
-order: "500"
+order: "7"
 category: Raum
 client: "Ludwigsburg Museum "
 thumbnail: fehlerfabrik_titelbild_1.jpg
