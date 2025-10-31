@@ -33,4 +33,12 @@ content:
       image-video-image: fehlerfabrik_studioerika_7_.jpg
     image-video-mp4fileobject:
       image-video-mp4file: fehlerfabrik_studioerika_2.mp4
+  - type: coverimageobject
+    alttext: Bild
+    coverimage: fehlerfabrik_studioerika_8.jpg
+  - type: doubleimageobject
+    alttext1: Bild
+    alttext2: Bild
+    doubleimage1: fehlerfabrik_studioerika_6.jpg
+    doubleimage2: fehlerfabrik_studioerika_10.jpg
 ---
