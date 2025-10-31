@@ -3,7 +3,7 @@ backend-title: Fehlerfabrik
 title: Fehlerfabrik
 header: Wir produzieren die fabelhaftesten Fehler!
 grafikund: Murks
-order: "100"
+order: "500"
 category: Raum
 client: "Ludwigsburg Museum "
 thumbnail: fehlerfabrik_titelbild_1.jpg
@@ -26,4 +26,11 @@ content:
   - type: coverimageobject
     alttext: Bild
     coverimage: fehlerfabrik_studioerika_1.jpg
+  - type: image-video
+    image-video-left: false
+    image-video-imageobject:
+      alttext: Bild
+      image-video-image: fehlerfabrik_studioerika_7_.jpg
+    image-video-mp4fileobject:
+      image-video-mp4file: fehlerfabrik_studioerika_2.mp4
 ---
