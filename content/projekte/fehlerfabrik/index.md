@@ -1,6 +1,6 @@
 ---
 backend-title: Fehlerfabrik
-title: Fehlerfabrik
+title: Die Fehlerfabrik
 header: Wir produzieren die fabelhaftesten Fehler!
 grafikund: Murks
 order: "500"
