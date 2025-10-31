@@ -3,7 +3,7 @@ backend-title: Grosse Gefühle
 title: Grosse Gefühle
 header: "Große Gefühle – Mitmachausstellung für Kinder "
 grafikund: Freude
-order: "8"
+order: "29"
 category: Raum
 client: "Ludwigsburg Museum "
 thumbnail: grossegefuehle_web_1.jpg
