@@ -8,7 +8,7 @@ category: Raum
 client: "Ludwigsburg Museum "
 thumbnail: fehlerfabrik_titelbild_1.jpg
 thumbhovercolour: "#f5f4f0"
-bigthumbnail: true
+bigthumbnail: false
 werwaswieso: Das Ludwigsburg Museum lädt Kinder in die Fehlerfabrik ein – eine
   Mitmachausstellung rund ums Ausprobieren, Verwerfen und Neudenken. Hier darf
   etwas schiefgehen! Denn genau da, wo Fehler passieren, entstehen oft die
@@ -41,4 +41,11 @@ content:
     alttext2: Bild
     doubleimage1: fehlerfabrik_studioerika_6.jpg
     doubleimage2: fehlerfabrik_studioerika_10.jpg
+  - type: image-video
+    image-video-left: true
+    image-video-imageobject:
+      alttext: Bild
+      image-video-image: mik_die-fehlerfabrik_foto-reiner-pfisterer_rpd_9498.jpg
+    image-video-mp4fileobject:
+      image-video-mp4file: fehlerfabrik_studioerika_23.mp4
 ---
