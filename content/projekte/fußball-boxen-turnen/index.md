@@ -6,7 +6,7 @@ grafikund: Sport
 order: "31"
 category: Raum
 client: Erinnerungsort Badehaus
-thumbnail: 00_titelbild_badehaus.jpg
+thumbnail: 12_badehaus.jpg
 thumbhovercolour: "#f5f4f0"
 bigthumbnail: false
 werwaswieso: Sport spielte nach dem Krieg eine wichtige Rolle für Gemeinschaft
