@@ -41,6 +41,11 @@ content:
     alttext2: Bild
     doubleimage1: fehlerfabrik_studioerika_6.jpg
     doubleimage2: fehlerfabrik_studioerika_10.jpg
+  - type: doubleimageobject
+    alttext1: Bild
+    alttext2: Bild
+    doubleimage1: 1.jpg
+    doubleimage2: 2.jpg
   - type: image-video
     image-video-left: true
     image-video-imageobject:
@@ -48,4 +53,29 @@ content:
       image-video-image: mik_die-fehlerfabrik_foto-reiner-pfisterer_rpd_9498.jpg
     image-video-mp4fileobject:
       image-video-mp4file: fehlerfabrik_studioerika_23.mp4
+  - type: coverimageobject
+    alttext: Bild
+    coverimage: 5.jpg
+  - type: coverimageobject
+    alttext: Bild
+    coverimage: 6.jpg
+  - type: image-video
+    image-video-left: true
+    image-video-imageobject:
+      alttext: Bild
+      image-video-image: 7.jpg
+    image-video-mp4fileobject:
+      image-video-mp4file: 8.mp4
+  - type: coverimageobject
+    alttext: Bild
+    coverimage: 9.jpg
+  - type: image-video
+    image-video-left: true
+    image-video-imageobject:
+      alttext: Bild
+      image-video-image: 10.jpg
+    image-video-mp4fileobject:
+      image-video-mp4file: 11.mp4
+  - type: mp4fileobject
+    mp4file: 12.mp4
 ---
