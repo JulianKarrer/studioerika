@@ -39,4 +39,9 @@ content:
     coverimage: cover_sticker.jpg
   - type: mp4fileobject
     mp4file: sticker_kl.mp4
+  - type: doubleimageobject
+    alttext1: Bild
+    alttext2: Bild
+    doubleimage1: work2.jpg
+    doubleimage2: gelbeseite.jpg
 ---
