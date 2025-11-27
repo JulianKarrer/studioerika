@@ -27,4 +27,11 @@ content:
   - type: coverimageobject
     alttext: Bild
     coverimage: cover.jpg
+  - type: image-video
+    image-video-left: true
+    image-video-imageobject:
+      alttext: Bild
+      image-video-image: work.jpg
+    image-video-mp4fileobject:
+      image-video-mp4file: fssj_website_mokup1_kl.mp4
 ---
