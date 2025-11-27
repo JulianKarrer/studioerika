@@ -44,7 +44,4 @@ content:
     alttext2: Bild
     doubleimage1: work2.jpg
     doubleimage2: gelbeseite.jpg
-  - type: portraitimageobject
-    alttext: Bild
-    portraitimage: inhaltsverzeichnis.jpg
 ---
