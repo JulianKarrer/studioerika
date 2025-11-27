@@ -34,4 +34,9 @@ content:
       image-video-image: work.jpg
     image-video-mp4fileobject:
       image-video-mp4file: fssj_website_mokup1_kl.mp4
+  - type: coverimageobject
+    alttext: Bild
+    coverimage: cover_sticker.jpg
+  - type: mp4fileobject
+    mp4file: sticker_kl.mp4
 ---
