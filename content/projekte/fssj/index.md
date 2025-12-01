@@ -1,7 +1,7 @@
 ---
 backend-title: FSSJ
 title: FSSJ
-header: Soziales Engagement mit Gestaltung die Freude macht
+header: "Soziales Engagement + Freude "
 grafikund: Soziales
 order: "92"
 category: Grafik
