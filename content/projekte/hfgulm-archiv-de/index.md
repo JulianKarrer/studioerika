@@ -6,7 +6,7 @@ title: |-
 header: Ein Archiv vom Archiv
 grafikund: Archivierung
 order: "20"
-category: Online
+category: Grafik
 client: HfG-Archiv Ulm, Museum Ulm
 thumbnail: erika_hfgulm_titelbild_1.jpg
 thumbhovercolour: "#141414"
