@@ -1,12 +1,12 @@
 ---
-backend-title: Ohlinger.at
+backend-title: Ohlinger
 title: |-
-  katharina
-  ohlinger.at
+  Hebamme Katharina
+  Ohlinger
 header: Doing more by doing less.
 grafikund: Neues Leben
 order: "170"
-category: Online
+category: Marke
 client: Katharina Ohlinger
 thumbnail: erika_ohlinger_titelbild_1.jpg
 thumbhovercolour: "#141414"
@@ -20,6 +20,12 @@ erikamacht: Eine Website, die Katharinas Philosophie und Inhalte gut
 content:
   - type: coverimageobject
     alttext: Bild
+    coverimage: erika_ohlinger_3.jpg
+  - type: coverimageobject
+    alttext: Bild
+    coverimage: erika_ohlinger_2.jpg
+  - type: coverimageobject
+    alttext: Bild
     coverimage: erika_ohlinger_titelbild_1.jpg
   - type: mp4fileobject
     mp4file: erika-ohlinger-website-1.mp4
@@ -30,4 +36,9 @@ content:
     coverimage: erika_ohlinger_website_3.gif
   - type: mp4fileobject
     mp4file: erika-ohlinger-website-4.mp4
+  - type: doubleimageobject
+    alttext1: Bild
+    alttext2: Bild
+    doubleimage1: free_dl_flyer_mockup_5.jpg
+    doubleimage2: erika_ohlinger_1_titel.gif
 ---
