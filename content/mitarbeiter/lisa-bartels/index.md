@@ -1,11 +1,11 @@
 ---
-title: Lisa Krause
-mitarbeiterdescription: " ist gelernte Kommunikationsdesignerin. Nach ihrem
-  Studium konzentrierte sie sich im Schwerpunkt auf Kommunikation im Raum und
-  arbeitete für renommierte Kunden aus Berliner Kultur, Wirtschaft und
-  Gesellschaft. Sie gibt Inhalten eine Form, stets strukturiert und mit
-  ganzheitlichem Blick. Aktuell ist Lisa in Elternzeit."
-mitarbeiteremail: ""
-mitarbeiterimage: 20221011-mitarbeiters_7_.jpg
-order: "5"
+title: Justine Wiedemann
+mitarbeiterdescription: absolvierte nach ihrer Ausbildung zur Mediengestalterin
+  ein Studium an der Hochschule für Gestaltung Schwäbisch Gmünd. Sie bringt eine
+  große Portion Begeisterungsfähigkeit und Sorgfalt mit – ebenso wie stets den
+  höchsten Anspruch an sich selbst. Durch ihr breites Interessensspektrum
+  entsteht Gestaltung, die ebenso präzise wie lebendig ist.
+mitarbeiteremail: jw@studioerika.de
+mitarbeiterimage: nj.jpg
+order: "2"
 ---
