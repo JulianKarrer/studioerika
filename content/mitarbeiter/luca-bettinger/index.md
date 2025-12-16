@@ -6,6 +6,6 @@ mitarbeiterdescription: "hat nach seinem Studium in Kommunikationsdesign direkt
   Luca schafft intelligente Konzepte und verbindet ein sicheres Auge für Grafik
   und Typografie mit exzellentem Handwerk. "
 mitarbeiteremail: lb@studioerika.de
-mitarbeiterimage: erika_luca.jpg
-order: "2"
+mitarbeiterimage: nl.jpg
+order: "3"
 ---
