@@ -5,6 +5,6 @@ mitarbeiterdescription: " ist Gründungsmitglied, HR-Manager*In und Head of
   darauf dass Freiheit und Experimente den Designprozess stetig begleiten. Zu
   Erikas Hauptaufgaben gehört die Social-Media-Betreuung und die Musikauswahl
   fürs Studio."
-mitarbeiterimage: erika_erika.jpg
+mitarbeiterimage: ne.jpg
 order: "4"
 ---
