@@ -4,7 +4,7 @@ title: gayze.de
 header: gayze - Auf den Spuren queeren Lebens.
 grafikund: Queeres Leben
 order: "100"
-category: Online
+category: Grafik
 client: Platform München, Forum Queeres Archiv München
 thumbnail: erika_gayze_titelbild_1.jpg
 thumbhovercolour: "#f5f4f0"
