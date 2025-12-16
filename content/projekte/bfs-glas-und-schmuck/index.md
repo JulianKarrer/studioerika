@@ -4,7 +4,7 @@ title: bfs-ngl.de
 header: Altes Handwerk, neue Gestaltung
 grafikund: Schmuck
 order: "450"
-category: Online
+category: Marke
 client: Staatliche Berufsfachschule Glas und Schmuck Kaufbeuren-Neugablonz
 thumbnail: erika_bfs_titelbild_1.jpg
 thumbhovercolour: "#f5f4f0"
