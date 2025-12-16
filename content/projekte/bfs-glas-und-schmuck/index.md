@@ -24,6 +24,11 @@ content:
   - type: coverimageobject
     alttext: Bild
     coverimage: bfs-6905.jpg
+  - type: doubleimageobject
+    alttext1: Bild
+    alttext2: Bild
+    doubleimage1: bfs-6836.jpg
+    doubleimage2: erika_bfsschmuckschule_katalog_1_titel.jpg
   - type: coverimageobject
     alttext: Bild
     coverimage: erika_bfs_titelbild_1.jpg
@@ -34,9 +39,4 @@ content:
     coverimage: erika_bfs_website_3.png
   - type: mp4fileobject
     mp4file: erika_bfs_website_4.mp4
-  - type: doubleimageobject
-    alttext1: Bild
-    alttext2: Bild
-    doubleimage1: bfs-6836.jpg
-    doubleimage2: erika_bfsschmuckschule_katalog_1_titel.jpg
 ---
