@@ -6,6 +6,6 @@ mitarbeiterdescription: " ist der Gründer des Studio Erika. Während und nach d
   verständlich. Dabei arbeitet er stets im Spannungsfeld zwischen Spaß und
   Ernst. Neben seiner Designtätigkeit unterrichtet er an der DHBW Ravensburg. "
 mitarbeiteremail: fs@studioerika.de
-mitarbeiterimage: erika_fabian.jpg
+mitarbeiterimage: nf.jpg
 order: "1"
 ---
