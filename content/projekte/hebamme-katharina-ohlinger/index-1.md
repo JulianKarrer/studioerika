@@ -12,11 +12,12 @@ thumbnail: erika_ohlinger_titelbild_1.jpg
 thumbhovercolour: "#141414"
 bigthumbnail: false
 werwaswieso: Katharina Ohlinger begleitet den Übergang zum Beginn eines neuen
-  Lebensabschnitts – als Hebamme. Neben ihrer Visitenkarte möchte sie auch ihr
-  Fachwissen online vermitteln.
-erikamacht: Eine Website, die Katharinas Philosophie und Inhalte gut
-  strukturiert und klar kommuniziert. Das schlichte Design gibt den
-  Leistungsinformationen genügend Raum, um leicht erfasst zu werden.
+  Lebensabschnitts – als Hebamme.
+erikamacht: >
+  Passend zur Philosophie von Katharina hat sie ein lebendiges, minimalistisches
+  Erscheinungsbild erhalten. Handgezeichnete Elemente, ein limitiertes
+  Farbspektrum und viel Liebe zum Detail prägen das Design. Harmonisch. Klar.
+  Warm.
 content:
   - type: coverimageobject
     alttext: Bild
