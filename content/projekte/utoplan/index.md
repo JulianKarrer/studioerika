@@ -49,4 +49,8 @@ content:
   - type: coverimageobject
     alttext: Bild
     coverimage: erika_utoplan_10.jpg
+  - type: mp4fileobject
+    mp4file: erika_utoplan_website_doku_1_klein.mp4
+  - type: mp4fileobject
+    mp4file: erika_utoplan_website_doku_2_klein.mp4
 ---
