@@ -1,12 +1,12 @@
 ---
-backend-title: BFS Website
-title: bfs-ngl.de
+backend-title: "BFS "
+title: Berufsfachschule Glas und Schmuck
 header: Altes Handwerk, neue Gestaltung
 grafikund: Schmuck
 order: "450"
 category: Marke
 client: Staatliche Berufsfachschule Glas und Schmuck Kaufbeuren-Neugablonz
-thumbnail: erika_bfs_titelbild_1.jpg
+thumbnail: bfs-6836.jpg
 thumbhovercolour: "#f5f4f0"
 bigthumbnail: true
 werwaswieso: Kaufbeuren-Neugablonz ist im Bereich Schmuck deutschandweit
@@ -14,11 +14,16 @@ werwaswieso: Kaufbeuren-Neugablonz ist im Bereich Schmuck deutschandweit
   Schmuck – Goldschmiede, Silberschmiede, Gravur und Glas-/Porzellanmalerei –
   sollen auf einer neuen Website der jungen, kreativen Zielgruppe präsentiert
   werden.
-erikamacht: Eine Website, deren Einstieg über eine visuell spannende
-  3D-Animation der Materialitäten gelingt. Die übersichtliche Struktur,
-  insbesondere im Bereich der Bewerbung, gibt interessierten Bewerber*innen
-  einen umfassenden Überblick über die Schule und ihre Ausbildung.
+erikamacht: >-
+  Das Erscheinungsbild wird durch das knallige Neon-Grün geprägt. Ein spannender
+  Schriftmix greift – ebenso wie der pädagogische Ansatz der Schule – klassische
+  Techniken auf und interpretiert sie neu und zeitgenössisch. 
+
+  Der Einstieg in die Website erfolgt über eine visuell eindrucksvolle 3D-Animation der verwendeten Materialitäten. Die klare, übersichtliche Struktur, insbesondere im Bereich der Bewerbung, bietet interessierten Bewerber*innen einen umfassenden Überblick über die Schule und ihre Ausbildung.
 content:
+  - type: coverimageobject
+    alttext: Bild
+    coverimage: bfs-6905.jpg
   - type: coverimageobject
     alttext: Bild
     coverimage: erika_bfs_titelbild_1.jpg
@@ -29,4 +34,9 @@ content:
     coverimage: erika_bfs_website_3.png
   - type: mp4fileobject
     mp4file: erika_bfs_website_4.mp4
+  - type: doubleimageobject
+    alttext1: Bild
+    alttext2: Bild
+    doubleimage1: bfs-6836.jpg
+    doubleimage2: erika_bfsschmuckschule_katalog_1_titel.jpg
 ---
