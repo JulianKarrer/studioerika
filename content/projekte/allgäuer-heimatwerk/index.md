@@ -5,6 +5,7 @@ header: Tradition weitergeben
 grafikund: Tradition
 order: "310"
 category: Marke
+category2: keine
 client: Allgäuer Heimatwerk
 thumbnail: vektor-smartobjekt.png
 thumbhovercolour: "#f5f4f0"

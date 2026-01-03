@@ -41,7 +41,8 @@ collections:
       - { label: "Headline für Unterseite", name: "header", widget: "text" }
       - { label: "Grafik und ...", name: "grafikund", widget: "string" }
       - { label: "Reihenfolge/Priorität (höher wird in Übersicht früher angezeigt)", name: "order", widget: "string", default: "0" }
-      - { label: "Kategorie", name: "category", widget: "select", multiple: false, options: ["Raum", "Grafik", "Marke", "Online", "Spiel"], default: ["Grafik"] }
+      - { label: "Kategorie", name: "category", widget: "select", multiple: false, options: ["Raum", "Grafik", "Marke", "Spiel", "Kids"], default: ["Grafik"] }
+      - { label: "Kategorie 2", name: "category2", widget: "select", multiple: false, options: ["keine", "Raum", "Grafik", "Marke", "Spiel", "Kids"], default: ["keine"] }
       - { label: "KundInnen", name: "client", widget: "string", required: false }
       - label: "Thumbnail"
         name: "thumbnail"

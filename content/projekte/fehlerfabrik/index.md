@@ -5,6 +5,7 @@ header: Wir produzieren die fabelhaftesten Fehler!
 grafikund: Murks
 order: "7"
 category: Raum
+category2: Kids
 client: "Ludwigsburg Museum "
 thumbnail: fehlerfabrik_titelbild_1.jpg
 thumbhovercolour: "#f5f4f0"

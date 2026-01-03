@@ -8,7 +8,7 @@ const mainContainerStyle = {
   background: "#141414",
   minHeight: "calc(100vh)",
   margin: "-20px",
-  marginBottom:"40px",
+  marginBottom: "40px",
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
@@ -27,7 +27,7 @@ const containedObject = {
 }
 
 const roundButton = {
-  position:"absolute",
+  position: "absolute",
   transition: "color 700ms ease-in-out 0s",
   left: "30%",
   bottom: "-80px",
@@ -44,24 +44,27 @@ const roundButton = {
   zIndex: 2,
 }
 
-const Wie = ()=>{
+const Wie = () => {
   const [muted, setMuted] = useState(true)
 
   return <Layout title="Prozess">
     <GatsbySeo
-        title="Wie?"
-        description="Unser kreativer Schaffensprozess visualisiert."
-      />
+      title="Wie?"
+      description="Unser kreativer Schaffensprozess visualisiert."
+      // do not index this page, it was removed from the menu:
+      nofollow
+      noindex
+    />
     <div style={mainContainerStyle}>
       <div style={innerContainer}>
-        <button 
-          onClick={() => setMuted(!muted)} 
-            style={{...roundButton, color:muted?"#000000":"#f5f4f0", background:muted?"#f5f4f0":"#000000"}}>
-          {muted?"Ton an":"Ton aus"}
+        <button
+          onClick={() => setMuted(!muted)}
+          style={{ ...roundButton, color: muted ? "#000000" : "#f5f4f0", background: muted ? "#f5f4f0" : "#000000" }}>
+          {muted ? "Ton an" : "Ton aus"}
         </button>
 
         <video controls={false} muted={muted} loop playsInline autoPlay style={containedObject}>
-          <source src={Wie600} type={"video/mp4"}/>
+          <source src={Wie600} type={"video/mp4"} />
         </video>
       </div>
     </div>

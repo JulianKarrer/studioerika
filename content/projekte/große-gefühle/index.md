@@ -5,6 +5,7 @@ header: "Große Gefühle – Mitmachausstellung für Kinder "
 grafikund: Freude
 order: "29"
 category: Raum
+category2: Kids
 client: "Ludwigsburg Museum "
 thumbnail: grossegefuehle_web_1.jpg
 thumbhovercolour: "#f5f4f0"

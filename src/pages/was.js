@@ -9,9 +9,9 @@ import { useIsMobile } from '../hooks/useMobile'
 import Fade from 'react-reveal/Fade';
 import { GatsbySeo } from 'gatsby-plugin-next-seo'
 import { useEffect } from 'react'
-import {useLocalStorage} from '../hooks/useLocalStorage'
+import { useLocalStorage } from '../hooks/useLocalStorage'
 
-const mainContainerStyle={
+const mainContainerStyle = {
   background: "#141414",
   minHeight: "70vh",
   margin: "-20px",
@@ -31,7 +31,7 @@ const selectionMenuContainer = {
 const selectionMenuItem = {
   textDecoration: "none",
   margin: "10px",
-  cursor: "url('/maus.cur') 12 12, auto", 
+  cursor: "url('/maus.cur') 12 12, auto",
   background: "none",
   border: "none",
   padding: "0",
@@ -43,7 +43,7 @@ const selectionMenuItem = {
 const selectionMenuMobileItem = {
   textDecoration: "none",
   margin: "5px",
-  cursor: "url('/maus.cur') 12 12, auto", 
+  cursor: "url('/maus.cur') 12 12, auto",
   background: "none",
   border: "none",
   padding: "0",
@@ -53,27 +53,27 @@ const selectionMenuMobileItem = {
   fontFamily: "SuisseWorks, serif",
 }
 
-const Selection = ({name, setter, selection, isMobile})=>{
+const Selection = ({ name, setter, selection, isMobile }) => {
   return <button
     style={{
-      ...(isMobile?selectionMenuMobileItem:selectionMenuItem),
-    }} 
+      ...(isMobile ? selectionMenuMobileItem : selectionMenuItem),
+    }}
     className={name === selection ? "underlined" : ""}
-    onClick={()=>{setter(name)}}>
-      <Fade cascade>{name}</Fade>
-    </button>
+    onClick={() => { setter(name) }}>
+    <Fade cascade>{name}</Fade>
+  </button>
 }
 
-const SelectionMenu = ({selectionSetter, selection, isMobile}) => {
+const SelectionMenu = ({ selectionSetter, selection, isMobile }) => {
   return <div style={selectionMenuContainer}>
-    {["Alle", "Raum", "Grafik", "Marke", "Online", "Spiel"].map((name,i) => {
-      return <Selection name={name} setter={selectionSetter} selection={selection} key={i+999} isMobile={isMobile}/>
+    {["Alle", "Raum", "Grafik", "Marke", "Spiel", "Kids"].map((name, i) => {
+      return <Selection name={name} setter={selectionSetter} selection={selection} key={i + 999} isMobile={isMobile} />
     })}
   </div>
 }
 
 const GridContainerStyle = {
-  display:"grid",
+  display: "grid",
   gridTemplateColumns: "1fr 1fr 1fr",
   gridGap: "20px",
   marginBottom: "100px",
@@ -81,7 +81,7 @@ const GridContainerStyle = {
 
 const GridContainerMobileStyle = {
   marginBottom: "100px",
-  display:"flex",
+  display: "flex",
   flexWrap: "wrap",
   justifyContent: "space-between",
 }
@@ -114,9 +114,9 @@ const TitlesContainerStyle = {
   display: "flex",
   flexDirection: "column",
   position: "absolute",
-  top:"0",
-  left:"0",
-  width:"100%",
+  top: "0",
+  left: "0",
+  width: "100%",
   height: "100%",
   alignItems: "center",
   justifyContent: "center",
@@ -136,72 +136,75 @@ const mobileSubtitleStyle = {
   lineHeight: "1",
 }
 
-const GridElement = ({node, isMobile, slug}) => {
+const GridElement = ({ node, isMobile, slug }) => {
   const [hovered, setHovered] = useState(false)
   return <>
-      {node.thumbnail&&<div style={{...(node.bigthumbnail?GridBigEntryStyle:GridEntryStyle), 
-        marginBottom:isMobile?"20px":"0", width:isMobile?"100%":""
-      }} 
-        onPointerOver={()=>{setHovered(true)}}
-        onPointerOut={()=>{setHovered(false)}}>
-        <Link to={slug}>
-          {!isMobile&&
-            <div style={{...TitlesContainerStyle, opacity: hovered?1:0}}>
-              <span style={{...GridTitleStyle, color: node.thumbhovercolour, whiteSpace: "pre-wrap"}}>{node.title}</span>
-            </div>
-          }
-          {node.thumbnail.childImageSharp&&
-            <GatsbyImage image={getImage(node.thumbnail.childImageSharp)} alt={node.title} 
-              /*account for aspect ratio in big thumb*/ style={{paddingBottom: node.bigthumbnail?"9px":0}}/>
-          }{!node.thumbnail.childImageSharp&&
-            <img style={{width: "100%"}} src={node.thumbnail.publicURL} alt={node.title} />
-          }
-        </Link>
-      {isMobile&&
-        <span style={{...mobileSubtitleStyle, whiteSpace: "pre-wrap"}}>{node.title}</span>
+    {node.thumbnail && <div style={{
+      ...(node.bigthumbnail ? GridBigEntryStyle : GridEntryStyle),
+      marginBottom: isMobile ? "20px" : "0", width: isMobile ? "100%" : ""
+    }}
+      onPointerOver={() => { setHovered(true) }}
+      onPointerOut={() => { setHovered(false) }}>
+      <Link to={slug}>
+        {!isMobile &&
+          <div style={{ ...TitlesContainerStyle, opacity: hovered ? 1 : 0 }}>
+            <span style={{ ...GridTitleStyle, color: node.thumbhovercolour, whiteSpace: "pre-wrap" }}>{node.title}</span>
+          </div>
+        }
+        {node.thumbnail.childImageSharp &&
+          <GatsbyImage image={getImage(node.thumbnail.childImageSharp)} alt={node.title}
+              /*account for aspect ratio in big thumb*/ style={{ paddingBottom: node.bigthumbnail ? "9px" : 0 }} />
+        }{!node.thumbnail.childImageSharp &&
+          <img style={{ width: "100%" }} src={node.thumbnail.publicURL} alt={node.title} />
+        }
+      </Link>
+      {isMobile &&
+        <span style={{ ...mobileSubtitleStyle, whiteSpace: "pre-wrap" }}>{node.title}</span>
       }
-      </div>}
+    </div>}
   </>
 }
 
-const Grid = ({category, nodes, isMobile}) => {
+const Grid = ({ category, nodes, isMobile }) => {
   const [betterNodes, setBetterNodes] = useState(nodes)
 
   // when the sequence of big and small nodes is wrong, empty slots can appear in the grid.
   // these scenarios are checked for and avoided
-  const isNodesOk = (ns)=>{
+  const isNodesOk = (ns) => {
     let smallSinceBig = 2
     // check if there are at least two small thumbnails between each big thumbnailed-node
-    for(let i = 0; i<ns.length; i++){
-      if (!ns[i].node.frontmatter.bigthumbnail){
-        smallSinceBig ++;
+    for (let i = 0; i < ns.length; i++) {
+      if (!ns[i].node.frontmatter.bigthumbnail) {
+        smallSinceBig++;
       }
       else {
-        if (smallSinceBig < 2) {return i}
+        if (smallSinceBig < 2) { return i }
         // also check if any big thumbnail is the third entry in a row
-        if (i % 3 === 2) {return i}
+        if (i % 3 === 2) { return i }
         smallSinceBig = 0
       }
     }
     return -1
   }
 
-  useEffect(()=>{
+  useEffect(() => {
     let ns = Array.from(nodes.filter(
-      node => node.node.frontmatter.category === category || category === "Alle"
-    )).sort((a, b) =>parseInt(a.node.frontmatter.order) - parseInt(b.node.frontmatter.order) )
-    
+      // select nodes that have matching first or second category, 
+      // or all nodes if "Alle" is the current category
+      node => node.node.frontmatter.category === category || node.node.frontmatter?.category2 === category || category === "Alle"
+    )).sort((a, b) => parseInt(a.node.frontmatter.order) - parseInt(b.node.frontmatter.order))
+
     // upper bound on shuffle operations to avoid locking in impossible configurations
     let maxShuffles = 1000;
-    while(maxShuffles>0){
+    while (maxShuffles > 0) {
       const problem = isNodesOk(ns)
-      if (problem<0){setBetterNodes(ns); return}
+      if (problem < 0) { setBetterNodes(ns); return }
       maxShuffles--;
 
       // choose the next greater index of a small thumbnail to swap with the problematic one
-      let other = (problem+1)%ns.length
-      while (ns[other].node.frontmatter.bigthumbnail){
-        other = (other+1)%ns.length;
+      let other = (problem + 1) % ns.length
+      while (ns[other].node.frontmatter.bigthumbnail) {
+        other = (other + 1) % ns.length;
         // console.log(problem, other)
       }
 
@@ -209,7 +212,7 @@ const Grid = ({category, nodes, isMobile}) => {
       let temp = ns[other]
       ns[other] = ns[problem]
       ns[problem] = temp
-      
+
       // ns = ns.map(value => ({ value, sort: Math.random() }))
       // .sort((a, b) => a.sort - b.sort)
       // .map(({ value }) => value)
@@ -217,24 +220,24 @@ const Grid = ({category, nodes, isMobile}) => {
   }, [nodes, category])
 
   return <>
-    <div style={isMobile?GridContainerMobileStyle:GridContainerStyle}> 
-      {betterNodes.map((node,i)=><GridElement node={node.node.frontmatter} slug={node.node.fields.slug} key={i} isMobile={isMobile} minigrid={false}/>)}
+    <div style={isMobile ? GridContainerMobileStyle : GridContainerStyle}>
+      {betterNodes.map((node, i) => <GridElement node={node.node.frontmatter} slug={node.node.fields.slug} key={i} isMobile={isMobile} minigrid={false} />)}
     </div>
   </>
 }
 
 
-const Was = ({data}) => {
+const Was = ({ data }) => {
   const isMobile = useIsMobile();
-  const [category, setCategory] = useLocalStorage("was-category","Alle")
+  const [category, setCategory] = useLocalStorage("was-category", "Alle")
   return <Layout title="Unfug">
     <GatsbySeo
-        title="Was?"
-        description="Eine Übersicht über Studio Erikas Werke und Projekte"
-      />
+      title="Was?"
+      description="Eine Übersicht über Studio Erikas Werke und Projekte"
+    />
     <div style={mainContainerStyle}>
-      <SelectionMenu selectionSetter={setCategory} selection={category} isMobile={isMobile}/>
-      <Grid category={category} nodes={data.allMarkdownRemark.edges} isMobile={isMobile}/>
+      <SelectionMenu selectionSetter={setCategory} selection={category} isMobile={isMobile} />
+      <Grid category={category} nodes={data.allMarkdownRemark.edges} isMobile={isMobile} />
     </div>
   </Layout>
 }
@@ -253,6 +256,7 @@ query WasQuery {
         frontmatter {
           order
           category
+          category2
           title
           thumbnail {
             childImageSharp {
