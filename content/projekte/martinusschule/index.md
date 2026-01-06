@@ -5,6 +5,7 @@ header: Eine runde Sache!
 grafikund: Schule
 order: "430"
 category: Marke
+category2: Kids
 client: Martinusschule Ravensburg
 thumbnail: erika_matrinus_2.jpg
 thumbhovercolour: "#141414"
