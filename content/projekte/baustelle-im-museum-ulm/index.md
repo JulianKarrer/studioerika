@@ -5,6 +5,7 @@ header: "Das Museum aus der Schubkarre "
 grafikund: Bauarbeiten
 order: "122"
 category: Raum
+category2: Kids
 thumbnail: 20230729_134854.jpg
 thumbhovercolour: "#f5f4f0"
 bigthumbnail: false
