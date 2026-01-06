@@ -8,6 +8,7 @@ header: Schaukeln, Spielen, Bauen und Buzzern!
 grafikund: Interaktion
 order: "50"
 category: Raum
+category2: Kids
 client: Museum Ulm
 thumbnail: erika_museumulm_wolkenkuckucksraum_1_titel.jpg
 thumbhovercolour: "#141414"
