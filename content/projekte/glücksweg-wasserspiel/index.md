@@ -5,6 +5,7 @@ header: Auf den Spuren der Natur - der Glücksweg »Wasserspiel«
 grafikund: Wasser
 order: "320"
 category: Raum
+category2: Kids
 client: Naturgemeinde Kettershausen
 thumbnail: erika_kettershausen_gluecksweg_wasserspiel_1_titel.jpg
 thumbhovercolour: "#f5f4f0"
