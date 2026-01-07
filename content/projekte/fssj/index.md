@@ -8,8 +8,8 @@ category: Grafik
 category2: Kids
 client: Caritasverband Kempten-Oberallgäu e.V.
 thumbnail: cover.jpg
-thumbhovercolour: "#f5f4f0"
-bigthumbnail: false
+thumbhovercolour: "#101010"
+bigthumbnail: true
 werwaswieso: "Mit dem Freiwilligen Sozialen Schuljahr (FSSJ) haben Jugendlichen
   die Möglichkeit, sich ein Schuljahr lang in sozialen oder ökologischen
   Einrichtungen zu engagieren. Sie unterstützen Projekte, entdecken neue
