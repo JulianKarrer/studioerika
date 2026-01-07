@@ -2,7 +2,7 @@
 backend-title: Museum Ulm Baustelle
 title: Baustelle im Museum Ulm
 header: "Das Museum aus der Schubkarre "
-grafikund: Bauarbeiten
+grafikund: Bauarbeit
 order: "122"
 category: Raum
 category2: Kids
