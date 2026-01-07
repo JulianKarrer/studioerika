@@ -5,6 +5,7 @@ header: "Soziales Engagement + Freude "
 grafikund: Soziales
 order: "92"
 category: Grafik
+category2: Kids
 client: Caritasverband Kempten-Oberallgäu e.V.
 thumbnail: cover.jpg
 thumbhovercolour: "#f5f4f0"
