@@ -1,7 +1,7 @@
 ---
 backend-title: Martinusschule
 title: Martinusschule
-header: Eine runde Sache!
+header: Eine runde Sache
 grafikund: Schule
 order: "430"
 category: Marke
