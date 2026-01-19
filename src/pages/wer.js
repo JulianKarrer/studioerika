@@ -99,7 +99,7 @@ const Portrait = ({ name, email, imagedata, description, isMobile }) => {
   return (
     <div style={isMobile ? portraitContainerMobile : portraitContainer}>
       <div style={{ pointerEvents: "none", userSelect: "none" }}>
-        <GatsbyImage image={image} alt={name} />
+        <GatsbyImage image={image} alt={name} style={{ width: "calc(100% + 2px)" }} />
         <p style={{ maxWidth: isMobile ? "100%" : "80%" }}><span style={{ ...accentFont, fontSize: "21.3333px" }}>{name + " "}</span>{description}</p>
       </div>
       {email && <a href={"mailto:" + email} style={{ ...mailtoStyle, userSelect: "none" }}>{"— " + email}</a>}
@@ -149,7 +149,7 @@ const Wer = ({ data }) => {
       title="Wer?"
       description="Das Team von Studio Erika stellt sich vor."
     />
-    <StaticImage
+    {/*<StaticImage
       src="../images/erika_team3.jpg"
       alt="Das Team von Studio Erika"
       layout="fixed"
@@ -157,7 +157,7 @@ const Wer = ({ data }) => {
       width={300}
       height={450}
       style={teamImgStyle}
-    />
+    />*/}
     <div style={headerStyle}>
       <p style={headerTextStyle}><span style={accentFont}>STUDIO ERIKA</span> ist ein detailverliebtes Designbüro, welches in den Bereichen Szenografie, Grafik, Corporate Design und Webdesign denkt und arbeitet. Charakteristisch für das Studio ist die Balance zwischen Professionalität und spielerisch-emotionaler Gestaltung, bei der Individualität stets den Kern der Arbeit bildet.</p>
     </div>

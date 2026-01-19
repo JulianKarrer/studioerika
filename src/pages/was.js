@@ -66,7 +66,7 @@ const Selection = ({ name, setter, selection, isMobile }) => {
 
 const SelectionMenu = ({ selectionSetter, selection, isMobile }) => {
   return <div style={selectionMenuContainer}>
-    {["Alle", "Raum", "Grafik", "Marke", "Spiel", "Kids"].map((name, i) => {
+    {["Alle", "Raum", "Grafik", "Marke", "Kids"].map((name, i) => {
       return <Selection name={name} setter={selectionSetter} selection={selection} key={i + 999} isMobile={isMobile} />
     })}
   </div>
