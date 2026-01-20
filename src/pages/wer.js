@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { graphql } from 'gatsby'
-import { StaticImage, GatsbyImage, getImage } from "gatsby-plugin-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import Slider from 'infinite-react-carousel';
 import useWindowSize from '../hooks/useWindowSize';
 import { useIsMobile } from '../hooks/useMobile';
@@ -10,12 +10,6 @@ import { useEffect } from 'react';
 import { GatsbySeo } from 'gatsby-plugin-next-seo';
 import { Fade } from 'react-reveal';
 import { useRef } from 'react';
-
-const teamImgStyle = {
-  left: "calc(50vw - 20px)",
-  transform: "translateX(-50%)",
-  top: 150,
-}
 
 const headerTextStyle = {
   fontFamily: "SuisseWorks, serif",
@@ -159,7 +153,7 @@ const Wer = ({ data }) => {
       style={teamImgStyle}
     />*/}
     <div style={headerStyle}>
-      <p style={headerTextStyle}><span style={accentFont}>STUDIO ERIKA</span> ist ein detailverliebtes Designbüro, welches in den Bereichen Szenografie, Grafik, Corporate Design und Webdesign denkt und arbeitet. Charakteristisch für das Studio ist die Balance zwischen Professionalität und spielerisch-emotionaler Gestaltung, bei der Individualität stets den Kern der Arbeit bildet.</p>
+      <p style={headerTextStyle}><span style={accentFont}>STUDIO ERIKA</span> ist ein detailverliebtes Designbüro, das in den Bereichen Szenografie, Grafik und Corporate Design denkt und arbeitet. Ein Schwerpunkt sind Bildungsprojekte für Kinder und junge Erwachsene. Charakteristisch für das Studio ist die Balance zwischen Professionalität und spielerisch-emotionaler Gestaltung, bei der Individualität stets den Kern der Arbeit bildet.</p>
     </div>
     <PortraitContainer isMobile={isMobile}>
       {data.allMarkdownRemark.nodes.map((node, i) => {
