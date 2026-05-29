@@ -42,4 +42,7 @@ content:
     alttext2: Bild
     doubleimage1: 08.jpg
     doubleimage2: 09.jpg
+  - type: coverimageobject
+    alttext: Bild
+    coverimage: 10.jpg
 ---
