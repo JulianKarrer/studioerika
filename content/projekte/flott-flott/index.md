@@ -45,4 +45,7 @@ content:
   - type: coverimageobject
     alttext: Bild
     coverimage: 10.jpg
+  - type: coverimageobject
+    alttext: Bild
+    coverimage: 11.jpg
 ---
