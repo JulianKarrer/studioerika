@@ -70,8 +70,8 @@ content:
       image-video-mp4file: 17.mp4
   - type: coverimageobject
     alttext: Bild
-    coverimage: 19.jpg
+    coverimage: 18.jpg
   - type: coverimageobject
     alttext: Bild
-    coverimage: 18.jpg
+    coverimage: 19.jpg
 ---
