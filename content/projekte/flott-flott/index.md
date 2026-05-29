@@ -48,4 +48,11 @@ content:
   - type: coverimageobject
     alttext: Bild
     coverimage: 11.jpg
+  - type: image-video
+    image-video-left: true
+    image-video-imageobject:
+      alttext: Bild
+      image-video-image: 12.jpg
+    image-video-mp4fileobject:
+      image-video-mp4file: 13.mp4
 ---
