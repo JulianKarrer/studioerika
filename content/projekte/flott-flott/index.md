@@ -61,4 +61,11 @@ content:
   - type: coverimageobject
     alttext: Bild
     coverimage: 15.jpg
+  - type: image-video
+    image-video-left: true
+    image-video-imageobject:
+      alttext: Bild
+      image-video-image: 16.jpg
+    image-video-mp4fileobject:
+      image-video-mp4file: 17.mp4
 ---
