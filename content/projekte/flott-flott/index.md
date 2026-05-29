@@ -29,4 +29,9 @@ content:
     doubleimage2: 03.jpg
   - type: mp4fileobject
     mp4file: 04.mp4
+  - type: doubleimageobject
+    alttext1: Bild
+    alttext2: Bild
+    doubleimage1: 05.jpg
+    doubleimage2: 06.jpg
 ---
