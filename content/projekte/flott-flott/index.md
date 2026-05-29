@@ -4,7 +4,7 @@ title: Flott, flott!
 header: |
   Flott, flott! – Mitmachausstellung für Kinder 
 grafikund: Mobilität
-order: "32"
+order: "29"
 category: Raum
 category2: Kids
 client: Städtische Museen Esslingen
