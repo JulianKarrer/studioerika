@@ -55,4 +55,10 @@ content:
       image-video-image: 12.jpg
     image-video-mp4fileobject:
       image-video-mp4file: 13.mp4
+  - type: coverimageobject
+    alttext: Bild
+    coverimage: 14.jpg
+  - type: coverimageobject
+    alttext: Bild
+    coverimage: 15.jpg
 ---
