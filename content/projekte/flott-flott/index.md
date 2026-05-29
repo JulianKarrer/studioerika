@@ -21,7 +21,6 @@ erikamacht: "In 10 Mitmachstationen wird Mobilität erforscht: Warum bewegen wir
   Erfinde-Werkstatt entstehen eigene Wunschfahrzeuge für die Mobilität der
   Zukunft."
 content:
-  - type: coverimageobject
-    alttext: Bild
-    coverimage: ttelbild_1.jpg
+  - type: mp4fileobject
+    mp4file: 01.mp4
 ---
