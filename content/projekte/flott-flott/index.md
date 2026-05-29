@@ -23,4 +23,9 @@ erikamacht: "In 10 Mitmachstationen wird Mobilität erforscht: Warum bewegen wir
 content:
   - type: mp4fileobject
     mp4file: 01.mp4
+  - type: doubleimageobject
+    alttext1: Bild
+    alttext2: Bild
+    doubleimage1: 02.jpg
+    doubleimage2: 03.jpg
 ---
