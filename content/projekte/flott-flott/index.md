@@ -37,4 +37,9 @@ content:
   - type: coverimageobject
     alttext: Bild
     coverimage: 07.jpg
+  - type: doubleimageobject
+    alttext1: Bild
+    alttext2: Bild
+    doubleimage1: 08.jpg
+    doubleimage2: 09.jpg
 ---
