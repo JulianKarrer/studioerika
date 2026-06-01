@@ -47,4 +47,9 @@ content:
     alttext2: Bild
     doubleimage1: queereslebenaufdemland_11.jpg
     doubleimage2: queereslebenaufdemland_12.jpg
+  - type: doubleimageobject
+    alttext1: Bild
+    alttext2: Bild
+    doubleimage1: queereslebenaufdemland_13_.jpg
+    doubleimage2: queereslebenaufdemland_14_.jpg
 ---
