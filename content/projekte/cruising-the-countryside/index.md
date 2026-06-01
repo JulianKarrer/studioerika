@@ -60,4 +60,6 @@ content:
   - type: coverimageobject
     alttext: Bild
     coverimage: queereslebenaufdemland_17_.jpg
+  - type: mp4fileobject
+    mp4file: queereslebenaufdemland_18.mp4
 ---
