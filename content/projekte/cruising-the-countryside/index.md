@@ -20,5 +20,8 @@ erikamacht: "Die Gestaltung arbeitet mit humorvollen Collagen und überraschende
   Umdeutungen: Milchkannen werden zu Audiostationen, Schubkarren zu Sitzmöbeln,
   vor Screens kann auf einem Sattel Platz genommen werden. Interaktive Stationen
   laden zum Mitmachen und Entdecken ein."
-content: []
+content:
+  - type: coverimageobject
+    alttext: Bild
+    coverimage: queereslebenaufdemland_01.jpg
 ---
