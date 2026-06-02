@@ -21,15 +21,6 @@ erikamacht: "Die Gestaltung arbeitet mit humorvollen Collagen und überraschende
   vor Screens kann auf einem Sattel Platz genommen werden. Interaktive Stationen
   laden zum Mitmachen und Entdecken ein."
 content:
-  - type: coverimageobject
-    alttext: Bild
-    coverimage: queereslebenaufdemland_01.jpg
-  - type: coverimageobject
-    alttext: Bild
-    coverimage: queereslebenaufdemland_04.jpg
-  - type: coverimageobject
-    alttext: Bild
-    coverimage: queereslebenaufdemland_07.jpg
   - type: doubleimageobject
     alttext1: Bild
     alttext2: Bild
