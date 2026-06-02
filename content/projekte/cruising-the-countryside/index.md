@@ -3,7 +3,7 @@ backend-title: Cruising the Countryside
 title: Cruising the Countryside
 header: "Cruising the Countryside – Queeres Leben auf dem Land "
 grafikund: Vielfalt
-order: "32"
+order: "1500"
 category: Raum
 category2:
   - keine
@@ -26,22 +26,4 @@ content:
     alttext2: Bild
     doubleimage1: queereslebenaufdemland_05_.jpg
     doubleimage2: queereslebenaufdemland_06_.jpg
-  - type: doubleimageobject
-    alttext1: Bild
-    alttext2: Bild
-    doubleimage1: queereslebenaufdemland_11.jpg
-    doubleimage2: queereslebenaufdemland_12.jpg
-  - type: doubleimageobject
-    alttext1: Bild
-    alttext2: Bild
-    doubleimage1: queereslebenaufdemland_13_.jpg
-    doubleimage2: queereslebenaufdemland_14_.jpg
-  - type: doubleimageobject
-    alttext1: Bild
-    alttext2: Bild
-    doubleimage1: queereslebenaufdemland_15_.jpg
-    doubleimage2: queereslebenaufdemland_16_.jpg
-  - type: coverimageobject
-    alttext: Bild
-    coverimage: queereslebenaufdemland_17_.jpg
 ---
