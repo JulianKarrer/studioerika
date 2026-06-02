@@ -30,7 +30,7 @@ content:
       alttext: Bild
       image-video-image: queereslebenaufdemland_02_.jpg
     image-video-mp4fileobject:
-      image-video-mp4file: queereslebenaufdemland_03.mp4
+      image-video-mp4file: queereslebenaufdemland_03_web.mp4
   - type: coverimageobject
     alttext: Bild
     coverimage: queereslebenaufdemland_04.jpg
