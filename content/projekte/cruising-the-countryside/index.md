@@ -28,7 +28,7 @@ content:
     image-video-left: true
     image-video-imageobject:
       alttext: Bild
-      image-video-image: queereslebenaufdemland_02.jpg
+      image-video-image: queereslebenaufdemland_02_.jpg
     image-video-mp4fileobject:
       image-video-mp4file: queereslebenaufdemland_03.mp4
   - type: coverimageobject
