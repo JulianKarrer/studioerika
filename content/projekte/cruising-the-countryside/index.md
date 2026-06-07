@@ -5,8 +5,7 @@ header: "Cruising the Countryside – Queeres Leben auf dem Land "
 grafikund: Buntes
 order: "1000"
 category: Raum
-category2:
-  - keine
+category2: keine
 client: Schwules Museum Berlin
 thumbnail: queereslebenaufdemland_titelbild.jpg
 thumbhovercolour: "#f5f4f0"
