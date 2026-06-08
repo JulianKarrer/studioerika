@@ -52,4 +52,7 @@ content:
       image-video-image: untold_studioerika_10.jpg
     image-video-mp4fileobject:
       image-video-mp4file: untold_studioerika_11_comp.mp4
+  - type: coverimageobject
+    alttext: Bild
+    coverimage: untold_studioerika_12.jpg
 ---
