@@ -30,4 +30,9 @@ content:
       image-video-image: untold_studioerika_02.jpg
     image-video-mp4fileobject:
       image-video-mp4file: untold_studioerika_03.mp4
+  - type: doubleimageobject
+    alttext1: Bild
+    alttext2: Bild
+    doubleimage1: untold_studioerika_04.jpg
+    doubleimage2: untold_studioerika_05.jpg
 ---
