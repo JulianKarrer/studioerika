@@ -40,4 +40,6 @@ content:
     alttext2: Bild
     doubleimage1: untold_studioerika_06.jpg
     doubleimage2: untold_studioerika_07.jpg
+  - type: mp4fileobject
+    mp4file: untold_studioerika_08_comp_2.mp4
 ---
