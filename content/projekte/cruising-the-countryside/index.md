@@ -33,4 +33,9 @@ content:
   - type: coverimageobject
     alttext: Bild
     coverimage: queereslebenaufdemland_04.jpg
+  - type: doubleimageobject
+    alttext1: Bild
+    alttext2: Bild
+    doubleimage1: queereslebenaufdemland_05.jpg
+    doubleimage2: queereslebenaufdemland_06.jpg
 ---
