@@ -65,5 +65,10 @@ content:
       alttext: Bild
       image-video-image: queereslebenaufdemland_15.jpg
     image-video-mp4fileobject:
-      image-video-mp4file: queereslebenaufdemland_18_web.mp4
+      image-video-mp4file: queereslebenaufdemland_16_.jpg
+  - type: coverimageobject
+    alttext: Bild
+    coverimage: queereslebenaufdemland_17.jpg
+  - type: mp4fileobject
+    mp4file: queereslebenaufdemland_18_web.mp4
 ---
