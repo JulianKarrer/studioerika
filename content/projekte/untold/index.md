@@ -3,7 +3,7 @@ backend-title: Untold
 title: Untold
 header: Untold – Queere Geschichten aus dem Allgäu
 grafikund: Queerness
-order: "1600"
+order: "42"
 category: Raum
 category2: keine
 client: Kempten Museum
