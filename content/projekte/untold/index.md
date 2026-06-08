@@ -23,4 +23,11 @@ content:
   - type: coverimageobject
     alttext: Bild
     coverimage: untold_studioerika_01.jpg
+  - type: image-video
+    image-video-left: true
+    image-video-imageobject:
+      alttext: Bild
+      image-video-image: untold_studioerika_02.jpg
+    image-video-mp4fileobject:
+      image-video-mp4file: untold_studioerika_03.mp4
 ---
