@@ -8,7 +8,7 @@ order: "29"
 category: Raum
 category2: Kids
 client: Städtische Museen Esslingen
-thumbnail: ttelbild_1.jpg
+thumbnail: titelbild_1.jpg
 thumbhovercolour: "#f5f4f0"
 bigthumbnail: false
 werwaswieso: "Die Schnecke hat genug vom Langsamsein und geht auf
