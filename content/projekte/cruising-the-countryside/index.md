@@ -54,6 +54,9 @@ content:
     alttext2: Bild
     doubleimage1: pscfoto202605060022_cl_web2.jpg
     doubleimage2: pscfoto202605060080_cl_web.jpg
+  - type: coverimageobject
+    alttext: Bild
+    coverimage: pscfoto202605060053_cl_web2.jpg
   - type: doubleimageobject
     alttext1: Bild
     alttext2: Bild
