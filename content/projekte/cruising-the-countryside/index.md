@@ -25,7 +25,7 @@ content:
     coverimage: queereslebenaufdemland_01.jpg
   - type: coverimageobject
     alttext: Bild
-    coverimage: pscfoto202605060116_cl_web.jpg
+    coverimage: pscfoto202605060116_cl_web2.jpg
   - type: image-video
     image-video-left: true
     image-video-imageobject:
