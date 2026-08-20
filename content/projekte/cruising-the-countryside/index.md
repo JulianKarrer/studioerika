@@ -47,6 +47,11 @@ content:
   - type: doubleimageobject
     alttext1: Bild
     alttext2: Bild
+    doubleimage2: pscfoto202605060082_cl_web.jpg
+    doubleimage1: pscfoto202605060020_cl_web2.jpg
+  - type: doubleimageobject
+    alttext1: Bild
+    alttext2: Bild
     doubleimage1: queereslebenaufdemland_05.jpg
     doubleimage2: queereslebenaufdemland_06.jpg
   - type: doubleimageobject
