@@ -47,7 +47,7 @@ content:
   - type: doubleimageobject
     alttext1: Bild
     alttext2: Bild
-    doubleimage2: pscfoto202605060082_cl_web.jpg
+    doubleimage2: pscfoto202605060082_cl_web2.jpg
     doubleimage1: pscfoto202605060020_cl_web2.jpg
   - type: doubleimageobject
     alttext1: Bild
