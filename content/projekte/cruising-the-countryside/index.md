@@ -70,6 +70,9 @@ content:
     alttext2: Bild
     doubleimage1: queereslebenaufdemland_06.jpg
     doubleimage2: pscfoto202605060093_cl_web2.jpg
+  - type: coverimageobject
+    alttext: Bild
+    coverimage: pscfoto202605060063_cl_web.jpg
   - type: doubleimageobject
     alttext1: Bild
     alttext2: Bild
