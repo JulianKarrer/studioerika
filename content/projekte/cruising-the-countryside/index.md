@@ -73,22 +73,6 @@ content:
   - type: coverimageobject
     alttext: Bild
     coverimage: pscfoto202605060063_cl_web.jpg
-  - type: doubleimageobject
-    alttext1: Bild
-    alttext2: Bild
-    doubleimage1: queereslebenaufdemland_08.jpg
-    doubleimage2: queereslebenaufdemland_09.jpg
-  - type: coverimageobject
-    alttext: Bild
-    coverimage: queereslebenaufdemland_10_querformat.jpg
-  - type: doubleimageobject
-    alttext1: Bild
-    alttext2: Bild
-    doubleimage1: queereslebenaufdemland_13_.jpg
-    doubleimage2: queereslebenaufdemland_14_.jpg
-  - type: coverimageobject
-    alttext: Bild
-    coverimage: queereslebenaufdemland_17.jpg
   - type: mp4fileobject
     mp4file: queereslebenaufdemland_18_web.mp4
 ---
